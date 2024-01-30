@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.devlearnhub.databinding.LayoutLoginActivityBinding
-import com.example.devlearnhub.databinding.LayoutRegisterActivityBinding
 
 class Login_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutLoginActivityBinding

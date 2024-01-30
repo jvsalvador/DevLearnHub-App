@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="amber">#FFBF00</color>
     <color name="violet">#7F00FF</color>
+    <color name="light_gray">#78787C</color>
 </resources>

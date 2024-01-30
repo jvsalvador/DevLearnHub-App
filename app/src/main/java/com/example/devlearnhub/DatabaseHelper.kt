@@ -12,9 +12,8 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
             "$COL_USER_FIRSTNAME TEXT," +
             "$COL_USER_LASTNAME TEXT," +
             "$COL_USER_EMAIL TEXT," +
-            "$COL_USER_MOBILE INT," +
             "$COL_USER_PASSWORD TEXT," +
-            "$COL_USER_GENDER TEXT)"
+            "$COL_USER_CONFIRM TEXT)"
 
     private val DROP_TABLE_USER = "DROP TABLE IF EXISTS $TABLE_USER"
 
@@ -33,9 +32,9 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
         value.put(COL_USER_FIRSTNAME,user.firstname)
         value.put(COL_USER_LASTNAME,user.lastname)
         value.put(COL_USER_EMAIL,user.email)
-        value.put(COL_USER_MOBILE,user.mobile)
         value.put(COL_USER_PASSWORD,user.password)
-        value.put(COL_USER_GENDER,user.gender)
+        value.put(COL_USER_CONFIRM,user.confirm)
+
 
         db.insert(TABLE_USER, null,value)
         db.close()
@@ -72,8 +71,7 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
         private const val COL_USER_FIRSTNAME = "user_firstname"
         private const val COL_USER_LASTNAME = "user_lastname"
         private const val COL_USER_EMAIL = "user_email"
-        private const val COL_USER_MOBILE = "user_mobile"
-        private const val COL_USER_GENDER = "user_gender"
         private const val COL_USER_PASSWORD = "user_password"
+        private const val COL_USER_CONFIRM = "user_confirm"
     }
 }

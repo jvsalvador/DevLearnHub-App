@@ -6,6 +6,5 @@ data class User(
     var lastname  :  String = "",
     var email     :  String = "",
     var password  :  String = "",
-    var mobile    :  Int = 0,
-    var gender    :  String = "",
+    var confirm   :  String = "",
 )

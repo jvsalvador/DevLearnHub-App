@@ -3,10 +3,9 @@ package com.example.devlearnhub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.Data
-import android.view.View
 import android.widget.Toast
 import com.example.devlearnhub.databinding.LayoutRegisterActivityBinding
+
 
 class Register_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutRegisterActivityBinding
@@ -22,33 +21,38 @@ class Register_Activity : AppCompatActivity() {
         }
 
         binding.tvRegisterLogin.setOnClickListener {
-            startActivity(Intent(this,Login_Activity::class.java))
+            startActivity(Intent(this, Login_Activity::class.java))
         }
     }
 
-    private fun registerUser()  {
+    private fun registerUser() {
         val firstname = binding.etRegisterFirstname.text.toString()
         val lastname = binding.etRegisterLastName.text.toString()
-        val mobile = binding.etRegisterMobileNumber.text.toString().toInt()
         val email = binding.etRegisterEmail.text.toString()
         val password = binding.etRegisterPassword.text.toString()
+        val confirmString = binding.etRegisterConfirm.text.toString()
 
         if (ValidationUtils.isTextNotEmpty(firstname) &&
             ValidationUtils.isTextNotEmpty(lastname) &&
-            ValidationUtils.isTextNotFill(mobile) &&
             ValidationUtils.isTextNotEmpty(email) &&
-            ValidationUtils.isTextNotEmpty(password)
+            ValidationUtils.isTextNotEmpty(password) &&
+            ValidationUtils.isTextNotEmpty(confirmString)
         ) {
             if (ValidationUtils.isValidEmail(email)) {
-                val user = User(firstname = firstname, lastname = lastname, mobile = mobile, email = email.trim(), password = password )
+                val user = User(
+                    firstname = firstname,
+                    lastname = lastname,
+                    email = email.trim(),
+                    password = password,
+                    confirm = confirmString
+                )
                 db.registerUser(user)
                 Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Invalid email format", Toast.LENGTH_SHORT).show()
             }
         } else {
-            Toast.makeText(this, "Please input all field", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Please input all fields", Toast.LENGTH_SHORT).show()
         }
     }
-
 }

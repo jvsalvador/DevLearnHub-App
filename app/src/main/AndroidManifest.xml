@@ -13,10 +13,19 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31">
         <activity
-            android:name=".Choices_Activity"
+            android:name=".Senior_Activity"
             android:exported="false" />
         <activity
-            android:name=".Home_Activity"
+            android:name=".Junior_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sophomore_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Initial_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Choices_Activity"
             android:exported="false" />
         <activity
             android:name=".Register_Activity"
@@ -26,10 +35,11 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.App.SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

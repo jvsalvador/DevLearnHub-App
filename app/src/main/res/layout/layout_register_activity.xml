@@ -61,23 +61,6 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_register_MobileNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_regular"
-            android:hint="Mobile Number *"
-            android:inputType="number"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="7dp"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_register_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,6 +83,24 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
             android:hint="Password *"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:password="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_register_Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Confirm Password *"
             android:inputType="text"
             android:maxLines="1"
             android:password="true" />
@@ -150,11 +151,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Have an Account?"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        />
+        android:fontFamily="@font/poppins_regular"
+        android:text="You already have an account?" />
 
     <TextView
         android:id="@+id/tv_register_Login"
