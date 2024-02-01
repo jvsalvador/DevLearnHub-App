@@ -16,13 +16,13 @@ class Choices_Activity : AppCompatActivity() {
         setContentView(binding.root)
 
         val btnNext = binding.btnNext
-        val cbFrist = binding.cbFirst
+        val cbFirst = binding.cbFirst
         val cbSecond = binding.cbSecond
         val cbThird = binding.cbThird
         val cbFourth = binding.cbFourth
 
 
-        val checkBoxes = listOf(cbFrist,cbSecond, cbThird, cbFourth)
+        val checkBoxes = listOf(cbFirst,cbSecond, cbThird, cbFourth)
         checkBoxes.forEach { checkBox ->
             checkBox.setOnCheckedChangeListener { buttonView, isChecked ->
                 if (isChecked)
@@ -37,11 +37,9 @@ class Choices_Activity : AppCompatActivity() {
 
             if (selectedCheckBox !=null){
 
-                Toast.makeText(this, "${selectedCheckBox.text} Checked", Toast.LENGTH_SHORT).show()
-
                 when(selectedCheckBox){
 
-                    cbFrist -> startActivity(Intent(this, Initial_Activity::class.java))
+                    cbFirst -> startActivity(Intent(this, Initial_Activity::class.java))
                     cbSecond -> startActivity(Intent(this, Sophomore_Activity::class.java))
                     cbThird -> startActivity(Intent(this, Junior_Activity::class.java))
                     cbFourth -> startActivity(Intent(this, Senior_Activity::class.java))

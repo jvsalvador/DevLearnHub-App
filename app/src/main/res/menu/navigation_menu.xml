@@ -29,7 +29,8 @@
 
                 <item android:id="@+id/nav_logout"
                     android:title="Log out"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    android:icon="@drawable/baseline_logout_24"/>
 
             </group>
 
@@ -45,15 +46,18 @@
 
                 <item android:id="@+id/nav_contact"
                     android:title="Contact us"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    android:icon="@drawable/baseline_chat_24"/>
 
                 <item android:id="@+id/nav_rate"
                     android:title="Rate"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    android:icon="@drawable/baseline_star_rate_24"/>
 
                 <item android:id="@+id/nav_about"
                     android:title="About us"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    android:icon="@drawable/baseline_help_24"/>
 
             </group>
 
