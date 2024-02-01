@@ -22,6 +22,7 @@ class Login_Activity : AppCompatActivity() {
 
         binding.btLoginLogin.setOnClickListener {
             loginUser()
+            Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
         }
 
     }
