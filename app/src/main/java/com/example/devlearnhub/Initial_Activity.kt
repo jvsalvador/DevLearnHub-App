@@ -59,6 +59,12 @@ class Initial_Activity : AppCompatActivity() {
 
                     true
                 }
+                R.id.nav_back -> {
+                    val intent = Intent(this, Choices_Activity::class.java)
+                    startActivity(intent)
+
+                    true
+                }
                 R.id.nav_contact -> {
                     true
                 }

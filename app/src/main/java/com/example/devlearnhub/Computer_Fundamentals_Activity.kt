@@ -16,7 +16,7 @@ class Computer_Fundamentals_Activity : AppCompatActivity() {
         val btnBack = binding.btnBack
 
         btnBack.setOnClickListener {
-            startActivity(Intent(this, Initial_Activity::class.java))
+            val intent = Intent(this, Initial_Activity::class.java)
             startActivity(intent)
 
         }

@@ -6,19 +6,23 @@
 
     <item android:id="@+id/nav_course"
         android:title="Course Modules"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:icon="@drawable/baseline_course_module_24"/>
 
     <item android:id="@+id/nav_computer"
         android:title="Computer Fundamentals"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:icon="@drawable/baseline_computer_24"/>
 
     <item android:id="@+id/nav_laboratory"
         android:title="Lab Environment"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:icon="@drawable/baseline_network_24"/>
 
     <item android:id="@+id/nav_dsa"
         android:title="DSA"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:icon="@drawable/baseline_dsa_24"/>
 
 
     <item android:title="Profile">
@@ -26,6 +30,11 @@
         <menu>
 
             <group android:checkableBehavior="single">
+
+                <item android:id="@+id/nav_back"
+                    android:title="Level Choices"
+                    android:padding="10dp"
+                    android:icon="@drawable/baseline_arrow_back_24"/>
 
                 <item android:id="@+id/nav_logout"
                     android:title="Log out"

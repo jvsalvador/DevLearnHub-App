@@ -53,7 +53,7 @@
         android:drawablePadding="10dp"
         android:drawableTint="@color/violet"
         android:hint="Email"
-        android:maxLines="1" />
+        android:maxLines="1"/>
 
   </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,6 +77,7 @@
   </com.google.android.material.textfield.TextInputLayout>
 
   <TextView
+      android:id="@+id/tv_forgot_password"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_gravity="end"
