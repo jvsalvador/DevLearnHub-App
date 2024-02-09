@@ -20,5 +20,23 @@ class Computer_Fundamentals_Activity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+        btnBack.setOnClickListener {
+            val intent = Intent(this, Sophomore_Activity::class.java)
+            startActivity(intent)
+
+        }
+
+        btnBack.setOnClickListener {
+            val intent = Intent(this, Junior_Activity::class.java)
+            startActivity(intent)
+
+        }
+
+        btnBack.setOnClickListener {
+            val intent = Intent(this, Senior_Activity::class.java)
+            startActivity(intent)
+
+        }
     }
 }

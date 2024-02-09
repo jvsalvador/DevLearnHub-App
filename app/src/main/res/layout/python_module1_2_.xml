@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Python_Module1_2">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python Comments"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView34"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Comments are hints that we add to our code to make it\neasier to understand.\n\nWhen executing code, Python's interpreter ignores\ncomments.\n\nFor example, we have a program to print a text entered by\nthe user."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView33"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n   name = input(&quot;Enter your name:&quot;)\n   print(name)"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView35"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="To make this program more readable, we can add\ncomments like:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView36"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:text="\n    # Program to take the user's name\n\n     name = input('Enter your name')\n     print(name) "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView37"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Here, the line starting with # is a comment. The Python\ncompiler ignores everything after the # symbol.\n\nNow, let's understand the different types of comments in Python."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to next"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -3,14 +3,14 @@ package com.example.devlearnhub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.databinding.DataBindingUtil
-import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.example.devlearnhub.databinding.LayoutInitialActivityBinding
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class Initial_Activity : AppCompatActivity() {
@@ -24,11 +24,21 @@ class Initial_Activity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.btnLearn.setOnClickListener {
+            val intent = Intent(this, Python_Activity::class.java)
+            startActivity(intent)
+        }
+        binding.btnLearn2.setOnClickListener {
+            val intent = Intent(this, Java_Activity::class.java)
+            startActivity(intent)
+        }
+
+
+        // Navigation Drawer
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        // Set up the NavigationView
         val navView: NavigationView = findViewById(R.id.nav_view)
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {

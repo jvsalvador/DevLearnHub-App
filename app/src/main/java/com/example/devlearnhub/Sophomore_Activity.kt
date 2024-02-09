@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import com.example.devlearnhub.databinding.LayoutInitialActivityBinding
 import com.example.devlearnhub.databinding.LayoutSophomoreActivityBinding
 import com.google.android.material.navigation.NavigationView
 

@@ -13,6 +13,21 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31">
         <activity
+            android:name=".module.Python_Module1_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Python_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Python_Module1"
+            android:exported="false" />
+        <activity
+            android:name=".Java_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Python_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Computer_Fundamentals_Activity"
             android:exported="false" />
         <activity
