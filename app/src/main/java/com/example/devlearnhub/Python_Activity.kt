@@ -14,6 +14,11 @@ class Python_Activity : AppCompatActivity() {
         binding = LayoutPythonActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnBackToHome.setOnClickListener {
+            val intent = Intent(this, Initial_Activity::class.java)
+            startActivity(intent)
+        }
+
         binding.btnNextLearn.setOnClickListener {
             val intent = Intent(this, com.example.devlearnhub.module.Python_Module1::class.java)
             startActivity(intent)

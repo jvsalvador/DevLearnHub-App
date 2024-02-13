@@ -1,5 +1,6 @@
 package com.example.devlearnhub
 
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -26,7 +27,7 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
     }
 
 
-    fun registerUser(user : User) {
+    fun registerUser(user : Users) {
         val db = this.writableDatabase
         val value = ContentValues()
         value.put(COL_USER_FIRSTNAME,user.firstname)
@@ -62,6 +63,7 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
 
         return cursorCount > 0
     }
+
     companion object {
         private const val DATABASE_VERSION = 1
         private const val DATABASE_NAME = "user.db"
@@ -74,4 +76,6 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
         private const val COL_USER_PASSWORD = "user_password"
         private const val COL_USER_CONFIRM = "user_confirm"
     }
+
+
 }

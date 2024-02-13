@@ -4,17 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.R
-import com.example.devlearnhub.databinding.PythonModule13Binding
+import com.example.devlearnhub.databinding.PythonModule14Binding
 
-class Python_Module1_3 : AppCompatActivity() {
-    private lateinit var binding: PythonModule13Binding
+class Python_Module1_4 : AppCompatActivity() {
+    private lateinit var binding: PythonModule14Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = PythonModule13Binding.inflate(layoutInflater)
+        binding = PythonModule14Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnTapToNext3.setOnClickListener {
-            val intent = Intent(this, Python_Module1_4::class.java)
+        binding.btnTopToNext4.setOnClickListener {
+            val intent = Intent(this, Python_Module1_5::class.java)
             startActivity(intent)
         }
     }

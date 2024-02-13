@@ -39,7 +39,7 @@ class Register_Activity : AppCompatActivity() {
             ValidationUtils.isTextNotEmpty(confirmString)
         ) {
             if (ValidationUtils.isValidEmail(email)) {
-                val user = User(
+                val user = Users(
                     firstname = firstname,
                     lastname = lastname,
                     email = email.trim(),

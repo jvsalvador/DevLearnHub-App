@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Python_Module1_4">
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python Operators"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Since everything is an object in Python programming, data types are actually classes and variables are instances(object) of these classes."
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="388dp"
+        android:layout_height="198dp"
+        android:layout_below="@+id/textView39"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/data_types"
+        tools:srcCompat="@drawable/operators" />
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textView40"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:text="\n  num1 = 5\n  print(num1, 'int', type(num1))\n\n  num2 = 2.0\n  print(num2, 'float', type(num2))\n\n  num3 = 1+2j\n  print(num3, 'complex', type(num3))\n\n  name = 'String'\n  print(name)\n\n  languages = [Swift, Java, Python ] "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/btn_top_to_next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to next"
+        android:textSize="16sp" />
+</RelativeLayout>
