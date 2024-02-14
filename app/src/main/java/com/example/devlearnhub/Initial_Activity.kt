@@ -7,11 +7,9 @@ import android.widget.Toast
 import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
 import com.google.android.material.navigation.NavigationView
-import com.example.devlearnhub.Initial_Activity
 import com.example.devlearnhub.databinding.LayoutInitialActivityBinding
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import com.example.devlearnhub.Menu.Computer_Fundamentals_Activity
+import com.example.devlearnhub.Menu.Networking_Fundamentals_Activity
 
 
 class Initial_Activity : AppCompatActivity() {
@@ -58,6 +56,9 @@ class Initial_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_laboratory -> {
+                    val intent = Intent(this, Networking_Fundamentals_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
                 R.id.nav_dsa -> {

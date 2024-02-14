@@ -22,10 +22,9 @@
             android:background="@color/lavander">
 
             <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="start"
-                android:layout_marginStart="16dp"
                 android:src="@drawable/devlearn_logo" />
 
 
@@ -33,9 +32,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:fontFamily="@font/poppins_bold"
                 android:text="DevLearn Hub"
                 android:textColor="@android:color/white"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
         </androidx.appcompat.widget.Toolbar>
 
