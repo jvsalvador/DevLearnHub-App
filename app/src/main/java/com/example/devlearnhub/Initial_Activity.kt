@@ -80,9 +80,7 @@ class Initial_Activity : AppCompatActivity() {
                 R.id.nav_contact -> {
                     true
                 }
-                R.id.nav_rate -> {
-                    true
-                }
+
                 R.id.nav_about -> {
                     true
                 }

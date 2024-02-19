@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Python_Module2_2">
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python for Loop"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView49"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In Python, a for loop is used to iterate over sequences such as lists, strings, tuples, etc."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView52"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n      languages = ['Swift', 'Python', 'Go']\n     # access elements of the list one by one\n      for i in languages:\n           print(i)\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView53"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n     Output:\n\n     Swift\n     Python\n     Go\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView54"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="In the above example, we have created a list called languages. As the list has 3 elements, the loop iterates 3 times.\n\nThe value of i is  Swift in the first iteration.\nPython in the second iteration.\nGo in the third iteration."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView55"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="for Loop with Python range()" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView56"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In Python, the range() function returns a sequence of numbers. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView57"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n     values = range(4)\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView58"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Here, range(4) returns a sequence of 0, 1, 2 ,and 3.  Since the range() function returns a sequence of numbers, we can iterate over it using\na for loop. "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

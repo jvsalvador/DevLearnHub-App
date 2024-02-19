@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Python_Module2_3">
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python while Loop"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView60"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In Python, we use the while loop to repeat a block of code until a certain condition is met. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView61"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n     number = 1\n\n     while number &lt;= 3:\n              print(number)\n              number = number + 1\n\n    Output:\n\n    1\n    2\n    3\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView62"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In the above example, we have used a while loop to print the numbers from 1 to 3. The loop runs as long as the condition number &lt;= 3 is satisfied."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView63"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Infinite while Loop" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView64"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="If the condition of a while loop is always True, the loop runs for infinite times, forming an infinite while loop. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView65"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n     age = 32\n     # the test condition is always True\n     while age > 18:\n     print('You can vote')\n\n     Output:\n      You can vote\n      You can vote\n      You can vote\n      .\n      .\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

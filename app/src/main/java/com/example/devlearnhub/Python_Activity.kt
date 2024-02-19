@@ -24,6 +24,11 @@ class Python_Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnNextLearn2.setOnClickListener {
+            val intent = Intent(this, com.example.devlearnhub.module.Python_Module2_1::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
