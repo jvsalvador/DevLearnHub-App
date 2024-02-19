@@ -1,4 +1,4 @@
-package com.example.devlearnhub
+package com.example.devlearnhub.data
 
 import android.text.TextUtils
 import android.util.Patterns

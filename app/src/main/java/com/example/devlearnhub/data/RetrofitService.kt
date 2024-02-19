@@ -1,8 +1,7 @@
-package com.example.devlearnhub
+package com.example.devlearnhub.data
 
 import retrofit2.Call
 import retrofit2.http.GET
-import com.example.devlearnhub.Users
 
 interface RetrofitService {
     @GET("/getData.php")

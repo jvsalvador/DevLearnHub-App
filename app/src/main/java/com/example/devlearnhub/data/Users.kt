@@ -1,4 +1,4 @@
-package com.example.devlearnhub
+package com.example.devlearnhub.data
 
 data class Users(
     var id          :  Int = -1,

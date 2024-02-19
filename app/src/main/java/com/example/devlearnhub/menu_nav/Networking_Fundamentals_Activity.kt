@@ -1,4 +1,4 @@
-package com.example.devlearnhub.Menu
+package com.example.devlearnhub.menu_nav
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

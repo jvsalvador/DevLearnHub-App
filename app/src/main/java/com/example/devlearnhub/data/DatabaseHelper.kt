@@ -1,6 +1,5 @@
-package com.example.devlearnhub
+package com.example.devlearnhub.data
 
-import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

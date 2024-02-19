@@ -4,6 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.devlearnhub.data.DatabaseHelper
+import com.example.devlearnhub.data.Users
+import com.example.devlearnhub.data.ValidationUtils
 import com.example.devlearnhub.databinding.LayoutRegisterActivityBinding
 
 

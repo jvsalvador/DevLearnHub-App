@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.devlearnhub.data.DatabaseHelper
 import com.example.devlearnhub.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -8,8 +8,8 @@ import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
 import com.google.android.material.navigation.NavigationView
 import com.example.devlearnhub.databinding.LayoutInitialActivityBinding
-import com.example.devlearnhub.Menu.Computer_Fundamentals_Activity
-import com.example.devlearnhub.Menu.Networking_Fundamentals_Activity
+import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
+import com.example.devlearnhub.menu_nav.Networking_Fundamentals_Activity
 
 
 class Initial_Activity : AppCompatActivity() {

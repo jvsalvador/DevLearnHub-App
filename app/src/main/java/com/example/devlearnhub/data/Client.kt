@@ -1,8 +1,7 @@
-package com.example.devlearnhub
+package com.example.devlearnhub.data
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 
 object Client {
     private const val BASE_URL = "http://192.168.0.105"

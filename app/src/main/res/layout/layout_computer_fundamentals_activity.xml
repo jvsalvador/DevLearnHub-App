@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/combb"
-    tools:context=".Menu.Computer_Fundamentals_Activity">
+    tools:context=".menu_nav.Computer_Fundamentals_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
