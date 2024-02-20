@@ -1,26 +1,27 @@
 package com.example.devlearnhub
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutInitialActivityBinding
 import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
 import com.example.devlearnhub.menu_nav.Networking_Fundamentals_Activity
+import com.google.android.material.navigation.NavigationView
 
 
 class Initial_Activity : AppCompatActivity() {
 
     private lateinit var binding: LayoutInitialActivityBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = LayoutInitialActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 
 
         binding.btnLearn.setOnClickListener {
