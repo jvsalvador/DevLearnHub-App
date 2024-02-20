@@ -21,9 +21,6 @@
             android:name=".module.Python_Module4_1"
             android:exported="false" />
         <activity
-            android:name=".module.Python_Module3_4"
-            android:exported="false" />
-        <activity
             android:name=".module.Python_Module3_3"
             android:exported="false" />
         <activity
@@ -58,6 +55,38 @@
             android:exported="false" />
         <activity
             android:name=".module.Java_Module1"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module1_2"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module1_3"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module1_4"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module1_5"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module2_1"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module2_2"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module2_3"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module2_4"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module2_5"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module2_6"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module3_1"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module3_2"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module3_3"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module4_1"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module4_2"
+            android:exported="false" />
+        <activity android:name=".module.Java_Module4_3"
             android:exported="false" />
         <activity
             android:name=".menu_nav.Networking_Fundamentals_Activity"

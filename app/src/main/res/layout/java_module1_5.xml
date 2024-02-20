@@ -18,7 +18,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/btn_tap_to_next17"
+        android:id="@+id/btn_java_next4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView56"
@@ -30,7 +30,7 @@
         android:id="@+id/textView64"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_tap_to_next17"
+        android:layout_below="@+id/btn_java_next4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
@@ -60,7 +60,7 @@
         android:text="\nOne thing you should always consider that comments \nshouldn't be the substitute for a way to explain poorly written code in English. You should always write well structured and self explaining code. And, then use comments.\n\nSome believe that code should be self-describing and comments should be rarely used. However, in my personal opinion, there is nothing wrong with using comments. We can use comments to explain complex algorithms, regex or scenarios where we have to choose one technique among different technique to solve problems.\n" />
 
     <TextView
-        android:id="@+id/btn_tap_to_next16"
+        android:id="@+id/btn_java_next5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

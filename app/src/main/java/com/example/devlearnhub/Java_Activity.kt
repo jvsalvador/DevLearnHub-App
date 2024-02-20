@@ -23,6 +23,21 @@ class Java_Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnNextLearn2.setOnClickListener {
+            val intent = Intent(this, com.example.devlearnhub.module.Java_Module2_1::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnNextLearn3.setOnClickListener {
+            val intent = Intent(this, com.example.devlearnhub.module.Java_Module3_1::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnNextLearn4.setOnClickListener {
+            val intent = Intent(this, com.example.devlearnhub.module.Java_Module4_1::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

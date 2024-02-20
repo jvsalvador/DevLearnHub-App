@@ -100,7 +100,7 @@
         app:srcCompat="@drawable/relationship_java" />
 
     <TextView
-        android:id="@+id/btn_tap_to_next19"
+        android:id="@+id/btn_java_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
