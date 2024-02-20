@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Java_Module2_2">
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Java switch Statement"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView74"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The switch statement allows us to execute a block of code among many alternatives."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView78"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Syntax:"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView79"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n   switch   (expression)  {   \n\n     case value1:    \n      // code    \n      break;      \n\n     case value2:     \n      // code     \n      break;      \n\n   ...   \n   ...      \n\n   default:     \n      // default statements   \n  }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView80"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="How does the switch-case statement work?"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView99"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The expression is evaluated once and compared with the values of each case."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView101"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text=" •If expression matches with value1, the code of case value1 are \n  executed. Similarly, \n  the code of case value2 is executed if expression matches with value2 \n  \n •If there is no match, the code of the default case is executed"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+</RelativeLayout>

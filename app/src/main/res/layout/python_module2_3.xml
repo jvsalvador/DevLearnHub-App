@@ -38,7 +38,7 @@
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/textView63"
+        android:id="@+id/btn_tap_to_next17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView62"
@@ -51,7 +51,7 @@
         android:id="@+id/textView64"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView63"
+        android:layout_below="@+id/btn_tap_to_next17"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
