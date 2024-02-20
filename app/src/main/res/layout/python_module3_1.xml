@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/btn_tap_to_nextt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_back1"
@@ -29,7 +29,7 @@
         android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView41"
+        android:layout_below="@+id/btn_tap_to_nextt"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="A function is a block of code that performs a specific task.\n\nSuppose we need to create a program to make a circle and color it. We can create two functions to solve this problem:\n\n1. function to create a circle \n2. function to color the shape\n\nDividing a complex problem into smaller chunks makes our program easy to understand and reuse."
@@ -47,4 +47,65 @@
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView42"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Create a Function" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView99"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Let's create our first function."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView101"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n def greet():\n        print('Hello World!')\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView102"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Note:  When writing a function, pay attention to indentation, which are the spaces at the start of a code line.  In the above code, the print() statement is indented to show it's part of the function body, distinguishing the function's definition from its body."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView103"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python Library Functions" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView104"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Python provides some built-in functions that can be directly used in our program.\nWe don't need to create the function, we just need to call them.\nSome Python library functions are:\n 1. print() - prints the string inside the quotation marks\n2. sqrt() - returns the square root of a number\n3. pow() - returns the power of a number\nThese library functions are defined inside the module. And to use them, we must include the module inside our program."
+        android:textSize="12sp" />
 </RelativeLayout>

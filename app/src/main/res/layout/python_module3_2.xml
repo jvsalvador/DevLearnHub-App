@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.Python_Module3_2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python Recursive Function"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView106"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In Python, we know that a function can call other functions. It is even possible for the function to call itself.\n\nThese types of construct are termed as recursive functions.  \n\n Following is an example of a recursive function to find the factorial of an integer.\n\nFactorial of a number is the product of all the integers from 1 to that number. For example, the factorial of 6 (denoted as 6!) is 1*2*3*4*5*6 = 720."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView107"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n      def factorial(x):\n            &quot;&quot;&quot;This is a recursive function to find the factorial of an\n            integer&quot;&quot;&quot;\n\n            if x == 1:\n                 return 1\n            else:\n                 return (x * factorial(x-1))\n\n       num = 3 print(&quot;The factorial of&quot;, num, &quot;is&quot;, factorial(num))\n\n Output:\n       The factorial of 3 is 6\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView108"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="When we call this function with a positive integer, it will recursively call itself by decreasing the number.\n\nEach function multiplies the number with the factorial of the number below it until it is equal to one. "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_nextt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

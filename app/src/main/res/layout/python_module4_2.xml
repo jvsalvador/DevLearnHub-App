@@ -1,9 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.Python_Module4_2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python Inheritance"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView114"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Being an object-oriented language, Python supports class inheritance. It allows us to create a new class from an existing one.\n\n•The newly created class is known as the subclass (child or derived class).\n•The existing class from which the child class inherits is known as the superclass (parent or base class)."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView115"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n     # define a superclass \n     class super_class:\n                # attributes and method definition\n\n     # inheritance \n     class sub_class(super_class):\n                # attributes and method of super_class\n                # attributes and method of sub_class\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView116"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Here, we are inheriting the sub_class from the super_class.\n\nNote: Before you move forward with inheritance, make sure you know how Python classes and objects work."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView117"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="is-a relationship" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView118"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Inheritance is an is-a relationship. That is, we use inheritance only\nif there exists an is-a relationship between two classes. For example,\n\n•Car is a Vehicle\n•Apple is a Fruit\n•Cat is an Animal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_nexttt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

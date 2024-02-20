@@ -48,7 +48,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n   class Test {     \n       public static void main(String[] args) {                \n\n              // for loop         \n            for (int i = 1; i <= 10; ++i) {              \n\n                     // if the value of i is 5 the loop terminates               \n                     if (i == 5) {                 \n                         break;             \n                    }                   \n                   System.out.println(i);         \n           }        \n        } \n    }\n"
+        android:text="\n      class Test {\n      public static void main(String[] args) {\n                  // for loop\n                 for (int i = 1; i &lt;= 10; ++i) {\n\n                 // if the value of i is 5 the loop terminates\n                 if (i == 5) {\n                    break;\n                 }\n                  System.out.println(i);\n             }\n       }\n  }\n"
         android:textColor="@color/white" />
 
     <TextView

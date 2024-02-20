@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Python_Module4_3">
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python Operator Overloading"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView120"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In Python, we can change the way operators work for user-defined types.\n\nFor example, the + operator will perform arithmetic addition on two numbers, merge two lists, or concatenate two strings.\n\nThis feature in Python that allows the same operator to have different meaning according to the context is called operator overloading."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView121"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Python Special Functions" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView122"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Class functions that begin with double underscore __ are called special functions in Python.\n\nThe special functions are defined by the Python interpreter and used to implement certain features or behaviors.\n\nThey are called &quot;double underscore&quot; functions because they have a double underscore prefix and suffix, such as __init__() or __add__()."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView124"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView123"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Advantages of Operator Overloading" />
+
+    <TextView
+        android:id="@+id/textView125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView124"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Here are some advantages of operator overloading,\n\n•Improves code readability by allowing the use of familiar operators.\n\n•Ensures that objects of a class behave consistently with built-in types and other user-defined types.\n\n•Makes it simpler to write code, especially for complex data types.\n\n•Allows for code reuse by implementing one operator method and using it for other operators."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_nexttt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

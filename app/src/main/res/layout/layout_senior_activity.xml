@@ -40,12 +40,12 @@
                 android:layout_height="60dp"
                 android:layout_below="@+id/imageView13"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="60dp"
                 android:background="@drawable/style_select_prog">
 
 
                 <ImageView
-                    android:id="@+id/python_icon"
+                    android:id="@+id/cplus_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
@@ -53,7 +53,7 @@
 
 
                 <TextView
-                    android:id="@+id/python"
+                    android:id="@+id/cplus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -63,9 +63,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="6dp"
                     android:layout_toStartOf="@+id/btn_learn"
-                    android:layout_toEndOf="@+id/python_icon"
+                    android:layout_toEndOf="@+id/cplus_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Python"
+                    android:text="C++"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -97,7 +97,7 @@
 
 
                 <ImageView
-                    android:id="@+id/java_icon"
+                    android:id="@+id/ruby_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
@@ -106,7 +106,7 @@
 
 
                 <TextView
-                    android:id="@+id/java"
+                    android:id="@+id/ruby"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -116,9 +116,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="8dp"
                     android:layout_toStartOf="@+id/btn_learn2"
-                    android:layout_toEndOf="@+id/java_icon"
+                    android:layout_toEndOf="@+id/ruby_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Java"
+                    android:text="Ruby"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -142,14 +142,14 @@
             <RelativeLayout
                 android:layout_width="350dp"
                 android:layout_height="60dp"
-                android:layout_below="@+id/relativeLayout2"
+                android:layout_below="@+id/relativeLayout6"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/style_select_prog">
 
 
                 <ImageView
-                    android:id="@+id/html_css_icon"
+                    android:id="@+id/rust_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
@@ -158,7 +158,60 @@
 
 
                 <TextView
-                    android:id="@+id/html_css"
+                    android:id="@+id/rust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toStartOf="@+id/btn_learn4"
+                    android:layout_toEndOf="@+id/rust_icon"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Rust"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_learn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#FDF6FE"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Learn"
+                    android:textColor="@color/violet" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_select_prog">
+
+
+                <ImageView
+                    android:id="@+id/swift_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+
+                    android:src="@drawable/devlearn_logo" />
+
+
+                <TextView
+                    android:id="@+id/swift"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -168,9 +221,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="8dp"
                     android:layout_toStartOf="@+id/btn_learn3"
-                    android:layout_toEndOf="@+id/html_css_icon"
+                    android:layout_toEndOf="@+id/swift_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Html and Css"
+                    android:text="Swift"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />

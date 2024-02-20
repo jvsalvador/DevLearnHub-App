@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/btn_tap_to_nextt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_back1"
@@ -29,7 +29,7 @@
         android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView41"
+        android:layout_below="@+id/btn_tap_to_nextt"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="In computer programming, the if statement is a conditional statement.\nIt is used to execute a block of code only when a specific condition is met. "

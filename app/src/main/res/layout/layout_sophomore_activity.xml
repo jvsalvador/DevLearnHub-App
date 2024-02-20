@@ -40,7 +40,7 @@
                 android:layout_height="60dp"
                 android:layout_below="@+id/imageView13"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/style_select_prog">
 
 
@@ -65,7 +65,7 @@
                     android:layout_toStartOf="@+id/btn_learn"
                     android:layout_toEndOf="@+id/python_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Python"
+                    android:text="Kotlin"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -118,7 +118,7 @@
                     android:layout_toStartOf="@+id/btn_learn2"
                     android:layout_toEndOf="@+id/java_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Java"
+                    android:text="MySQL"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -140,6 +140,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/relativeLayout3"
                 android:layout_width="350dp"
                 android:layout_height="60dp"
                 android:layout_below="@+id/relativeLayout2"
@@ -149,7 +150,7 @@
 
 
                 <ImageView
-                    android:id="@+id/html_css_icon"
+                    android:id="@+id/laravel_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
@@ -158,7 +159,112 @@
 
 
                 <TextView
-                    android:id="@+id/html_css"
+                    android:id="@+id/laravel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toStartOf="@+id/btn_learn5"
+                    android:layout_toEndOf="@+id/laravel_icon"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Laravel"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_learn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#FDF6FE"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Learn"
+                    android:textColor="@color/violet" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_select_prog">
+
+
+                <ImageView
+                    android:id="@+id/php_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+
+                    android:src="@drawable/devlearn_logo" />
+
+
+                <TextView
+                    android:id="@+id/php"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toStartOf="@+id/btn_learn4"
+                    android:layout_toEndOf="@+id/php_icon"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="PHP"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_learn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#FDF6FE"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Learn"
+                    android:textColor="@color/violet" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_select_prog">
+
+
+                <ImageView
+                    android:id="@+id/swift_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+
+                    android:src="@drawable/devlearn_logo" />
+
+
+                <TextView
+                    android:id="@+id/swift"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -168,9 +274,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="8dp"
                     android:layout_toStartOf="@+id/btn_learn3"
-                    android:layout_toEndOf="@+id/html_css_icon"
+                    android:layout_toEndOf="@+id/swift_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Html and Css"
+                    android:text="Laravel"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
