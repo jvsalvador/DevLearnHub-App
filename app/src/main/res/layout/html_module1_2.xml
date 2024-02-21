@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Html_Module1_2">
+
+    <TextView
+        android:id="@+id/textView159"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Html Basics"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView160"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView159"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="•&lt;!DOCTYPE html> - defines that this document is an HTML document\n\n•&lt;html> -root element of an HTML page which encloses all other elements in the HTML page\n\n•&lt;head> - contains information about the page, such as the title and metadata\n\n•&lt;title> - specifies a title for the HTML page which is shown in the browser's title bar\n\n•&lt;body> - defines the main content of the page and is a container for all the visible contents, such as headings, paragraphs, lists, etc\n\n•&lt;h1> - defines a heading &lt;p> - defines a paragraph of HTML document"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView161"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView160"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How HTML works?" />
+
+    <TextView
+        android:id="@+id/textView162"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView161"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="HTML works by defining the structure and content of a web page using a series of tags like &lt;h1>, &lt;p>, etc. Each tag has a meaning and can be used to define the purpose of the content it encloses. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView163"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView162"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n    &lt;!DOCTYPE html>\n    &lt;html>\n            &lt;head>\n                   &lt;meta charset=&quot;utf-8&quot;>\n                   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;>\n                   &lt;title>DevLearn Hub&lt;/title>\n             &lt;/head>\n             &lt;body>\n                   &lt;center>&lt;h1>DevLearn Hub&lt;/h1>&lt;/center>\n                   &lt;h1>Learn to Code for Free&lt;/h1>\n                   &lt;p>Learn to code with our beginner-friendly tutorials and\n                   examples.&lt;p>\n                   &lt;button>Join for free&lt;/button>\n                   &lt;/body>\n   &lt;/html>\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/html_tap_to_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>
