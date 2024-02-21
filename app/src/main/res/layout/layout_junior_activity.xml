@@ -255,7 +255,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="start"
-                    android:src="@drawable/dart_icon" />
+                    android:src="@drawable/devlearn_logo" />
 
 
                 <TextView
