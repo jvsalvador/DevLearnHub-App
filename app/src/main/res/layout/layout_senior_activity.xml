@@ -49,7 +49,7 @@
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/cplus_icon" />
 
 
                 <TextView
@@ -97,16 +97,16 @@
 
 
                 <ImageView
-                    android:id="@+id/ruby_icon"
+                    android:id="@+id/nodejs_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
 
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/nodejs_icon" />
 
 
                 <TextView
-                    android:id="@+id/ruby"
+                    android:id="@+id/nodejs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -116,9 +116,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="8dp"
                     android:layout_toStartOf="@+id/btn_learn2"
-                    android:layout_toEndOf="@+id/ruby_icon"
+                    android:layout_toEndOf="@+id/nodejs_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Ruby"
+                    android:text="Nodejs"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -149,16 +149,16 @@
 
 
                 <ImageView
-                    android:id="@+id/rust_icon"
+                    android:id="@+id/jquery_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
 
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/jquery_icon" />
 
 
                 <TextView
-                    android:id="@+id/rust"
+                    android:id="@+id/jquery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -168,9 +168,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="8dp"
                     android:layout_toStartOf="@+id/btn_learn4"
-                    android:layout_toEndOf="@+id/rust_icon"
+                    android:layout_toEndOf="@+id/jquery_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Rust"
+                    android:text="Jquery"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -207,7 +207,7 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
 
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/c_icon" />
 
 
                 <TextView

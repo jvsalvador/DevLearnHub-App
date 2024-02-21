@@ -49,7 +49,7 @@
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/csharp_icon" />
 
 
                 <TextView
@@ -102,7 +102,7 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
 
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/swift_icon" />
 
 
                 <TextView
@@ -154,7 +154,7 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
 
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/d_icon" />
 
 
                 <TextView
@@ -207,7 +207,7 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
 
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/javascript_icon" />
 
 
                 <TextView
@@ -255,7 +255,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="start"
-                    android:src="@drawable/devlearn_logo" />
+                    android:src="@drawable/dart_icon" />
 
 
                 <TextView
