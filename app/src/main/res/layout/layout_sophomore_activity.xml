@@ -45,7 +45,7 @@
 
 
                 <ImageView
-                    android:id="@+id/python_icon"
+                    android:id="@+id/dart_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
@@ -53,7 +53,7 @@
 
 
                 <TextView
-                    android:id="@+id/python"
+                    android:id="@+id/dart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -63,7 +63,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="6dp"
                     android:layout_toStartOf="@+id/btn_learn"
-                    android:layout_toEndOf="@+id/python_icon"
+                    android:layout_toEndOf="@+id/dart_icon"
                     android:fontFamily="@font/poppins_regular"
                     android:text="Kotlin"
                     android:textColor="@color/white"
@@ -231,58 +231,6 @@
 
                 <Button
                     android:id="@+id/btn_learn4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginBottom="5dp"
-                    android:backgroundTint="#FDF6FE"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Learn"
-                    android:textColor="@color/violet" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:layout_below="@+id/relativeLayout4"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/style_select_prog">
-
-
-                <ImageView
-                    android:id="@+id/swift_icon"
-                    android:layout_width="35dp"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="16dp"
-
-                    android:src="@drawable/devlearn_logo" />
-
-
-                <TextView
-                    android:id="@+id/swift"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_toStartOf="@+id/btn_learn3"
-                    android:layout_toEndOf="@+id/swift_icon"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="Laravel"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btn_learn3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"

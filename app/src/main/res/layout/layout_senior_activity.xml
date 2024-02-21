@@ -202,7 +202,7 @@
 
 
                 <ImageView
-                    android:id="@+id/swift_icon"
+                    android:id="@+id/c_icon"
                     android:layout_width="35dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
@@ -211,7 +211,7 @@
 
 
                 <TextView
-                    android:id="@+id/swift"
+                    android:id="@+id/c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -221,9 +221,9 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="8dp"
                     android:layout_toStartOf="@+id/btn_learn3"
-                    android:layout_toEndOf="@+id/swift_icon"
+                    android:layout_toEndOf="@+id/c_icon"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Swift"
+                    android:text="C"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
