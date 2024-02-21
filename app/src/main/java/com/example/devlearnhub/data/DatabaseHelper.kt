@@ -75,6 +75,4 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
         private const val COL_USER_PASSWORD = "user_password"
         private const val COL_USER_CONFIRM = "user_confirm"
     }
-
-
 }

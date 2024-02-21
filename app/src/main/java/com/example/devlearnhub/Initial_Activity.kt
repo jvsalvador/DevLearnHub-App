@@ -2,6 +2,7 @@ package com.example.devlearnhub
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -21,9 +22,6 @@ class Initial_Activity : AppCompatActivity() {
         binding = LayoutInitialActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
         binding.btnLearn.setOnClickListener {
             val intent = Intent(this, Python_Activity::class.java)
             startActivity(intent)
@@ -33,13 +31,16 @@ class Initial_Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
         // Navigation Drawer
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
         val navView: NavigationView = findViewById(R.id.nav_view)
+        val userEmail = intent.getStringExtra("user_email")
+        val headerView = navView.getHeaderView(0)
+        val emailTextView: TextView = headerView.findViewById(R.id.et_email)
+        emailTextView.text = userEmail
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_course -> {
@@ -73,7 +74,9 @@ class Initial_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_back -> {
+                    val email = intent.getStringExtra("user_email")
                     val intent = Intent(this, Choices_Activity::class.java)
+                    intent.putExtra("user_email", email)
                     startActivity(intent)
 
                     true

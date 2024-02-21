@@ -3,9 +3,12 @@ package com.example.devlearnhub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import com.example.devlearnhub.data.DatabaseHelper
+import com.example.devlearnhub.data.Users
 import com.example.devlearnhub.databinding.LayoutSeniorActivityBinding
 import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
 import com.google.android.material.navigation.NavigationView
@@ -17,17 +20,19 @@ class Senior_Activity : AppCompatActivity() {
         binding = LayoutSeniorActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        // Set up the NavigationView
         val navView: NavigationView = findViewById(R.id.nav_view)
+        val userEmail = intent.getStringExtra("user_email")
+        val headerView = navView.getHeaderView(0)
+        val emailTextView: TextView = headerView.findViewById(R.id.et_email)
+        emailTextView.text = userEmail
+
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_course -> {
-
                     if (this !is Senior_Activity){
                         val intent = Intent(this, Senior_Activity::class.java)
                         startActivity(intent)
@@ -54,7 +59,9 @@ class Senior_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_back -> {
+                    val email = intent.getStringExtra("user_email")
                     val intent = Intent(this, Choices_Activity::class.java)
+                    intent.putExtra("user_email", email)
                     startActivity(intent)
 
                     true
@@ -71,7 +78,6 @@ class Senior_Activity : AppCompatActivity() {
             }
         }
     }
-
     override fun onBackPressed() {
         if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
