@@ -1,7 +1,6 @@
 package com.example.devlearnhub
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -72,18 +71,8 @@ class Sophomore_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_contact -> {
-                    val intent = Intent(Intent.ACTION_SENDTO).apply {
-                        data = Uri.parse("mailto:")
-                        putExtra(Intent.EXTRA_EMAIL, arrayOf("sjeanreyvincent@email.com"))
-                        putExtra(Intent.EXTRA_SUBJECT, "Contact Us")
-                        putExtra(Intent.EXTRA_TEXT, "Hello, I have a question about...")
-                    }
-                    if (intent.resolveActivity(packageManager) != null) {
-                        startActivity(intent)
-                    } else {
-                        // No email app installed
-                        Toast.makeText(this, "No email app installed", Toast.LENGTH_SHORT).show()
-                    }
+                    val intent = Intent(this, Contact_Us_Activity::class.java)
+                    startActivity(intent)
 
                     true
                 }
