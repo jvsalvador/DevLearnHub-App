@@ -15,12 +15,16 @@ class Python_Module1 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnBackPythonChoices.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
             val intent = Intent(this, com.example.devlearnhub.Python_Activity::class.java)
+            intent.putExtra("user_email", email)
             startActivity(intent)
         }
 
         binding.btnTapToNext.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
             val intent = Intent(this, Python_Module1_2::class.java)
+            intent.putExtra("user_email", email)
             startActivity(intent)
         }
 

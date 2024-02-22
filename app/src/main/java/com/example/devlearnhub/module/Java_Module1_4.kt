@@ -13,7 +13,9 @@ class Java_Module1_4 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnJavaNext4.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
             val intent = Intent(this, Java_Module1_5::class.java)
+            intent.putExtra("user_email", email)
             startActivity(intent)
         }
     }

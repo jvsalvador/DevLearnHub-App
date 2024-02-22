@@ -14,7 +14,9 @@ class Html_Module1 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.htmlTapToNext.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
             val intent = Intent(this, Html_Module1_2::class.java)
+            intent.putExtra("user_email", email)
             startActivity(intent)
         }
     }
