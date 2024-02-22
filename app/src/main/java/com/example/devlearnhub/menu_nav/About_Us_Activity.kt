@@ -17,24 +17,27 @@ class About_Us_Activity : AppCompatActivity() {
         binding = LayoutAboutUsActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBackToNav.setOnClickListener {
-            val intent = Intent(this, Initial_Activity::class.java)
-            startActivity(intent)
-        }
+        val btnBack = binding.btnBackToNav
 
-        binding.btnBackToNav.setOnClickListener {
-            val intent = Intent(this, Sophomore_Activity::class.java)
+        btnBack.setOnClickListener {
+            // Determine which activity to go back to based on extra information
+            val sourceActivity = intent.getStringExtra("sourceActivity")
+            val intent = when (sourceActivity) {
+                "Initial_Activity" -> Intent(this, Initial_Activity::class.java)
+                "Sophomore_Activity" -> Intent(this, Sophomore_Activity::class.java)
+                "Junior_Activity" -> Intent(this, Junior_Activity::class.java)
+                "Senior_Activity" -> Intent(this, Senior_Activity::class.java)
+                else -> Intent(this, Initial_Activity::class.java)
+            }
             startActivity(intent)
         }
+    }
 
-        binding.btnBackToNav.setOnClickListener {
-            val intent = Intent(this, Junior_Activity::class.java)
-            startActivity(intent)
-        }
-
-        binding.btnBackToNav.setOnClickListener {
-            val intent = Intent(this, Senior_Activity::class.java)
-            startActivity(intent)
-        }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val sourceActivity = this::class.java.simpleName
+        val intent = Intent(this, About_Us_Activity::class.java)
+        intent.putExtra("sourceActivity", sourceActivity)
+        startActivity(intent)
     }
 }

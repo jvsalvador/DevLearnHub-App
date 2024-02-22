@@ -19,27 +19,24 @@ class Networking_Fundamentals_Activity : AppCompatActivity() {
         val btnBack = binding.btnBack2
 
         btnBack.setOnClickListener {
-            val intent = Intent(this, Initial_Activity::class.java)
+            // Determine which activity to go back to based on extra information
+            val sourceActivity = intent.getStringExtra("sourceActivity")
+            val intent = when (sourceActivity) {
+                "Initial_Activity" -> Intent(this, Initial_Activity::class.java)
+                "Sophomore_Activity" -> Intent(this, Sophomore_Activity::class.java)
+                "Junior_Activity" -> Intent(this, Junior_Activity::class.java)
+                "Senior_Activity" -> Intent(this, Senior_Activity::class.java)
+                else -> Intent(this, Initial_Activity::class.java)
+            }
             startActivity(intent)
-
         }
+    }
 
-        btnBack.setOnClickListener {
-            val intent = Intent(this, Sophomore_Activity::class.java)
-            startActivity(intent)
-
-        }
-
-        btnBack.setOnClickListener {
-            val intent = Intent(this, Junior_Activity::class.java)
-            startActivity(intent)
-
-        }
-
-        btnBack.setOnClickListener {
-            val intent = Intent(this, Senior_Activity::class.java)
-            startActivity(intent)
-
-        }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val sourceActivity = this::class.java.simpleName
+        val intent = Intent(this, Networking_Fundamentals_Activity::class.java)
+        intent.putExtra("sourceActivity", sourceActivity)
+        startActivity(intent)
     }
 }
