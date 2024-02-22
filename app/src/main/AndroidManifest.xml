@@ -15,13 +15,16 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31" >
         <activity
+            android:name=".module.Html_Module4_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module2_1"
+            android:exported="false" />
+        <activity
             android:name=".Html_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".module.Html_Module1_5"
-            android:exported="false" />
-        <activity
-            android:name=".module.Html_Module1_4"
             android:exported="false" />
         <activity
             android:name=".module.Html_Module1_3"

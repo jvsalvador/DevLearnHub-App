@@ -8,7 +8,10 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutInitialActivityBinding
+import com.example.devlearnhub.menu_nav.About_Us_Activity
 import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
+import com.example.devlearnhub.menu_nav.Contact_Us_Activity
+import com.example.devlearnhub.menu_nav.DSA_Activity
 import com.example.devlearnhub.menu_nav.Networking_Fundamentals_Activity
 import com.google.android.material.navigation.NavigationView
 
@@ -30,6 +33,11 @@ class Initial_Activity : AppCompatActivity() {
             val intent = Intent(this, Java_Activity::class.java)
             startActivity(intent)
         }
+        binding.btnLearn3.setOnClickListener {
+            val intent = Intent(this, Html_Activity::class.java)
+            startActivity(intent)
+        }
+
 
         // Navigation Drawer
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -64,6 +72,9 @@ class Initial_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_dsa -> {
+                    val intent = Intent(this, DSA_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
                 R.id.nav_logout -> {
@@ -82,10 +93,16 @@ class Initial_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_contact -> {
+                    val intent = Intent(this, Contact_Us_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
 
                 R.id.nav_about -> {
+                    val intent = Intent(this, About_Us_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
 

@@ -8,7 +8,11 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutSophomoreActivityBinding
+import com.example.devlearnhub.menu_nav.About_Us_Activity
 import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
+import com.example.devlearnhub.menu_nav.Contact_Us_Activity
+import com.example.devlearnhub.menu_nav.DSA_Activity
+import com.example.devlearnhub.menu_nav.Networking_Fundamentals_Activity
 import com.google.android.material.navigation.NavigationView
 
 class Sophomore_Activity : AppCompatActivity() {
@@ -47,9 +51,15 @@ class Sophomore_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_laboratory -> {
+                    val intent = Intent(this, Networking_Fundamentals_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
                 R.id.nav_dsa -> {
+                    val intent = Intent(this, DSA_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
                 R.id.nav_logout -> {
@@ -68,10 +78,16 @@ class Sophomore_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_contact -> {
+                    val intent = Intent(this, Contact_Us_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
 
                 R.id.nav_about -> {
+                    val intent = Intent(this, About_Us_Activity::class.java)
+                    startActivity(intent)
+
                     true
                 }
 

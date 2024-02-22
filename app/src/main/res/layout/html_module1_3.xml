@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.Html_Module1_3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView164"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="HTML Hierarchy"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView165"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView164"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="HTML elements are hierarchical, which means that they can be nested inside each other to create a tree-like structure of the content on the web page.  This hierarchical structure is called the DOM (Document Object Model), and it is used by the web browser to render the web page.For Example."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView167"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView165"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n        &lt;!DOCTYPE html>\n        &lt;html>\n            &lt;head>\n                &lt;title>My web page&lt;/title>\n            &lt;/head>\n            &lt;body>\n                &lt;h1>Hello, world!&lt;/h1>\n                &lt;p>This is my first web page.&lt;/p>\n                &lt;p>It contains a \n                    &lt;strong>main heading&lt;/strong> and &lt;em> paragraph \n              &lt;/em>.\n                &lt;/p>\n            &lt;/body>\n        &lt;/html>\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView168"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView167"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In this example, the html element is the root element of the hierarchy and contains two child elements: head and body. The head element, in turn, contains a child element called the title, and the body element contains child elements: h1 and p.\n\n•&lt;html>: the root element of the DOM, and it contains all of the other elements in the code\n•&lt;head>: contains metadata about the web page, such as the title and any linked CSS or JavaScript files\n•&lt;title>: contains the title of the web page, which will be displayed in the web browser's title bar or tab\n•&lt;body>: contains the main content of the web page, which will be displayed in the web browser's window\n•&lt;p>: contains the paragraphs of text on the web page &lt;strong>, &lt;em>: child elements of the &lt;p> elements, they are used to mark text as important and emphasized respectively"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/html_tap_to_next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+
+</RelativeLayout>
