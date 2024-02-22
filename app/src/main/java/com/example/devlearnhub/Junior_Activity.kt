@@ -1,6 +1,7 @@
 package com.example.devlearnhub
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -11,7 +12,6 @@ import com.example.devlearnhub.databinding.LayoutJuniorActivityBinding
 import com.example.devlearnhub.menu_nav.About_Us_Activity
 import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
 import com.example.devlearnhub.menu_nav.Contact_Us_Activity
-import com.example.devlearnhub.menu_nav.DSA_Activity
 import com.example.devlearnhub.menu_nav.Networking_Fundamentals_Activity
 import com.google.android.material.navigation.NavigationView
 
@@ -54,12 +54,6 @@ class Junior_Activity : AppCompatActivity() {
 
                     true
                 }
-                R.id.nav_dsa -> {
-                    val intent = Intent(this, DSA_Activity::class.java)
-                    startActivity(intent)
-
-                    true
-                }
                 R.id.nav_logout -> {
                     val intent = Intent(this, Login_Activity::class.java)
                     startActivity(intent)
@@ -76,8 +70,18 @@ class Junior_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_contact -> {
-                    val intent = Intent(this, Contact_Us_Activity::class.java)
-                    startActivity(intent)
+                    val intent = Intent(Intent.ACTION_SENDTO).apply {
+                        data = Uri.parse("mailto:")
+                        putExtra(Intent.EXTRA_EMAIL, arrayOf("sjeanreyvincent@email.com"))
+                        putExtra(Intent.EXTRA_SUBJECT, "Contact Us")
+                        putExtra(Intent.EXTRA_TEXT, "Hello, I have a question about...")
+                    }
+                    if (intent.resolveActivity(packageManager) != null) {
+                        startActivity(intent)
+                    } else {
+                        // No email app installed
+                        Toast.makeText(this, "No email app installed", Toast.LENGTH_SHORT).show()
+                    }
 
                     true
                 }
