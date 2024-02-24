@@ -4,104 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Java_Module4_3">
+    tools:context=".module.Java_Module4_8">
 
     <TextView
-        android:id="@+id/textView170"
+        android:id="@+id/textView205"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Java Exception Handling"
+        android:text="Java Logging"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView171"
+        android:id="@+id/textView206"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView170"
-        android:layout_marginStart="12dp"
+        android:layout_below="@+id/textView205"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="In the last tutorial, we learned about Java exceptions. We know that exceptions abnormally terminate the execution of a program.\n\nThis is why it is important to handle exceptions. Here's a list of different approaches to handle exceptions in Java.\n\n•try...catch block\n\n•finally block\n\n•throw and throws keyword"
+        android:text="Java allows us to create and capture log messages and files through the process of logging.\n\nIn Java, logging requires frameworks and APIs. Java has a built-in logging framework in the java.util.logging package.\n\nWe can also use third-party frameworks like Log4j, Logback, and many more for logging purposes.  "
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView172"
+        android:id="@+id/textView207"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView171"
+        android:layout_below="@+id/textView206"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text=" Java try...catch block"
+        android:text="Java Logging Components"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView173"
+        android:id="@+id/textView208"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView172"
+        android:layout_below="@+id/textView207"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The try-catch block is used to handle exceptions in Java. Here's the syntax of try...catch block:"
+        android:text="The figure below represents the core components and the flow of control of the Java Logging API"
         android:textSize="12sp" />
 
-    <TextView
-        android:id="@+id/textView174"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView173"
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView208"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@color/black"
-        android:text="\n   try  {\n       // code\n   }\n   catch(Exception e) {\n       // code\n   }\n"
-        android:textColor="@color/white"
-        android:textSize="12sp" />
+        app:srcCompat="@drawable/java_module" />
 
     <TextView
-        android:id="@+id/textView175"
+        android:id="@+id/textView209"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView174"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="Here, we have placed the code that might generate an exception inside the try block. Every try block is followed by a catch block."
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView176"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView175"
+        android:layout_below="@+id/imageView29"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="The basic syntax of finally block is:"
+        android:text="Logger"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView177"
+        android:id="@+id/textView210"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView209"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The Logger class provides methods for logging. We can instantiate objects from the Logger class and call its methods for logging purposes.\n\nLet's take an example."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView211"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView176"
+        android:layout_below="@+id/textView210"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n   try {\n      //code\n   } catch (ExceptionType1 e1) {\n     // catch block\n   }\n   finally {\n      // finally block always executes \n   }\n"
+        android:text="\nLogger logger = Logger.getLogger(&quot;newLoggerName&quot;);\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/btn_tap_to_next22"
+        android:id="@+id/btn_tap_to_next27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView177"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />

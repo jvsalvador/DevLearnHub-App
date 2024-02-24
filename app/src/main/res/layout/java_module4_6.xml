@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Java_Module4_6">
+
+    <TextView
+        android:id="@+id/textView191"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Java try-with-resources"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView192"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView191"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The try-with-resources statement automatically closes all the resources at the end of the statement. A resource is an object to be closed at the end of the program.\n\nIts syntax is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView193"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView192"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n   try (resource declaration) {\n       // use of the resource\n   } catch (ExceptionType e1) {\n       // catch block\n   }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView194"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView193"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="As seen from the above syntax, we declare the try-with-resources statement by,\n\1.ndeclaring and instantiating the resource within the try clause.\n\n2.specifying and handling all exceptions that might be thrown while closing the resource."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView195"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView194"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="try with multiple resources"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView196"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView195"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n   import java.io.*;\n   import java.util.*;\n   class Main {\n       public static void main(String[] args) throws IOException{\n          try (Scanner scanner = new Scanner(new File(&quot;testRead.txt&quot;));\n            PrintWriter writer = new PrintWriter(new File(&quot;testWrite.txt&quot;))) {\n           while (scanner.hasNext()) {\n             writer.print(scanner.nextLine());\n           }\n        }\n     }\n  }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

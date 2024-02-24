@@ -4,64 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Java_Module4_2">
-
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/textView169"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/java_module" />
+    tools:context=".module.Java_Module6_5">
 
     <TextView
-        android:id="@+id/textView157"
+        android:id="@+id/textView281"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Java Exceptions"
+        android:text="Java LinkedBlockingQueue"
         android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="36dp" />
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView167"
+        android:id="@+id/textView282"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView157"
+        android:layout_below="@+id/textView281"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="An exception is an unexpected event that occurs during program execution. It affects the flow of the program instructions which can cause the program to terminate abnormally.\n\nAn exception can occur for many reasons. Some of them are:\n\n•Invalid user input\n\n•Device failure\n\n•Loss of network connection\n\n•Physical limitations (out of disk memory)\n\n•Code errors\n\n•Opening an unavailable file"
+        android:text="The LinkedBlockingQueue class of the Java Collections framework provides the blocking queue implementation using a linked list."
         android:textSize="12sp" />
 
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView282"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/java_11" />
+
     <TextView
-        android:id="@+id/textView168"
+        android:id="@+id/textView287"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView167"
+        android:layout_below="@+id/imageView42"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Java Exception hierarchy"
+        android:text="Methods of LinkedBlockingQueue"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView169"
+        android:id="@+id/textView293"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView168"
+        android:layout_below="@+id/textView287"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here is a simplified diagram of the exception hierarchy in Java."
+        android:text="The LinkedBlockingQueue class provides the implementation of all the methods in the BlockingQueue interface.\n\nThese methods are used to insert, access and delete elements from linked blocking queues.\n\nAlso, we will learn about two methods put() and take() that support the blocking operation in the linked blocking queue.\n\nThese two methods distinguish the linked blocking queue from other typical queues."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/btn_tap_to_next21"
+        android:id="@+id/btn_tap_to_next39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -69,6 +66,5 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
-        android:textSize="16sp"
-        android:textStyle="normal" />
+        android:textSize="16sp" />
 </RelativeLayout>

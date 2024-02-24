@@ -4,104 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Java_Module4_3">
+    tools:context=".module.Java_Module4_4">
 
     <TextView
-        android:id="@+id/textView170"
+        android:id="@+id/textView178"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Java Exception Handling"
+        android:text="Java try...catch"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView171"
+        android:id="@+id/textView179"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView170"
-        android:layout_marginStart="12dp"
+        android:layout_below="@+id/textView178"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In the last tutorial, we learned about Java exceptions. We know that exceptions abnormally terminate the execution of a program.\n\nThis is why it is important to handle exceptions. Here's a list of different approaches to handle exceptions in Java.\n\n•try...catch block\n\n•finally block\n\n•throw and throws keyword"
+        android:text="The try...catch block in Java is used to handle exceptions and prevents the abnormal termination of the program.\n\nHere's the syntax of a try...catch block in Java"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView172"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView171"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text=" Java try...catch block"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView173"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView172"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="The try-catch block is used to handle exceptions in Java. Here's the syntax of try...catch block:"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView174"
+        android:id="@+id/textView180"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView173"
+        android:layout_below="@+id/textView179"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="9dp"
         android:background="@color/black"
-        android:text="\n   try  {\n       // code\n   }\n   catch(Exception e) {\n       // code\n   }\n"
+        android:text="\n   try{\n     // code\n   }\n   catch(exception) {\n     // code\n   }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView175"
+        android:id="@+id/textView181"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView174"
+        android:layout_below="@+id/textView180"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, we have placed the code that might generate an exception inside the try block. Every try block is followed by a catch block."
+        android:text="TextViewThe try block includes the code that might generate an exception."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView176"
+        android:id="@+id/textView182"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView175"
+        android:layout_below="@+id/textView181"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="The basic syntax of finally block is:"
+        android:text="Example: Java try...catch block"
         android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView177"
+        android:id="@+id/textView183"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView176"
+        android:layout_below="@+id/textView182"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n   try {\n      //code\n   } catch (ExceptionType1 e1) {\n     // catch block\n   }\n   finally {\n      // finally block always executes \n   }\n"
+        android:text="\n   class Main {\n       public static void main(String[] args) {\n           try {\n               int divideByZero = 5 / 0;\n               System.out.println(&quot;Rest of code in try block&quot;);\n           }\n\n          catch (ArithmeticException e) {\n              System.out.println(&quot;ArithmeticException => e.getMessage());\n           }\n       } \n   }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/btn_tap_to_next22"
+        android:id="@+id/textView184"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView177"
+        android:layout_below="@+id/textView183"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Output"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView185"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView184"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n   ArithmeticException => / by zero\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />

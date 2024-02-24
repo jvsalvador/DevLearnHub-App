@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Java_Module6_6">
+
+    <TextView
+        android:id="@+id/textView294"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Java ArrayBlockingQueue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView295"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView294"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The ArrayBlockingQueue class of the Java Collections framework provides the blocking queue implementation using an array.\n\nIt implements the Java BlockingQueue interface."
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView295"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/java_12" />
+
+    <TextView
+        android:id="@+id/textView296"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView43"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Creating ArrayBlockingQueue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView297"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView296"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In order to create an array blocking queue, we must import the java.util.concurrent.ArrayBlockingQueue package.  Once we import the package, here is how we can create an array blocking queue in Java:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView298"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView297"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\nArrayBlockingQueue<Type> animal = new ArrayBlockingQueue<>(int capacity);\n"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView299"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView298"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Methods of ArrayBlockingQueue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView299"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The ArrayBlockingQueue class provides the implementation of all the methods in the BlockingQueue interface.  These methods are used to insert, access and delete elements from array blocking queues.  Also, we will learn about two methods put() and take() that support the blocking operation in the array blocking queue.  These two methods distinguish the array blocking queue from other typical queues."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

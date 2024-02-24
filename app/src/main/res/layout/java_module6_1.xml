@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Java_Module6_1">
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView262"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView38"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Java Queue Interface"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView263"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView262"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The Queue interface of the Java collections framework provides the functionality of the queue data structure. It extends the Collection interface.  "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView264"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView263"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="•ArrayDeque\n\n•LinkedList\n\n•PriorityQueue"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView264"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/java_8" />
+
+    <TextView
+        android:id="@+id/textView266"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView39"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Methods of Queue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView267"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView266"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The Queue interface includes all the methods of the Collection interface. It is because Collection is the super interface of Queue.\n\nSome of the commonly used methods of the Queue interface are:\n•add() - Inserts the specified element into the queue. If the task is successful, add() returns true, if not it throws an exception.\n•offer() - Inserts the specified element into the queue. If the task is successful, offer() returns true, if not it returns false.\n•element() - Returns the head of the queue. Throws an exception if the queue is empty.\n•peek() - Returns the head of the queue. Returns null if the queue is empty.\n•remove() - Returns and removes the head of the queue. Throws an exception if the queue is empty.\n•poll() - Returns and removes the head of the queue. Returns null if the queue is empty."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/btn_tap_to_next35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

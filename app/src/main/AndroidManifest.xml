@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,27 +13,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DevLearnHub"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".module.Html_Module4_1"
+            android:name=".module.Java_Module6_6"
             android:exported="false" />
         <activity
-            android:name=".module.Html_Module3_1"
+            android:name=".module.Java_Module6_5"
             android:exported="false" />
         <activity
-            android:name=".module.Html_Module2_1"
+            android:name=".module.Java_Module6_4"
             android:exported="false" />
         <activity
-            android:name=".Html_Activity"
+            android:name=".module.Java_Module6_3"
             android:exported="false" />
         <activity
-            android:name=".module.Html_Module1_3"
+            android:name=".module.Java_Module6_2"
             android:exported="false" />
         <activity
-            android:name=".module.Html_Module1_2"
+            android:name=".module.Java_Module6_1"
             android:exported="false" />
         <activity
-            android:name=".module.Html_Module1"
+            android:name=".module.Java_Module5_6"
             android:exported="false" />
         <activity
             android:name=".module.Python_Module4_2"
@@ -176,7 +176,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.App.SplashScreen" >
+            android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

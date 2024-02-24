@@ -20,7 +20,9 @@ class Networking_Fundamentals_Activity : AppCompatActivity() {
 
         btnBack.setOnClickListener {
             // Determine which activity to go back to based on extra information
+            val email = intent.getStringExtra("user_email")
             val sourceActivity = intent.getStringExtra("sourceActivity")
+            intent.putExtra("user_email", email)
             val intent = when (sourceActivity) {
                 "Initial_Activity" -> Intent(this, Initial_Activity::class.java)
                 "Sophomore_Activity" -> Intent(this, Sophomore_Activity::class.java)
