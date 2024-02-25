@@ -79,7 +79,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n   Vector<Type> vector = new Vector<>();\n"
+        android:text="\n   Vector&lt;Type> vector = new Vector&lt;>();\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
@@ -101,7 +101,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    // create Integer type linked list\n    Vector<Integer> vector= new Vector<>();\n\n    // create String type linked list\n    Vector<String> vector= new Vector<>();\n"
+        android:text="\n    // create Integer type linked list\n    Vector&lt;Integer> vector= new Vector&lt;>();\n\n    // create String type linked list\n    Vector&lt;String> vector= new Vector&lt;>();\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

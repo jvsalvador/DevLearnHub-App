@@ -65,7 +65,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    LinkedList<Type> linkedList = new LinkedList<>();\n"
+        android:text="\n    LinkedList&lt;Type> linkedList = new LinkedList&lt;>();\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
@@ -87,7 +87,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    // create Integer type linked list\n    LinkedList<Integer> linkedList = new LinkedList<>();\n\n    // create String type linked list\n    LinkedList<String> linkedList = new LinkedList<>();\n"
+        android:text="\n    // create Integer type linked list\n    LinkedList&lt;Integer> linkedList = new LinkedList&lt;>();\n\n    // create String type linked list\n    LinkedList&lt;String> linkedList = new LinkedList&lt;>();\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

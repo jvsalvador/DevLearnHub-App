@@ -65,7 +65,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\nArrayBlockingQueue<Type> animal = new ArrayBlockingQueue<>(int capacity);\n"
+        android:text="\nArrayBlockingQueue&lt;Type> animal = new ArrayBlockingQueue&lt;>(int capacity);\n"
         android:textColor="@color/white"
         android:textSize="10sp" />
 

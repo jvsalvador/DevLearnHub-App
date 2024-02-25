@@ -35,7 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    PriorityQueue<Integer> numbers = new PriorityQueue<>();\n"
+        android:text="\n    PriorityQueue&lt;Integer> numbers = new PriorityQueue&lt;>();\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
@@ -89,7 +89,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="9dp"
         android:background="@color/black"
-        android:text="\n    class Main {\n          public static void main(String[] args) {\n\n           // Creating a priority queue\n           PriorityQueue<Integer> numbers = new PriorityQueue<>();\n\n           // Using the add() method\n           numbers.add(4);\n           numbers.add(2);\n           System.out.println(&quot;PriorityQueue: &quot; + numbers);\n\n          // Using the offer() method\n           numbers.offer(1);\n           System.out.println(&quot;Updated PriorityQueue: &quot; + numbers);\n        }\n     }"
+        android:text="\n    class Main {\n          public static void main(String[] args) {\n\n           // Creating a priority queue\n           PriorityQueue&lt;Integer> numbers = new PriorityQueue&lt;>();\n\n           // Using the add() method\n           numbers.add(4);\n           numbers.add(2);\n           System.out.println(&quot;PriorityQueue: &quot; + numbers);\n\n          // Using the offer() method\n           numbers.offer(1);\n           System.out.println(&quot;Updated PriorityQueue: &quot; + numbers);\n        }\n     }"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
