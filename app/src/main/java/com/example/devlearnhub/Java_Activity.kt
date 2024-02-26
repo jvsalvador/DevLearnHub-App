@@ -47,5 +47,21 @@ class Java_Activity : AppCompatActivity() {
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
+
+        binding.btnNextLearn5.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, com.example.devlearnhub.module.Java_Module4_1::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+
+        binding.btnNextLearn6.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, com.example.devlearnhub.module.Java_Module4_1::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+
+
     }
 }

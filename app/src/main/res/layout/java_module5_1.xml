@@ -7,7 +7,7 @@
     tools:context=".module.Java_Module5_1">
 
     <ImageView
-        android:id="@+id/imageView30"
+        android:id="@+id/btn_back_java1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -20,7 +20,7 @@
         android:id="@+id/textView220"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView30"
+        android:layout_below="@+id/btn_back_java1"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"

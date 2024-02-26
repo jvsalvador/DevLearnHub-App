@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.Html_Module3_1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/btn_back_html3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView303"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_back_html3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="HTML Head"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView310"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView303"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="The &lt;head> section contains information about the HTML document like meta, links, styles, scripts, titles, etc."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView311"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView310"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n     &lt;head>\n           &lt;title>HTML  Head Article&lt;/title>\n     &lt;/head>\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView312"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView311"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="The contents of the HTML head are not displayed in the browser\nwhen the document is loaded."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView313"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView312"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Elements of &lt;head> Tag" />
+
+    <TextView
+        android:id="@+id/textView314"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView313"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="The HTML &lt;head> tag can contain the following tags:\n\nHTML &lt;title> tag \nHTML &lt;meta> tag\nHTML &lt;link> tag\nHTML &lt;style> tag\nHTML &lt;script> tag\nHTML &lt;base> tag"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView315"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView314"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Complete Example" />
+
+    <TextView
+        android:id="@+id/textView316"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView315"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n     &lt;head>\n           &lt;title>HTML  Head Article&lt;/title>\n           &lt;meta charset=&quot;UTF-8&quot;>\n           &lt;meta name=&quot;description&quot; content=&quot;HTML Tutorial&quot;>\n           &lt;meta name=&quot;keywords&quot; content=&quot;HTML, Learn, Tutorial&quot;>\n           &lt;meta name=&quot;author&quot; content=&quot;programiz team&quot;>\n           &lt;base href=&quot;https://programiz.com&quot; target=&quot;_blank&quot;>\n           &lt;link href=&quot;/styles/index.css&quot; rel=&quot;stylesheet&quot;>\n           &lt;script src=&quot;scripts/main.js&quot;>\n     &lt;/head>\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/html_tap_to_next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

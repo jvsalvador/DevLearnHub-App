@@ -1,12 +1,23 @@
 package com.example.devlearnhub.module
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.devlearnhub.R
+import com.example.devlearnhub.databinding.JavaModule63Binding
 
 class Java_Module6_3 : AppCompatActivity() {
+    private lateinit var binding: JavaModule63Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.java_module6_3)
+        binding = JavaModule63Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnTapToNext37.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Java_Module6_4::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+
     }
 }

@@ -128,7 +128,7 @@
         android:textSize="12sp" />
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/btn_back_java"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView63"
