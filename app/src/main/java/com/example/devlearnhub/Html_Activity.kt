@@ -25,28 +25,28 @@ class Html_Activity : AppCompatActivity() {
 
         binding.btnNextLearn.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, com.example.devlearnhub.module.Html_Module1::class.java)
+            val intent = Intent(this, Html_Module1::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
 
         binding.btnNextLearn2.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, com.example.devlearnhub.module.Html_Module2_1::class.java)
+            val intent = Intent(this, Html_Module2_1::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
 
         binding.btnNextLearn3.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, com.example.devlearnhub.module.Html_Module3_1::class.java)
+            val intent = Intent(this, Html_Module3_1::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
 
         binding.btnNextLearn4.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, com.example.devlearnhub.module.Html_Module4_1::class.java)
+            val intent = Intent(this, Html_Module4_1::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }

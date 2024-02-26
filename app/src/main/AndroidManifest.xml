@@ -15,6 +15,27 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31">
         <activity
+            android:name=".Html_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module1_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module2_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module4_1"
+            android:exported="false" />
+        <activity
             android:name=".module.Java_Module6_6"
             android:exported="false" />
         <activity
@@ -50,9 +71,9 @@
         <activity
             android:name=".module.Python_Module3_1"
             android:exported="false" />
-        <activity
+        <!--<activity
             android:name=".menu_nav.DSA_Activity"
-            android:exported="false" />
+            android:exported="false" />-->
         <activity
             android:name=".menu_nav.About_Us_Activity"
             android:exported="false" />
