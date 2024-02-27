@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Python_Activity">
+    tools:context=".module_activity.Python_Activity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
@@ -35,7 +35,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Python Course"
+            android:text="Python "
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"

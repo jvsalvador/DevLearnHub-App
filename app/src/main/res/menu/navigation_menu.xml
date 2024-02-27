@@ -5,19 +5,11 @@
 
 
     <item android:id="@+id/nav_course"
-        android:title="Course Modules"
+        android:title="Visit Us"
         android:padding="10dp"
-        android:icon="@drawable/baseline_course_module_24"/>
+        android:icon="@drawable/devlearn_logo"/>
 
-    <item android:id="@+id/nav_computer"
-        android:title="Computer Fundamentals"
-        android:padding="10dp"
-        android:icon="@drawable/baseline_computer_24"/>
 
-    <item android:id="@+id/nav_laboratory"
-        android:title="Lab Environment"
-        android:padding="10dp"
-        android:icon="@drawable/baseline_network_24"/>
 
 
 

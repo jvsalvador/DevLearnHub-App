@@ -15,7 +15,37 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31">
         <activity
-            android:name=".Html_Activity"
+            android:name=".module_activity.Javascript_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Swift_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Csharp_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Jquery_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.C_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Cplus_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Php_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Css_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Mysql_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Kotlin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".module_activity.Html_Activity"
             android:exported="false" />
         <activity
             android:name=".module.Html_Module1"
@@ -71,9 +101,6 @@
         <activity
             android:name=".module.Python_Module3_1"
             android:exported="false" />
-        <!--<activity
-            android:name=".menu_nav.DSA_Activity"
-            android:exported="false" />-->
         <activity
             android:name=".menu_nav.About_Us_Activity"
             android:exported="false" />
@@ -147,9 +174,6 @@
             android:name=".module.Java_Module4_3"
             android:exported="false" />
         <activity
-            android:name=".menu_nav.Networking_Fundamentals_Activity"
-            android:exported="false" />
-        <activity
             android:name=".module.Python_Module1_5"
             android:exported="false" />
         <activity
@@ -165,13 +189,10 @@
             android:name=".module.Python_Module1"
             android:exported="false" />
         <activity
-            android:name=".Java_Activity"
+            android:name=".module_activity.Java_Activity"
             android:exported="false" />
         <activity
-            android:name=".Python_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".menu_nav.Computer_Fundamentals_Activity"
+            android:name=".module_activity.Python_Activity"
             android:exported="false" />
         <activity
             android:name=".Senior_Activity"

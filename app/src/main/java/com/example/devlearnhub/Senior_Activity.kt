@@ -9,9 +9,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutSeniorActivityBinding
 import com.example.devlearnhub.menu_nav.About_Us_Activity
-import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
 import com.example.devlearnhub.menu_nav.Contact_Us_Activity
-import com.example.devlearnhub.menu_nav.Networking_Fundamentals_Activity
 import com.google.android.material.navigation.NavigationView
 
 class Senior_Activity : AppCompatActivity() {
@@ -41,18 +39,6 @@ class Senior_Activity : AppCompatActivity() {
                         val intent = Intent(this, Sophomore_Activity::class.java)
                         startActivity(intent)
                     }
-                    true
-                }
-                R.id.nav_computer -> {
-                    val intent = Intent(this, Computer_Fundamentals_Activity::class.java)
-                    startActivity(intent)
-
-                    true
-                }
-                R.id.nav_laboratory -> {
-                    val intent = Intent(this, Networking_Fundamentals_Activity::class.java)
-                    startActivity(intent)
-
                     true
                 }
                 R.id.nav_logout -> {

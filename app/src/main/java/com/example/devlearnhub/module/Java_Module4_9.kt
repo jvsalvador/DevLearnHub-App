@@ -3,7 +3,7 @@ package com.example.devlearnhub.module
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.devlearnhub.Java_Activity
+import com.example.devlearnhub.module_activity.Java_Activity
 import com.example.devlearnhub.databinding.JavaModule49Binding
 
 class Java_Module4_9 : AppCompatActivity() {

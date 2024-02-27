@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.databinding.PythonModule25Binding
-import com.example.devlearnhub.Python_Activity
+import com.example.devlearnhub.module_activity.Python_Activity
 
 class Python_Module2_5 : AppCompatActivity() {
     private lateinit var binding: PythonModule25Binding

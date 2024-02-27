@@ -2,7 +2,6 @@ package com.example.devlearnhub
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -10,9 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutInitialActivityBinding
 import com.example.devlearnhub.menu_nav.About_Us_Activity
-import com.example.devlearnhub.menu_nav.Computer_Fundamentals_Activity
 import com.example.devlearnhub.menu_nav.Contact_Us_Activity
-import com.example.devlearnhub.menu_nav.Networking_Fundamentals_Activity
+import com.example.devlearnhub.module_activity.Html_Activity
+import com.example.devlearnhub.module_activity.Java_Activity
+import com.example.devlearnhub.module_activity.Python_Activity
 import com.google.android.material.navigation.NavigationView
 
 
@@ -63,18 +63,6 @@ class Initial_Activity : AppCompatActivity() {
                         val intent = Intent(this, Initial_Activity::class.java)
                         startActivity(intent)
                     }
-                    true
-                }
-                R.id.nav_computer -> {
-                    val intent = Intent(this, Computer_Fundamentals_Activity::class.java)
-                    startActivity(intent)
-
-                    true
-                }
-                R.id.nav_laboratory -> {
-                    val intent = Intent(this, Networking_Fundamentals_Activity::class.java)
-                    startActivity(intent)
-
                     true
                 }
                 R.id.nav_logout -> {
