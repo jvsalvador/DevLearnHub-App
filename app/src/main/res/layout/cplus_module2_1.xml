@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Cplus_Module2_1">
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView399"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView27"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="C++ if, if...else and Nested if...else"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView399"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nIn computer programming, we use the if...else statement to run one block of code under certain conditions and another block of code under different conditions.\n\nFor example, assigning grades (A, B, C) based on marks obtained by a student.\n\n• if the percentage is above 90, assign grade A\n• if the percentage is above 75, assign grade B\n• if the percentage is above 65, assign grade C\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView401"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView400"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView403"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView400"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="There are three forms of if...else statements in C++.\n\n 1. if statement\n 2. if...else statement\n 3. if...else if...else statement\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView404"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView403"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView405"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView404"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The syntax of the if statement is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView406"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView405"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    if (condition) {\n       // body of if statement\n    }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap top continue"
+        android:textSize="16sp" />
+</RelativeLayout>

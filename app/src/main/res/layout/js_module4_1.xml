@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Js_Module4_1">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView359"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView20"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Objects"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView360"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView359"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In the JavaScript data types tutorial, you learned about 7 different primitive data types. And here, you are going to learn about the eighth data-type (JavaScript object).\n\nJavaScript object is a non-primitive data-type that allows you to store multiple collections of data."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView361"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView360"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here is an example of a JavaScript object."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView362"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView361"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    // object\n    const student = {\n           firstName: 'ram',\n            class: 10\n     };\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView363"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView362"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, student is an object that stores values such as strings and numbers."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView364"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView363"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Object Declaration"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView365"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView364"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The syntax to declare an object is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView366"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView365"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    const object_name = {\n         key1: value1,\n         key2: value2\n     }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView367"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView366"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, an object object_name is defined. Each member of an object is a key: value pair separated by commas and enclosed in curly braces {}."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/js_tap_to_next4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

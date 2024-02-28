@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Cplus_Module1">
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView391"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView24"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="C++ Variables, Literals and Constants"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView392"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView391"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nIn programming, a variable is a container (storage area) to hold data.\n\nTo indicate the storage area, each variable should be given a unique name (identifier). For example,\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView393"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView392"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age = 14;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView394"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView393"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nHere, age is a variable of the int data type, and we have assigned an integer value 14 to it.\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView395"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView394"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="Note: The int data type suggests that the variable can only hold integers. Similarly, we can use the double data type if we have to store decimals and exponentials."
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView396"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView395"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:text="\nWe will learn about all the data types in detail in the next tutorial.\n\nThe value of a variable can be changed, hence the name variable.\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView397"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView396"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:scrollHorizontally="true"
+        android:text="\n    int age = 14;      // age is 14\n\n    age = 17;          // age is 17\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

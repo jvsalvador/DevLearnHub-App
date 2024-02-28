@@ -45,6 +45,84 @@
             android:name=".module.Kotlin_Module1"
             android:exported="false" />
         <activity
+            android:name=".module.Cplus_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Cplus_Module2_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Cplus_Module1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module2_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module1_5"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module1_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module1_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module4_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module2_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Js_Module1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Swift_Module1_5"
+            android:exported="false" />
+        <activity
+            android:name=".module.Swift_Module1_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.Swift_Module1_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Swift_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Swift_Module4_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Swift_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.swift_Module2_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Swift_Module1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Csharp_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Csharp_Module2_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Csharp_Module1"
+            android:exported="false" />
+        <activity
             android:name=".module_activity.Javascript_Activity"
             android:exported="false" />
         <activity

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Swift_Module3_1">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView8"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift Functions"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView92"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A function is a block of code that performs a specific task.\n\nSuppose we need to create a program to create a circle and color it. In this case, we can create two functions:\n\n1.a function to draw the circle\n2.a function to color the circle\n\nHence, a function helps us break our program into smaller chunks to make our code reusable and easy to understand.\n\nIn Swift, there are two types of function:\n\n•User-defined Function - We can create our own functions based on our requirements.\n\n•Standard Library Functions - These are built-in functions in Swift that are available to use."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView93"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift Function Declaration"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView95"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The syntax to declare a function is"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView96"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    func functionName(parameters)-> returnType {\n        // function body\n    }\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView97"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here,\n\n•func - keyword used to declare a function\n\n•functionName - any name given to the function\n\n•parameters - any value passed to function\n\n•returnType - specifies the type of value returned by the function"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+</RelativeLayout>

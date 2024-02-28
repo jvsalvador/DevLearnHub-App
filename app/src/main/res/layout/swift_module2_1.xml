@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.swift_Module2_1">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift if, if...else Statement"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView85"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In computer programming, we use the if statement to run a block code only when a certain condition is met.\n\nFor example, assigning grades (A, B, C) based on marks obtained by a student.\n\n1.if the percentage is above 90, assign grade A\n\n2.if the percentage is above 75, assign grade B\n\n3.if the percentage is above 65, assign grade C"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView86"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In Swift, there are three forms of the if...else statement.\n\n1.if statement\n\n2.if...else statement\n\n3.if...else if...else statement"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView87"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="1. Swift if Statement"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView88"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The syntax of if statement in Swift is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView89"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    if (condition) {\n      // body of if statement\n    }\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView90"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The if statement evaluates condition inside the parenthesis ().\n\n•f condition is evaluated to true, the code inside the body of if is executed.\n\n•If condition is evaluated to false, the code inside the body of if is skipped."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>
