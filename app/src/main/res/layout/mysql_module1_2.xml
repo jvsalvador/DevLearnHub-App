@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Mysql_Module1_2">
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Relational Database" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView90"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="In a relational database, data is stored in tabular format. For example,"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView91"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/mysql_non_relational" />
+
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, customers is a table inside the database.\n\nThe first row is the attributes of the table. Each row after that contains the data of a customer.\n\nIn a relational database, two or more tables may be related to each other. Hence the term Relational."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView92"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Structured Query Language (SQL)" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView93"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Structured Query Language is a standard query language that is used to work with relational databases.\n\nWe use SQL to perform CRUD operations:\n\n·Create: create databases or tables in a database\n·Read: read data from a table\n·Update: insert or update data in a table\n·Delete: delete tables, databases or table from a table"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:scrollHorizontally="true"
+        android:text="All done!"
+        android:textSize="16sp" />
+</RelativeLayout>

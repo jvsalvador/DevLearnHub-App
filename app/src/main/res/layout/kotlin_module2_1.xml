@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module2_1">
+
+    <ImageView
+        android:id="@+id/kotlin_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotlin_back2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin if Expression"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="if executes a certain section of code if the testExpression is evaluated to true. It can have optional else clause. Codes inside else clause are executed if the testExpression is false."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n       if (testExpression) {\n                // codes to run if testExpression is true\n       }else {\n               // codes to run if testExpression is false\n       }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Nested if Expression" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="An if expression can be inside the block of another if expression known as nested if expression."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin if..else..if Ladder" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="You can return a block of code among many blocks in Kotlin using if..else...if ladder."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin2_tap_to_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -104,17 +104,6 @@
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView292"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView291"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@color/black"
-        android:text="\n    // Creating String type ArrayDeque\n    ArrayDeque&lt;String> animals = new ArrayDeque&lt;>();\n\n    // Creating Integer type ArrayDeque\n   ArrayDeque&lt;Integer> age = new ArrayDeque&lt;>();"
-        android:textColor="@color/white" />
-
-    <TextView
         android:id="@+id/btn_tap_to_next38"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

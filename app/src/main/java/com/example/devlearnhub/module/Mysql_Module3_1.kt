@@ -1,12 +1,12 @@
-package com.example.devlearnhub.module_activity
+package com.example.devlearnhub.module
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.R
 
-class Css_Activity : AppCompatActivity() {
+class Mysql_Module3_1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_css_activity)
+        setContentView(R.layout.mysql_module3_1)
     }
 }

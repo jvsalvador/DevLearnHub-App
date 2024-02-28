@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module3_1">
+
+    <ImageView
+        android:id="@+id/kotlin_back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotlin_back3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Functions"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="In programming, function is a group of related statements that perform a specific task.\n\nFunctions are used to break a large program into smaller and modular chunks. For example, you need to create and color a circle based on input from the user. You can create two functions to solve this problem:\n\n·createCircle() Function\n·colorCircle()\n\nFunction Dividing a complex program into smaller components makes our program more organized and manageable.  Furthermore, it avoids repetition and makes code reusable."
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Types of Functions" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView18"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Depending on whether a function is defined by the user, or available in standard library, there are two types of functions:\n\n·Kotlin Standard Library Function\n·User-defined functions"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView19"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Standard Library Function" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView20"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="The standard library functions are built-in functions in Kotlin that are readily available for use.\n\nprint() is a library function that prints message to the standard output stream (monitor).\nsqrt() returns square root of a number (Double value)"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin3_tap_to_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to Continue"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/kotlin_functions" />
+
+</RelativeLayout>

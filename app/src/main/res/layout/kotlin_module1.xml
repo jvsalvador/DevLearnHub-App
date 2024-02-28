@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module1">
+
+    <ImageView
+        android:id="@+id/kotlin_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotlin_back"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Programming"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Kotlin is a relatively new programming language developed by JetBrains for modern multiplatform applications. Nowadays, Kotlin is widely used for Android development instead of Java. It is because Kotlin is safe, concise, and fun to read and write."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Features of Kotlin Programming" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="1. Open Source - Kotlin is distributed under Apache License, Version 2.0. The Kompiler (Kotlin compiler), IntelliJ IDEA plugin, enhancements to basic Java libraries and build tools all are open source.\n2.Interoperable with Java and Android - It is 100% interoperable with Java and Android. This means all your current Java/Android code works seamlessly with Kotlin. For more information.\n3.Concise and Expressive - Rough estimation indicates that using Kotlin allows you to cut off the lines of code by approximately 40% (compared to Java).  Expressive means, it's easy to write code that both humans and compilers can understand easily.\n4. Easy to Learn - Learning Kotlin is easy if you know other programming languages like Java, Scala, Groovy, C#, Javascript and Gosu.\n5.Tool-Friendly - Kotlin is developed by JetBrains, a company renowned for creating development tools for professionals. No wonder, it is tool-friendly.\n6. Safe - Kotlin is a statically types language. Hence, the type checking occurs at compile-time as opposed to run-time and trivial bugs are caught at an early stage."
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Final Words" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Kotlin has already gained a reputation for being concise, expressive and safe. And, with Google's announcement (an official language for Android development), it's safe to say that Kotlin is here for the big run.\n\nIf you are a Java/Android developer, we recommend you to learn Kotlin when possible. It not only makes your CV better but also helps to increase productivity."
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

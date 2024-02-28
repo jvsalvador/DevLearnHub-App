@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module4_1">
+
+    <ImageView
+        android:id="@+id/kotlin_back4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kotlin_back4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Object-oriented Programming (OOP)"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView24"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="In object-oriented style of programming, you can divide a complex problem into smaller sets by creating objects.\n\nThese objects share two characteristics:\n·state\n·behavior\n\nLet's take few examples:\n1. Lamp is an object\n    ·It can be in on or off state.\n    ·You can turn on and turn off lamp (behavior).\n2. Bicycle is an object\n    ·It has current gear, two wheels, number of gear etc. states.\n    ·It has braking, accelerating, changing gears etc. behavior.\n\nYou will learn about detail features of an object-oriented programming like: data encapsulation, inheritance and polymorphism as we go on. This article will focus on the basics to keep things simple."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView25"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Class and Object" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView27"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Class: Blueprint defining properties and behaviors.  Declared using class keyword. May include constructors, properties, functions, and inheritance.\n\nObject (Instance): Instance of a class.  Created using class constructor, no need for new keyword. Has state (properties) and behavior (functions) defined by its class."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin4_tap_to_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+</RelativeLayout>

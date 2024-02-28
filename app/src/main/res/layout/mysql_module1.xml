@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Mysql_Module1">
+
+    <ImageView
+        android:id="@+id/mysql_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mysql_back"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Introduction to Databases"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView22"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="A database is an organized collection of data." />
+
+    <TextView
+        android:id="@+id/textView85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView84"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Types of Databases" />
+
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView85"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="In general, there are two common types of databases:\n\n·Non-Relational\n·Relational"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView86"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Non-Relational Database" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView87"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="In a non-relational database, data is stored in key-value pairs. For example:"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView88"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mysql_relational" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, customers' data are stored in key-value pairs.\n\n Commonly used non-relational database management systems (Non-RDBMS) are MongoDB, Amazon DynamoDB, Redis, etc."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysql_tap_to_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+</RelativeLayout>
