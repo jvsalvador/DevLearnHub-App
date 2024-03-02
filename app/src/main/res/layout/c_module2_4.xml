@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.C_Module2_4">
+
+    <TextView
+        android:id="@+id/textView493"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Nested Loops in C#: for, while, do-while"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView494"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView493"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A loop within another loop is called nested loop. This is how a nested loop looks like:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView495"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView494"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    Outer-Loop\n    {\n                   // body of outer-loop\n                   Inner-Loop\n                   {\n                               // body of inner-loop\n                   }\n       ... ... ...\n     }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView496"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView495"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="As you can see, the outer loop encloses the inner loop. The inner loop is a part of the outer loop and must start and finish within the body of outer loop.  On each iteration of outer loop, the inner loop is executed completely."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView497"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView496"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Nested for loop"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView498"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView497"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A for loop inside another for loop is called nested for loop."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView499"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView498"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    for (int i=0; i<5; i++)\n     {\n                   // body of outer for loop\n                  for (int j=0; j<5; j++)\n                  {\n                                     // body of inner for loop\n                   }\n                 // body of outer for loop\n       }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cmodule_tap_to_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

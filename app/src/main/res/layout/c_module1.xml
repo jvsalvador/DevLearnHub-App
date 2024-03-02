@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Jquery_Module2_1">
+    tools:context=".module.C_Module1">
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/imageView38"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -15,74 +15,73 @@
         app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
     <TextView
-        android:id="@+id/textView374"
+        android:id="@+id/textView292"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView22"
+        android:layout_below="@+id/imageView38"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="R Booleans (Comparison and Logical Operators)"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:text="C# Hello World - Your First C# Program"
+        android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView375"
+        android:id="@+id/textView409"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView374"
+        android:layout_below="@+id/textView292"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In R, boolean variables can take only 2 values: TRUE and FALSE. For example,"
+        android:text="The “Hello World!” program is often the first program we see when we dive into a new language. It simply prints Hello World! on the output screen.\n\nThe purpose of this program is to get us familiar with the basic syntax and requirements of a programming language."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView381"
+        android:id="@+id/textView410"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView409"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="&quot;Hello World!&quot; in C#"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView411"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView375"
+        android:layout_below="@+id/textView410"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    # declare boolean\n    x &lt;- TRUE print(x)\n    print(class(x))\n\n    # declare boolean using single character\n    y &lt;- F\n    print(y) print(class(y))\n"
+        android:text="\n    // Hello World! program\n     namespace HelloWorld\n    {\n         class Hello {\n                 static void Main(string[] args)\n                 {\n                        System.Console.WriteLine(&quot;Hello World!&quot;);\n                  }\n            }\n    }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView382"
+        android:id="@+id/textView412"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView381"
+        android:layout_below="@+id/textView411"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Output"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:text="When you run the program, the output will be:"
+        android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView383"
+        android:id="@+id/textView413"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView382"
+        android:layout_below="@+id/textView412"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    [1] TRUE\n    [1] &quot;logical&quot;\n    [1] FALSE\n    [1] &quot;logical&quot;\n"
+        android:text="\n    Hello World!\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView384"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView383"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="Here, we have declared x and y as boolean variables. In R, Boolean variables belong to the logical class.\n\nYou can also declare boolean variables using a single character - T or F. Here, T stands for TRUE and F stands for FALSE." />
-
-    <TextView
-        android:id="@+id/jquery_tap_to_next2"
+        android:id="@+id/c_tap_to_next1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

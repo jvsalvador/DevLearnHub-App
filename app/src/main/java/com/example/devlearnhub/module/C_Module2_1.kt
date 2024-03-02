@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.R
 
-class Mysql_Module5_1 : AppCompatActivity() {
+class C_Module2_1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.mysql_module5_1)
+        setContentView(R.layout.c_module2_1)
     }
 }

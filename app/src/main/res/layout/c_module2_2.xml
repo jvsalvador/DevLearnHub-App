@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.C_Module2_2">
+
+    <TextView
+        android:id="@+id/textView481"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# switch Statement"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView482"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView481"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Switch statement can be used to replace the if...else if statement in C#. The advantage of using switch over if...else if statement is the codes will look much cleaner and readable with switch.\n\nThe syntax of switch statement is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView483"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView482"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    switch (variable/expression)\n     {\n              case value1:\n                      // Statements executed if expression(or variable) = value1\n                      break;\n                  case value2:\n                      // Statements executed if expression(or variable) = value1\n                      break;\n                      ... ... ...\n                      ... ... ...\n                default:\n                        // Statements executed if no case matches\n       }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView484"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView483"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The switch statement evaluates the expression (or variable) and compare its value with the values (or expression) of each case (value1, value2, …). When it finds the matching value, the statements inside that case are executed.\n\nBut, if none of the above cases matches the expression, the statements inside default block is executed. The default statement at the end of switch is similar to the else block in if else statement.\n\nHowever a problem with the switch statement is, when the matching value is found, it executes all statements after it until the end of switch block.\n\no avoid this, we use break statement at the end of each case. The break statement stops the program from executing non-matching statements by terminating the execution of switch statement."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cmodule_tap_to_next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

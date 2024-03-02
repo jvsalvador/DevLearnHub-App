@@ -44,7 +44,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    # declare boolean\n    x <- TRUE print(x)\n    print(class(x))\n\n    # declare boolean using single character\n    y <- F\n    print(y) print(class(y))\n"
+        android:text="\n    # declare boolean\n    x &lt;- TRUE print(x)\n    print(class(x))\n\n    # declare boolean using single character\n    y &lt;- F\n    print(y) print(class(y))\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

@@ -4,125 +4,139 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Mysql_Module4_1">
+    tools:context=".module.C_Module1_3">
 
-    <ImageView
-        android:id="@+id/imageView47"
+    <TextView
+        android:id="@+id/textView455"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
-
-    <TextView
-        android:id="@+id/textView445"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView47"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL Constraints"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView446"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView445"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="In a database table, we can add rules to a column known as constraints. These rules control the data that can be stored in a column.  For example, if a column has NOT NULL constraint, it means the column cannot store NULL values."
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView447"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView446"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="NOT NULL Constraint"
+        android:text="C# Variables and (Primitive) Data Types"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView448"
+        android:id="@+id/textView464"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView447"
+        android:layout_below="@+id/textView455"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The NOT NULL constraint in a column means that the column cannot store NULL values. For example,"
+        android:text="A variable is a symbolic name given to a memory location. Variables are used to store data in a computer program."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView449"
+        android:id="@+id/textView465"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView464"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How to declare variables in C#?"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView466"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView465"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here's an example to declare a variable in C#."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView467"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView448"
+        android:layout_below="@+id/textView466"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    CREATE TABLE Colleges (\n       college_id INT NOT NULL,\n       college_code VARCHAR(20) NOT NULL,\n       college_name VARCHAR(50)\n    );\n"
+        android:text="\n    int age;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView450"
+        android:id="@+id/textView468"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView449"
+        android:layout_below="@+id/textView467"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, the college_id and the college_code columns of the Colleges table won't allow NULL values."
+        android:text="In this example, a variable age of type int (integer) is declared and it can only store integer values.\n\nWe can assign a value to the variable later in our program like such:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView451"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView450"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="UNIQUE Constraint"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/textView452"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView451"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="The UNIQUE constraint in a column means that the column must have unique value. For example,"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView453"
+        android:id="@+id/textView469"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView452"
+        android:layout_below="@+id/textView468"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    CREATE TABLE Colleges (\n       college_id INT NOT NULL UNIQUE,\n       college_code VARCHAR(20) UNIQUE,\n       college_name VARCHAR(50)\n     );\n"
+        android:text="\n    int age;\n    ... ... ...\n   age = 24;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView454"
+        android:id="@+id/textView470"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView453"
+        android:layout_below="@+id/textView469"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, the value of the college_code column must be unique. Similarly, the value of college_id must be unique as well as it cannot store NULL values."
+        android:text="However, the variable can also be initialized to some value during declaration. For example,"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/mysql_tap_to_next4"
+        android:id="@+id/textView471"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView470"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age = 24;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView472"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView471"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, a variable age of type int is declared and initialized to 24 at the same time.  Since, it’s a variable, we can change the value of variables as well. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView473"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView472"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age = 24; age = 35;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView474"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView473"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the value of age is changed to 35 from 24."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cmodule_tap_to_next6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

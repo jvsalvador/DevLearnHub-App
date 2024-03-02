@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Mysql_Module2_1">
+    tools:context=".module.C_Module3_1">
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/imageView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -15,83 +15,81 @@
         app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
     <TextView
-        android:id="@+id/textView432"
+        android:id="@+id/textView424"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView26"
+        android:layout_below="@+id/imageView45"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL JOINS"
+        android:text="C# Class and Object"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView433"
+        android:id="@+id/textView425"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView432"
+        android:layout_below="@+id/textView424"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The SQL JOIN statement is used to combine rows from two tables based on a common column and selects records that have matching values in these columns."
+        android:text="C# is an object-oriented program. In object-oriented programming(OOP), we solve complex problems by dividing them into objects.\n\nTo work with objects, we need to perform the following activities:\n\n•create a class\n•create objects from the class"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView434"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView433"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@color/black"
-        android:text="\n    -- join the Customers and Orders tables\n    -- based on the common values of their customer_id columns\n\n   SELECT Customers.customer_id, Customers.first_name, Orders.item\n   FROM Customers\n  JOIN Orders ON Customers.customer_id = Orders.customer_id;\n"
-        android:textColor="@color/white"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView435"
+        android:id="@+id/textView426"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView434"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="Here, the SQL command joins the Customers and Orders tables based on the common column, customer_id of both tables."
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView436"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView435"
+        android:layout_below="@+id/textView425"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL JOIN Syntax"
+        android:text="C# Class"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView437"
+        android:id="@+id/textView427"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView426"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Before we learn about objects, we need to understand the working of classes. Class is the blueprint for the object.\n\nWe can think of the class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows, etc. We can build a house based on these descriptions. House is the object.\n\nLike many houses can be made from the sketch, we can create many objects from a class."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView428"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView427"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="We use the class keyword to create an object. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView429"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView436"
+        android:layout_below="@+id/textView428"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    SELECT columns_from_both_tables\n    FROM table1\n   JOIN table2\n   ON table1.column1 = table2.column2\n"
+        android:text="\n    class ClassName {\n\n    }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView438"
+        android:id="@+id/textView430"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView437"
+        android:layout_below="@+id/textView429"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here,\n\ntable1 and table2 are the two tables that are to be joined\n\ncolumn1 is the column in table1 that is related to column2 in table2"
+        android:text="Here, we have created a class named ClassName. A class can contain"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/msql_tap_to_next1"
+        android:id="@+id/c_tap_to_next3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

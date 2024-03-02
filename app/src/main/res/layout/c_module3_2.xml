@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.C_Module3_2">
+
+    <TextView
+        android:id="@+id/textView500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# Method"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView501"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView500"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A method is a block of code that performs a specific task. Suppose you need to create a program to create a circle and color it. You can create two methods to solve this problem:\n\n•a method to draw the circle\n\n•a method to color the circle\n\nDividing a complex problem into smaller chunks makes your program easy to understand and reusable."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView502"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView501"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Declaring a Method in C#"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView503"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView502"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here's the syntax to declare a method in C#."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView504"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView503"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n       returnType methodName() {\n          // method body\n        }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView505"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView504"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here,\n\n•returnType - It specifies what type of value a method returns. For example, if a method has an int return type then it returns an int value.\n\nIf the method does not return a value, its return type is void.\n\n•methodName - It is an identifier that is used to refer to the particular method in a program. method body - It includes the programming statements that are used to perform some tasks. The method body is enclosed inside the curly braces { }\n\nLet's see an example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView506"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView505"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    void display() {\n    // code\n }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView507"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView506"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the name of the method is display(). And, the return type is void."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c_tap_to_next4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

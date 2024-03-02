@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.Mysql_Module3_1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView431"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView46"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SQL INSERT INTO"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView439"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView431"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In SQL, we use the INSERT INTO statement to insert new row(s) into a database table."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView440"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView439"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    -- insert a row in the Customers table\n\n    INSERT INTO Customers(customer_id, first_name, last_name, age, country)\n   VALUES\n   (7, 'Ron', 'Weasley', 31, 'UK');\n"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView441"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView440"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the SQL command inserts a new row into the Customers table with the given values."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView442"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView441"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Example: Insert Row Into a Table"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView443"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView442"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In SQL, the INSERT INTO statement is used to insert new row(s) into a database table."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView444"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView443"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    -- insert a row in the Customers table\n\n    INSERT INTO Customers(customer_id, first_name, last_name, age, country)\n    VALUES\n   (5, 'Harry', 'Potter', 31, 'USA');\n"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/mysql_tap_to_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView444"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Run Code Here, the SQL command inserts a new row into the Customers table with the given values."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysql_tap_to_next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -4,91 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Jquery_Module2_1">
+    tools:context=".module.C_Module1_2">
 
-    <ImageView
-        android:id="@+id/imageView22"
+    <TextView
+        android:id="@+id/textView456"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
-
-    <TextView
-        android:id="@+id/textView374"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView22"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="R Booleans (Comparison and Logical Operators)"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:text="C# Keywords and Identifiers"
+        android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView375"
+        android:id="@+id/textView457"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView374"
+        android:layout_below="@+id/textView456"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In R, boolean variables can take only 2 values: TRUE and FALSE. For example,"
+        android:text="Keywords are predefined sets of reserved words that have special meaning in a program. The meaning of keywords can not be changed, neither can they be directly used as identifiers in a program."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView381"
+        android:id="@+id/textView458"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView457"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView459"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView375"
+        android:layout_below="@+id/textView458"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    # declare boolean\n    x &lt;- TRUE print(x)\n    print(class(x))\n\n    # declare boolean using single character\n    y &lt;- F\n    print(y) print(class(y))\n"
+        android:text="\n    long mobileNum;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView382"
+        android:id="@+id/textView460"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView381"
+        android:layout_below="@+id/textView459"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Output"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:text="Here, long is a keyword and mobileNum is a variable (identifier). long has a special meaning in C# i.e. it is used to declare variables of type long and this function cannot be changed."
+        android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView383"
+        android:id="@+id/textView461"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView460"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Also, keywords like long, int, char, etc can not be used as identifiers. So, we cannot have something like:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView462"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView382"
+        android:layout_below="@+id/textView461"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    [1] TRUE\n    [1] &quot;logical&quot;\n    [1] FALSE\n    [1] &quot;logical&quot;\n"
+        android:text="\n    long long;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView384"
+        android:id="@+id/textView463"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView383"
+        android:layout_below="@+id/textView462"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, we have declared x and y as boolean variables. In R, Boolean variables belong to the logical class.\n\nYou can also declare boolean variables using a single character - T or F. Here, T stands for TRUE and F stands for FALSE." />
+        android:text="C# has a total of 79 keywords. All these keywords are in lowercase. Here is a complete list of all C# keywords."
+        android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/jquery_tap_to_next2"
+        android:id="@+id/cmodule_tap_to_next5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />
 </RelativeLayout>

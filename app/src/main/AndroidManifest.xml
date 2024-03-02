@@ -15,6 +15,45 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31">
         <activity
+            android:name=".module.C_Module3_5"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module3_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module3_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module3_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module2_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module2_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module2_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module1_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module1_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module2_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.C_Module1"
+            android:exported="false" />
+        <activity
             android:name=".module.Mysql_Module1_2"
             android:exported="false" />
         <activity
@@ -58,9 +97,6 @@
             android:exported="false" />
         <activity
             android:name=".module.Jquery_Module2_1"
-            android:exported="false" />
-        <activity
-            android:name=".module.MainActivity"
             android:exported="false" />
         <activity
             android:name=".module.Jquery_Module1"

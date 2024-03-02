@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.C_Module1_4">
+
+    <TextView
+        android:id="@+id/textView475"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# Operator Precedence and Associativity"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView476"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView475"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Operator precedence is a set of rules which defines how an expression is evaluated. In C#, each C# operator has an assigned priority and based on these priorities, the expression is evaluated.\n\nFor example, the precedence of multiplication (*) operator is higher than the precedence of addition (+) operator. Therefore, operation involving multiplication is carried out before addition.\n\nTake a look at the statement below."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView477"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView476"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int x = 4 + 3 * 5;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView478"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView477"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="What will be the value of x after executing this statement?\nThe operand 3 is associated with + and *. As stated earlier, multiplication has a higher precedence than addition. So, the operation 3 * 5 is carried out instead of 4 + 3. The value of variable x will be 19.\nIf addition would have a higher precedence, 4 + 3 would be evaluated first and the value of x would be 35."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView479"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView478"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Example 1: Operator Precedence"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView480"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView479"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    using System;\n\n     namespace Operator\n     { \n\n                   class OperatorPrecedence \n                    { \n\n                               public static void Main(string[] args)\n                                { \n\n                                           			int a = 5, b = 6, c = 3;\n                                              int result = --a * b / c;\n                                             Console.WriteLine(result1);\n\n                                            	a = b = c;\n                                            Console.WriteLine(result2);\n                           }\n                 }\n     }"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cmodule_tap_to_next7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

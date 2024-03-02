@@ -88,7 +88,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    message <-&quot;Hello World! &quot;\n    print(message)\n"
+        android:text="\n    message &lt;-&quot;Hello World! &quot;\n    print(message)\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
