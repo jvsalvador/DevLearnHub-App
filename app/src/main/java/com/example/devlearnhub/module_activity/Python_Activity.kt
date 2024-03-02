@@ -14,7 +14,9 @@ class Python_Activity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnBackToHome.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
             val intent = Intent(this, Initial_Activity::class.java)
+            intent.putExtra("user_email", email)
             startActivity(intent)
         }
 

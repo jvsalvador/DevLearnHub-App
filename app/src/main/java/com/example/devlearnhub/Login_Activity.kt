@@ -26,6 +26,10 @@ class Login_Activity : AppCompatActivity() {
         binding.btLoginLogin.setOnClickListener {
             loginUser()
         }
+
+        binding.tvLearnGuest.setOnClickListener {
+            startActivity(Intent(this, Choices_Activity::class.java))
+        }
     }
 
     private fun loginUser() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,20 +12,21 @@
         android:id="@+id/tv_register_create_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Create Account"
 
+        android:text="Create Account"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        >
+        android:layout_below="@+id/tv_register_create_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_register_firstname"
@@ -37,11 +38,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="7dp"
-        >
+        android:layout_below="@+id/textInputLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_register_LastName"
@@ -53,11 +55,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="7dp"
-        >
+        android:layout_below="@+id/textInputLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_register_Email"
@@ -70,11 +73,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="7dp"
-        >
+        android:layout_below="@+id/textInputLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_register_Password"
@@ -88,11 +92,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="7dp"
-        >
+        android:layout_below="@+id/textInputLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_register_Confirm"
@@ -106,8 +111,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
-        android:layout_height="100dp" >
+        android:layout_height="100dp"
+        android:layout_below="@+id/textInputLayout7"
+        android:layout_marginTop="0dp">
 
         <CheckBox
             android:id="@+id/cb_register_IAcceptThe"
@@ -142,15 +150,20 @@
         android:id="@+id/bt_register_CreateAccount"
         android:layout_width="250dp"
         android:layout_height="65dp"
-        android:layout_gravity="center"
+        android:layout_below="@+id/constraintLayout6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:backgroundTint="@color/amber"
         android:fontFamily="@font/poppins_bold"
         android:text="Create Account" />
 
     <TextView
+        android:id="@+id/textView100"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_register_CreateAccount"
         android:layout_gravity="center"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_regular"
         android:text="You already have an account?" />
@@ -159,13 +172,15 @@
         android:id="@+id/tv_register_Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_register_CreateAccount"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView100"
         android:fontFamily="@font/poppins_bold"
         android:text="Login"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:layout_marginTop="-5dp"
-        />
+        android:textStyle="bold" />
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
 

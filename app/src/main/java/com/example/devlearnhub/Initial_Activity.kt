@@ -81,15 +81,19 @@ class Initial_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_contact -> {
+                    val email = intent.getStringExtra("user_email")
                     val intent = Intent(this, Contact_Us_Activity::class.java)
                     startActivity(intent)
+                    intent.putExtra("user_email", email)
 
                     true
                 }
 
                 R.id.nav_about -> {
+                    val email = intent.getStringExtra("user_email")
                     val intent = Intent(this, About_Us_Activity::class.java)
                     startActivity(intent)
+                    intent.putExtra("user_email", email)
 
                     true
                 }
