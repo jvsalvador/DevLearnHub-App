@@ -1,9 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.C_Module3_4">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView521"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Create a C# constructo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView522"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView521"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here's how we create a constructor in C#"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView523"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView522"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    class Car {\n\n       // constructor\n      Car() {\n           //code\n        }\n    }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView524"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView523"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, Car() is a constructor. It has the same name as its class."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView525"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView524"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Once we create a constructor, we can call it using the new keyword. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView526"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView525"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    new Car();\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView527"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView526"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In C#, a constructor is called when we try to create an object of a class. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView528"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView527"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    Car car1 = new Car();\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView529"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView528"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text=" Here, we are calling the Car() constructor to create an object car1. "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView530"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView529"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Note: If a constructor is private, we cannot create objects of the class. Hence, all fields and methods of the class should be declared static, so that they can be accessed using the class name."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c_tap_to_next6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>
