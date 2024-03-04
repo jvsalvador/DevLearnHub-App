@@ -4,110 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Mysql_Module4_1">
+    tools:context=".module.Mysql_Module2_5">
 
     <TextView
-        android:id="@+id/textView445"
+        android:id="@+id/textView579"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint"
+        android:text="SQL FULL OUTER JOIN"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView446"
+        android:id="@+id/textView580"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView445"
+        android:layout_below="@+id/textView579"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In SQL, the UNIQUE constraint in a column means the column must have unique values.\n\nExample"
+        android:text="The SQL FULL OUTER JOIN statement joins two tables based on a common column. It selects records that have matching values in these columns and the remaining rows from both of the tables.\n\nExample"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView447"
+        android:id="@+id/textView581"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView446"
+        android:layout_below="@+id/textView580"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    -- create a table with unique constraint on college_code column\n   CREATE TABLE Colleges (\n       college_code VARCHAR(20) UNIQUE,\n       college_name VARCHAR(50)\n     );\n"
+        android:text="\n    -- full join Customers and Orders tables\n    -- based on their shared customer_id columns\n    -- Customers is the left table\n    -- Orders is the right table\n    SELECT Customers.customer_id, Customers.first_name, Orders.item\n     FROM Customers\n     FULL OUTER JOIN Orders\n     ON Customers.customer_id = Orders.customer_id;\n"
         android:textColor="@color/white"
-        android:textSize="12sp" />
-
-    <ImageView
-        android:id="@+id/imageView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+        android:textSize="10sp" />
 
     <TextView
-        android:id="@+id/textView449"
+        android:id="@+id/textView582"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView447"
+        android:layout_below="@+id/textView581"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Run Code Here, the values of the college_code column must be unique."
+        android:text="Here, the SQL query performs a FULL OUTER JOIN on two tables, Customers and Orders. This means that the result set contains all the rows from both tables, including the ones that don't have common customer_id values."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView450"
+        android:id="@+id/textView583"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView449"
+        android:layout_below="@+id/textView582"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint Syntax"
+        android:text="Example: SQL OUTER Join"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView451"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView450"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="The syntax of the SQL UNIQUE constraint is:"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView452"
+        android:id="@+id/textView584"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView451"
+        android:layout_below="@+id/textView583"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    CREATE TABLE table_name (\n         column_name data_type UNIQUE\n      );\n"
+        android:text="\n    SELECT Customers.customer_id, Customers.first_name, Orders.amount\n    FROM Customers\n    FULL OUTER JOIN Orders\n    ON Customers.customer_id = Orders.customer;\n"
         android:textColor="@color/white"
-        android:textSize="12sp" />
+        android:textSize="10sp" />
 
     <TextView
-        android:id="@+id/textView453"
+        android:id="@+id/textView585"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView452"
+        android:layout_below="@+id/textView584"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here,\n\n•table_name is the name of the table to be created\n\n•column_name is the name of the column where the constraint is to be implemented\n\n•data_type is the data type of the column such as INT, VARCHAR, etc. "
+        android:text="Here, the SQL command selects the customer_id and first_name columns (from the Customers table) and the amount column (from the Orders table).  The result set will contain all rows of both the tables, regardless of whether there is a match between customer_id (of the Customers table) and customer (of the Orders table)."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/mysql_tap_to_next14"
+        android:id="@+id/mysql_tap_to_next9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Tap to continue"
+        android:text="All Done!"
         android:textSize="16sp" />
-
 </RelativeLayout>

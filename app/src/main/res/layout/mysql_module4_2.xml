@@ -4,110 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Mysql_Module4_1">
+    tools:context=".module.Mysql_Module4_2">
 
     <TextView
-        android:id="@+id/textView445"
+        android:id="@+id/textView448"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint"
+        android:text="SQL PRIMARY KEY Constraint"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView446"
+        android:id="@+id/textView454"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView445"
+        android:layout_below="@+id/textView448"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In SQL, the UNIQUE constraint in a column means the column must have unique values.\n\nExample"
+        android:text="In SQL, the PRIMARY KEY constraint is used to uniquely identify rows. It is a combination of NOT NULL and UNIQUE constraints i.e. it cannot contain duplicate or NULL values.\n\nExample"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView447"
+        android:id="@+id/textView621"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView446"
+        android:layout_below="@+id/textView454"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    -- create a table with unique constraint on college_code column\n   CREATE TABLE Colleges (\n       college_code VARCHAR(20) UNIQUE,\n       college_name VARCHAR(50)\n     );\n"
+        android:text="\n    -- create Colleges table with primary key college_id\n    CREATE TABLE Colleges (\n         college_id INT,\n         college_code VARCHAR(20) NOT NULL,\n         college_name VARCHAR(50),\n         CONSTRAINT CollegePK PRIMARY KEY (college_id)\n    );\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
-    <ImageView
-        android:id="@+id/imageView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
-
     <TextView
-        android:id="@+id/textView449"
+        android:id="@+id/textView622"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView447"
+        android:layout_below="@+id/textView621"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Run Code Here, the values of the college_code column must be unique."
+        android:text="Here, the college_id column is the PRIMARY KEY. This means that the values of this column must be unique and it cannot contain NULL values.  Note that the above code works in all major database systems. However, some databases may have a different syntax."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView450"
+        android:id="@+id/textView623"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView449"
+        android:layout_below="@+id/textView622"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint Syntax"
+        android:text="SQL PRIMARY KEY Syntax"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView451"
+        android:id="@+id/textView624"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView450"
+        android:layout_below="@+id/textView623"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The syntax of the SQL UNIQUE constraint is:"
+        android:text="The syntax of the SQL PRIMARY KEY constraint is:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView452"
+        android:id="@+id/textView625"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView451"
+        android:layout_below="@+id/textView624"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    CREATE TABLE table_name (\n         column_name data_type UNIQUE\n      );\n"
+        android:text="\n    CREATE TABLE table_name (\n         column1 data_type,\n            ...,\n         [CONSTRAINT constraint_name] PRIMARY KEY (column1)\n     );\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView453"
+        android:id="@+id/textView626"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView452"
+        android:layout_below="@+id/textView625"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here,\n\n•table_name is the name of the table to be created\n\n•column_name is the name of the column where the constraint is to be implemented\n\n•data_type is the data type of the column such as INT, VARCHAR, etc. "
+        android:text="Here,\n\n•table_name is the name of the table to be created\n\n•column1 is the name of the column where the PRIMARY KEY constraint is to be defined\n\n•constraint_name is the arbitrary name given to the constraint\n\n•[...] signifies that the code inside is optional."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/mysql_tap_to_next14"
+        android:id="@+id/mysql_tap_to_next15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />
-
 </RelativeLayout>

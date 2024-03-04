@@ -4,103 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Mysql_Module4_1">
+    tools:context=".module.Mysql_Module4_3">
 
     <TextView
-        android:id="@+id/textView445"
+        android:id="@+id/textView627"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint"
+        android:text="SQL FOREIGN KEY Constraint"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView446"
+        android:id="@+id/textView628"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView445"
+        android:layout_below="@+id/textView627"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In SQL, the UNIQUE constraint in a column means the column must have unique values.\n\nExample"
+        android:text="In SQL, the FOREIGN KEY constraint is used to create a relationship between two tables. A foreign key is defined using the FOREIGN KEY and REFERENCES keywords.\n\nExample"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView447"
+        android:id="@+id/textView629"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView446"
+        android:layout_below="@+id/textView628"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    -- create a table with unique constraint on college_code column\n   CREATE TABLE Colleges (\n       college_code VARCHAR(20) UNIQUE,\n       college_name VARCHAR(50)\n     );\n"
+        android:text="\n    -- this table doesn't contain foreign keys\n    CREATE TABLE Customers (\n          id INTEGER PRIMARY KEY,\n          name VARCHAR(100),\n          age INTEGER\n    );\n\n     -- create another table named Products\n     -- add foreign key to the customer_id column\n     -- the foreign key references the id column of the Customers table\n\n     CREATE TABLE Products (\n          customer_id INTEGER ,     name VARCHAR(100),\n           FOREIGN KEY (customer_id)\n          REFERENCES Customers(id)\n);"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
-    <ImageView
-        android:id="@+id/imageView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
-
     <TextView
-        android:id="@+id/textView449"
+        android:id="@+id/textView630"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView447"
+        android:layout_below="@+id/textView629"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Run Code Here, the values of the college_code column must be unique."
+        android:text="Here, the customer_id column in the Products table references the id column in the Customers table."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView450"
+        android:id="@+id/textView631"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView449"
+        android:layout_below="@+id/textView630"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint Syntax"
+        android:text="Foreign Key Syntax in SQL"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView451"
+        android:id="@+id/textView632"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView450"
+        android:layout_below="@+id/textView631"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The syntax of the SQL UNIQUE constraint is:"
+        android:text="The syntax of the SQL FOREIGN KEY constraint is:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView452"
+        android:id="@+id/textView633"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView451"
+        android:layout_below="@+id/textView632"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    CREATE TABLE table_name (\n         column_name data_type UNIQUE\n      );\n"
+        android:text="\n    CREATE TABLE table_name (\n         column1 data_type,\n         column2 data_type,\n           ...,\n          FOREIGN KEY (column_name)\n          REFERENCES referenced_table_name (referenced_column_name)\n    );\n"
         android:textColor="@color/white"
-        android:textSize="12sp" />
+        android:textSize="10sp" />
 
     <TextView
-        android:id="@+id/textView453"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView452"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="Here,\n\n•table_name is the name of the table to be created\n\n•column_name is the name of the column where the constraint is to be implemented\n\n•data_type is the data type of the column such as INT, VARCHAR, etc. "
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/mysql_tap_to_next14"
+        android:id="@+id/mysql_tap_to_next16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -109,5 +91,4 @@
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />
-
 </RelativeLayout>

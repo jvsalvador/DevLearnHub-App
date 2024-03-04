@@ -4,110 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Mysql_Module4_1">
+    tools:context=".module.Mysql_Module3_4">
 
     <TextView
-        android:id="@+id/textView445"
+        android:id="@+id/textView603"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint"
+        android:text="SQL SELECT INTO (Copy Table) "
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView446"
+        android:id="@+id/textView604"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView445"
+        android:layout_below="@+id/textView603"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In SQL, the UNIQUE constraint in a column means the column must have unique values.\n\nExample"
+        android:text="In SQL, the SELECT INTO statement is used to copy data from one table to another.\n\nExample "
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView447"
+        android:id="@+id/textView605"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView446"
+        android:layout_below="@+id/textView604"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    -- create a table with unique constraint on college_code column\n   CREATE TABLE Colleges (\n       college_code VARCHAR(20) UNIQUE,\n       college_name VARCHAR(50)\n     );\n"
+        android:text="\n    -- copy all the contents of a table to a new table\n    SELECT *\n    INTO CustomersCopy\n    FROM Customers;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
-    <ImageView
-        android:id="@+id/imageView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
-
     <TextView
-        android:id="@+id/textView449"
+        android:id="@+id/textView606"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView447"
+        android:layout_below="@+id/textView605"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Run Code Here, the values of the college_code column must be unique."
+        android:text="Here, the SQL command copies all data from the Customers table to the new CustomersCopy table."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView450"
+        android:id="@+id/textView607"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView449"
+        android:layout_below="@+id/textView606"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint Syntax"
+        android:text="SELECT INTO Syntax"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView451"
+        android:id="@+id/textView608"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView450"
+        android:layout_below="@+id/textView607"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The syntax of the SQL UNIQUE constraint is:"
+        android:text="The syntax of the SQL SELECT INTO statement is:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView452"
+        android:id="@+id/textView609"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView451"
+        android:layout_below="@+id/textView608"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    CREATE TABLE table_name (\n         column_name data_type UNIQUE\n      );\n"
+        android:text="\n    SELECT column1, column2, column3, ...\n    INTO destination_table\n    FROM source_table;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView453"
+        android:id="@+id/textView610"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView452"
+        android:layout_below="@+id/textView609"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here,\n\n•table_name is the name of the table to be created\n\n•column_name is the name of the column where the constraint is to be implemented\n\n•data_type is the data type of the column such as INT, VARCHAR, etc. "
+        android:text="Here,\n\n•column1, column2, column3, ... are the columns to be copied\n\n•destination_table is the new table where the data is to be copied to\n\n•source_table is the table where the data is to be copied from"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/mysql_tap_to_next14"
+        android:id="@+id/mysql_tap_to_next12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Tap to continue"
+        android:text="All Done!"
         android:textSize="16sp" />
-
 </RelativeLayout>

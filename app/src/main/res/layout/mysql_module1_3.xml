@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Mysql_Module1_3">
+
+    <TextView
+        android:id="@+id/textView537"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SQL SELECT"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView538"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView537"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The SQL SELECT statement is used to select (retrieve) data from a database table.\n\nExample"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView539"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView538"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    -- select first_name from Customers table\n     SELECT first_name\n     FROM Customers;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView540"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView539"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The above SQL query selects the first_name of all the customers from the Customers table."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView541"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView540"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SQL SELECT Syntax"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView542"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView541"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The syntax of the SQL SELECT statement is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView543"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView542"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    SELECT column1, column2, ...\n    FROM table;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView544"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView543"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here,\n\n•column1, column2, ... are the table columns\n•table is the table name from where we select the data"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView545"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView544"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="For example," />
+
+    <TextView
+        android:id="@+id/textView546"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView545"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    -- select first_name and last_name columns from Customers table\n   SELECT first_name,\n   last_name FROM Customers;"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView547"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView546"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the SQL command selects the first_name and last_name of all customers in the Customers table."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/msql_tap_to_next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

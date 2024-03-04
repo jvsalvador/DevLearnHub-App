@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Mysql_Module3_5">
+
+    <TextView
+        android:id="@+id/textView611"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SQL Constraints"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView612"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView611"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:text="In a database table, we can add rules to a column known as constraints. These rules control the data that can be stored in a column.\n\nFor example, if a column has NOT NULL constraint, it means the column cannot store NULL values."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView613"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView612"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="NOT NULL Constraint"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView614"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView613"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The NOT NULL constraint in a column means that the column cannot store NULL values. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView615"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView614"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    CREATE TABLE Colleges (\n       college_id INT NOT NULL,\n       college_code VARCHAR(20) NOT NULL,\n       college_name VARCHAR(50)\n    ); \n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView616"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView615"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the college_id and the college_code columns of the Colleges table won't allow NULL values.\n\nTo learn more, visit SQL NOT NULL Constraint"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView617"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView616"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="UNIQUE Constraint"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView618"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView617"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The UNIQUE constraint in a column means that the column must have unique value.\n\nFor example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView619"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView618"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    CREATE TABLE Colleges (\n       college_id INT NOT NULL UNIQUE,\n       college_code VARCHAR(20) UNIQUE,\n       college_name VARCHAR(50)\n     );\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView620"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView619"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the value of the college_code column must be unique. Similarly, the value of college_id must be unique as well as it cannot store NULL values."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mysql_tap_to_next13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

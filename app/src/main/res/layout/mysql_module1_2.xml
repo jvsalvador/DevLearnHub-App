@@ -64,7 +64,7 @@
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView95"
+        android:id="@+id/msql_tap_to_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -72,6 +72,6 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
         android:scrollHorizontally="true"
-        android:text="All done!"
+        android:text="Tap to continue"
         android:textSize="16sp" />
 </RelativeLayout>

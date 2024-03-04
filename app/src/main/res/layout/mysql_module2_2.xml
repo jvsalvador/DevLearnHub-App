@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Mysql_Module2_2">
+
+    <TextView
+        android:id="@+id/textView560"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" SQL INNER JOIN"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView561"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView560"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The SQL INNER JOIN statement joins two tables based on a common column and selects rows that have matching values in these columns.\n\nExample"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView562"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView561"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    -- join Customers and Orders tables with their matching fields customer_id\n\n      SELECT Customers.customer_id, Orders.item\n      FROM Customers\n      INNER JOIN Orders\n      ON Customers.customer_id = Orders.customer_id;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView563"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView562"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the SQL command joins the Customers and Orders tables.  The result includes customer_id (from Customers) and item (from Orders) of rows where customer IDs match (Customer.customer_id = Orders.customer_id)."
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView563"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mysql_3" />
+
+    <TextView
+        android:id="@+id/mysql_tap_to_next6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

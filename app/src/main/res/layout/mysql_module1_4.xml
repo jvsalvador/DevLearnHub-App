@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Mysql_Module1_4">
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" SQL AND, OR, and NOT Operators"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView548"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView95"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The AND, OR, and NOT operators in SQL are used with the WHERE or HAVING clauses."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView549"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView548"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="SQL AND Operator"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView550"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView549"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The SQL AND operator selects data if all conditions are TRUE. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView551"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView550"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    -- select the first_name and last_name of all customers\n    -- who live in 'USA' and have the last name 'Doe'\n     SELECT first_name, last_name\n     FROM Customers\n     WHERE country = 'USA' AND last_name = 'Doe';\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView552"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView551"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the SQL command selects first_name and of last_name all customers whose country is USA and last_name is Doe from the Customers table."
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView552"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mysql_1" />
+
+    <TextView
+        android:id="@+id/mysql_tap_to_next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

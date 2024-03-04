@@ -37,7 +37,7 @@
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView95"
+        android:id="@+id/msql_tap_to_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView93"
@@ -52,7 +52,7 @@
         android:id="@+id/textView96"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView95"
+        android:layout_below="@+id/msql_tap_to_next2"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:text="The syntax to declare a function is"

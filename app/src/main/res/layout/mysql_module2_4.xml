@@ -4,103 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Mysql_Module4_1">
+    tools:context=".module.Mysql_Module2_4">
 
     <TextView
-        android:id="@+id/textView445"
+        android:id="@+id/textView564"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint"
+        android:text="SQL RIGHT JOIN"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView446"
+        android:id="@+id/textView572"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView445"
+        android:layout_below="@+id/textView564"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In SQL, the UNIQUE constraint in a column means the column must have unique values.\n\nExample"
+        android:text="The SQL RIGHT JOIN statement joins two tables based on a common column. It selects records that have matching values in these columns and the remaining rows from the right table.\n\nExample"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView447"
+        android:id="@+id/textView573"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView446"
+        android:layout_below="@+id/textView572"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    -- create a table with unique constraint on college_code column\n   CREATE TABLE Colleges (\n       college_code VARCHAR(20) UNIQUE,\n       college_name VARCHAR(50)\n     );\n"
+        android:text="\n    -- join Customers and Orders tables\n    -- based on their shared customer_id columns\n    -- Customers is the left table\n    -- Orders is the right table\n\n   SELECT Customers.customer_id, Customers.first_name, Orders.item\n   FROM Customers\n   RIGHT JOIN Orders\n   ON Customers.customer_id = Orders.customer_id;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
-    <ImageView
-        android:id="@+id/imageView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
-
     <TextView
-        android:id="@+id/textView449"
+        android:id="@+id/textView574"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView447"
+        android:layout_below="@+id/textView573"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Run Code Here, the values of the college_code column must be unique."
+        android:text="Here the code right joins the Customers and Orders tables based on customer_id, which is common to both tables. The result set contains\n\n•customer_id and first_name columns from the Customers table\n•item column from the Orders table (including those whose customer_id value is not present in the Customers table) "
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView450"
+        android:id="@+id/textView575"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView449"
+        android:layout_below="@+id/textView574"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="SQL UNIQUE Constraint Syntax"
+        android:text="RIGHT JOIN SYNTAX"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView451"
+        android:id="@+id/textView576"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView450"
+        android:layout_below="@+id/textView575"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The syntax of the SQL UNIQUE constraint is:"
+        android:text="The syntax of the SQL RIGHT JOIN statement is:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView452"
+        android:id="@+id/textView577"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView451"
+        android:layout_below="@+id/textView576"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    CREATE TABLE table_name (\n         column_name data_type UNIQUE\n      );\n"
+        android:text="\n    SELECT columns_from_both_tables\n    FROM table1\n    RIGHT JOIN table2\n   ON table1.column1 = table2.column2\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView453"
+        android:id="@+id/textView578"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView452"
+        android:layout_below="@+id/textView577"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here,\n\n•table_name is the name of the table to be created\n\n•column_name is the name of the column where the constraint is to be implemented\n\n•data_type is the data type of the column such as INT, VARCHAR, etc. "
+        android:text="•table1 is the left table to be joined\n•table2 is the right table to be joined\n•column1 and column2 are the related columns in the two tables"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/mysql_tap_to_next14"
+        android:id="@+id/mysql_tap_to_next8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -109,5 +101,4 @@
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />
-
 </RelativeLayout>
