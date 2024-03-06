@@ -17,7 +17,7 @@ class Login_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutLoginActivityBinding
     private lateinit var db: DatabaseHelper
     private lateinit var apiService: ApiService
-    private val BASE_URL = "your_base_url_here"
+    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/api/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

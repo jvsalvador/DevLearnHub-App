@@ -3,6 +3,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.devlearnhub.data.ApiService
+import com.example.devlearnhub.data.DatabaseHelper
 import com.example.devlearnhub.data.RegistrationRequest
 import com.example.devlearnhub.data.RegistrationResponse
 import com.example.devlearnhub.data.ValidationUtils
@@ -13,8 +14,9 @@ import retrofit2.Response
 
 class Register_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutRegisterActivityBinding
-    private lateinit var apiService: ApiService // Retrofit API Service
-    private val BASE_URL = "your_base_url_here"
+    private lateinit var db: DatabaseHelper
+    private lateinit var apiService: ApiService
+    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/api/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
