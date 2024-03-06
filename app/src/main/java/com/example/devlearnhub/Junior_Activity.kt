@@ -1,5 +1,6 @@
 package com.example.devlearnhub
 
+import Login_Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,12 @@ import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutJuniorActivityBinding
 import com.example.devlearnhub.menu_nav.About_Us_Activity
 import com.example.devlearnhub.menu_nav.Contact_Us_Activity
+import com.example.devlearnhub.module_activity.Csharp_Activity
+import com.example.devlearnhub.module_activity.Javascript_Activity
+import com.example.devlearnhub.module_activity.Kotlin_Activity
+import com.example.devlearnhub.module_activity.Mysql_Activity
+import com.example.devlearnhub.module_activity.Php_Activity
+import com.example.devlearnhub.module_activity.Swift_Activity
 import com.google.android.material.navigation.NavigationView
 
 class Junior_Activity : AppCompatActivity() {
@@ -18,6 +25,25 @@ class Junior_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = LayoutJuniorActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnLearn.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Csharp_Activity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+        binding.btnLearn2.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Swift_Activity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+        binding.btnLearn3.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Javascript_Activity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
 
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         binding.drawerLayout.addDrawerListener(toggle)

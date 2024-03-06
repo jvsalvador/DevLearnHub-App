@@ -1,5 +1,6 @@
 package com.example.devlearnhub
 
+import Login_Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,9 @@ import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutSeniorActivityBinding
 import com.example.devlearnhub.menu_nav.About_Us_Activity
 import com.example.devlearnhub.menu_nav.Contact_Us_Activity
+import com.example.devlearnhub.module_activity.C_Activity
+import com.example.devlearnhub.module_activity.Cplus_Activity
+import com.example.devlearnhub.module_activity.Jquery_Activity
 import com.google.android.material.navigation.NavigationView
 
 class Senior_Activity : AppCompatActivity() {
@@ -19,6 +23,24 @@ class Senior_Activity : AppCompatActivity() {
         binding = LayoutSeniorActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnLearn.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Cplus_Activity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+        binding.btnLearn2.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Jquery_Activity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+        binding.btnLearn3.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, C_Activity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
 
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         binding.drawerLayout.addDrawerListener(toggle)

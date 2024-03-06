@@ -102,9 +102,6 @@
             android:name=".module.Mysql_Module1_2"
             android:exported="false" />
         <activity
-            android:name=".module.Mysql_Module5_1"
-            android:exported="false" />
-        <activity
             android:name=".module.Mysql_Module3_1"
             android:exported="false" />
         <activity
@@ -392,12 +389,10 @@
         <activity
             android:name=".Choices_Activity"
             android:exported="false" />
-        <activity
-            android:name=".Register_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Login_Activity"
-            android:exported="false" />
+        <activity android:name="Register_Activity"
+            android:exported="false"/>
+        <activity android:name="Login_Activity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
