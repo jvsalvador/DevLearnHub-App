@@ -391,7 +391,7 @@
             android:exported="false" />
         <activity android:name="Register_Activity"
             android:exported="false"/>
-        <activity android:name="Login_Activity"
+        <activity android:name="com.example.devlearnhub.Login_Activity"
             android:exported="false"/>
         <activity
             android:name=".MainActivity"

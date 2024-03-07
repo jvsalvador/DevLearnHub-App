@@ -1,6 +1,6 @@
 package com.example.devlearnhub
 
-import Login_Activity
+import com.example.devlearnhub.Login_Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
