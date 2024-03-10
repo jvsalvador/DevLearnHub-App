@@ -2,6 +2,7 @@ package com.example.devlearnhub
 
 import com.example.devlearnhub.Login_Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -58,10 +59,12 @@ class Junior_Activity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_course -> {
-
-                    if (this !is Junior_Activity){
-                        val intent = Intent(this, Junior_Activity::class.java)
+                    val url = "https://devlearn-com.preview-domain.com/public/"
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                    if (intent.resolveActivity(packageManager) != null){
                         startActivity(intent)
+                    }else{
+
                     }
                     true
                 }

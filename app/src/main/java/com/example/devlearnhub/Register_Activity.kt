@@ -18,7 +18,7 @@ class Register_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutRegisterActivityBinding
     private lateinit var db: DatabaseHelper
     private lateinit var apiService: ApiService
-    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/api/"
+    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,27 +52,27 @@ class Register_Activity : AppCompatActivity() {
         ) {
             if (ValidationUtils.isValidEmail(email)) {
                 if (password == confirmString) {
-                    // Create registration request
+
                     val registrationRequest = RegistrationRequest(firstname, lastname, email, password)
 
-                    // Make API call for registration
+
                     val registrationCall = apiService.registerUser(registrationRequest)
                     registrationCall.enqueue(object : Callback<RegistrationResponse> {
                         override fun onResponse(call: Call<RegistrationResponse>, response: Response<RegistrationResponse>) {
                             if (response.isSuccessful) {
                                 val registrationResponse = response.body()
-                                // Handle successful registration
+
                                 Toast.makeText(this@Register_Activity, "User Registered", Toast.LENGTH_SHORT).show()
                                 startActivity(Intent(this@Register_Activity, Login_Activity::class.java))
                                 finish()
                             } else {
-                                // Handle unsuccessful registration
+
                                 Toast.makeText(this@Register_Activity, "Registration failed", Toast.LENGTH_SHORT).show()
                             }
                         }
 
                         override fun onFailure(call: Call<RegistrationResponse>, t: Throwable) {
-                            // Handle failure
+
                             Toast.makeText(this@Register_Activity, "Registration failed: ${t.message}", Toast.LENGTH_SHORT).show()
                         }
                     })

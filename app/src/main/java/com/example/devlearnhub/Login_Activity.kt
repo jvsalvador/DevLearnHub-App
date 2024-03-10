@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.devlearnhub.Choices_Activity
 import com.example.devlearnhub.data.ApiService
 import com.example.devlearnhub.data.DatabaseHelper
 import com.example.devlearnhub.data.LoginRequest
@@ -19,7 +18,7 @@ class Login_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutLoginActivityBinding
     private lateinit var db: DatabaseHelper
     private lateinit var apiService: ApiService
-    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/api/"
+    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,17 +47,15 @@ class Login_Activity : AppCompatActivity() {
 
         if (ValidationUtils.isTextNotEmpty(email) && ValidationUtils.isTextNotEmpty(password)) {
             if (ValidationUtils.isValidEmail(email)) {
-                // Create login request
+
                 val loginRequest = LoginRequest(email, password)
 
-                // Make API call for login
+
                 val call = apiService.loginUser(loginRequest)
                 call.enqueue(object : Callback<LoginResponse> {
                     override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                         if (response.isSuccessful) {
                             val loginResponse = response.body()
-                            // Handle successful login
-                            // Pass the email to Choices_Activity
                             val intent = Intent(this@Login_Activity, Choices_Activity::class.java)
                             intent.putExtra("user_email", email)
                             startActivity(intent)
@@ -70,7 +67,7 @@ class Login_Activity : AppCompatActivity() {
                     }
 
                     override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                        // Handle failure
+
                         Toast.makeText(this@Login_Activity, "Login failed: ${t.message}", Toast.LENGTH_SHORT).show()
                     }
                 })
@@ -81,8 +78,4 @@ class Login_Activity : AppCompatActivity() {
             Toast.makeText(this, "Please enter all fields", Toast.LENGTH_SHORT).show()
         }
     }
-}
-
-private fun ApiService.loginUser(loginRequest: LoginRequest): Call<LoginResponse> {
-    return this.loginUser(loginRequest)
 }

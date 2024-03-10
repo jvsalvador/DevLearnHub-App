@@ -7,20 +7,20 @@
     tools:context=".module.Js_Module1">
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/js_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="30dp"
         app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
     <TextView
         android:id="@+id/textView330"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView10"
+        android:layout_below="@+id/js_back"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Getting Started With JavaScript"
         android:textSize="20sp"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView330"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="JavaScript is a popular programming language that has a wide range of applications.\n\nJavaScript was previously used mainly for making webpages interactive such as form validation, animation, etc. Nowadays, JavaScript is also used in many other areas such as server-side development, mobile app development and so on.\n\nBecause of its wide range of applications, you can run JavaScript in several ways:"
         android:textSize="12sp" />
 
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView336"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="•Using console tab of web browsers\n\n•Using Node.js\n\n•By creating web pages"
         android:textSize="12sp" />
 
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView337"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/poppins_bold"
         android:text="1. Using Console Tab of Web Browsers"
         android:textSize="16sp"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView338"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="All the popular web browsers have built-in JavaScript engines. Hence, you can run JavaScript on a browser.To run JavaScript on a browser,\n\n1.Open your favorite browser (here we will use Google Chrome).\n\n2.Open the developer tools by right clicking on an empty area and select Inspect. Shortcut: F12."
         android:textSize="12sp" />
 
@@ -73,7 +73,7 @@
         android:layout_width="450dp"
         android:layout_height="200dp"
         android:layout_below="@+id/textView339"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         app:srcCompat="@drawable/js_1" />
 
     <TextView

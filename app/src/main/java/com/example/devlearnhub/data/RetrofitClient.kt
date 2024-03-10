@@ -10,7 +10,7 @@ object RetrofitClient {
     fun getClient(baseUrl: String): Retrofit {
         if (retrofit == null) {
             retrofit = Retrofit.Builder()
-                .baseUrl(baseUrl)
+                .baseUrl("https://devlearn-com.preview-domain.com/public/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
