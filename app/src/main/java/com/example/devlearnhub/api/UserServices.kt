@@ -11,6 +11,6 @@ interface UserServices {
     @GET("users")
     fun getData(): Call<ApiResponse>
 
-    @POST
+    @POST("users")
     fun registerUser(@Body request: RegistrationRequest): Call<ApiResponse>
 }
