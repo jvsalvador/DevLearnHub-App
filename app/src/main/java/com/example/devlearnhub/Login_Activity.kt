@@ -1,5 +1,6 @@
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.devlearnhub.Choices_Activity
@@ -61,12 +62,14 @@ class Login_Activity : AppCompatActivity() {
                     val intent = Intent(this@Login_Activity, Choices_Activity::class.java)
                     startActivity(intent)
                     finish()
+                    Log.d(TAG, "Login successful")
                 }else{
                     Toast.makeText(
                         this@Login_Activity,
                         "Sign-in failed: ${response.code()}",
                         Toast.LENGTH_SHORT
                     ).show()
+                    Log.e(TAG, "Login failed: ${response.code()}")
                 }
             }
 
