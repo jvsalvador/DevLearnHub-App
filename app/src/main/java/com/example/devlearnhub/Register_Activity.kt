@@ -3,23 +3,15 @@ package com.example.devlearnhub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.example.devlearnhub.api.UserServices
-import com.example.devlearnhub.data.ApiResponse
+import android.widget.Toast
 import com.example.devlearnhub.data.DatabaseHelper
-import com.example.devlearnhub.data.RegistrationRequest
+import com.example.devlearnhub.data.Users
+import com.example.devlearnhub.data.ValidationUtils
 import com.example.devlearnhub.databinding.LayoutRegisterActivityBinding
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class Register_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutRegisterActivityBinding
     private lateinit var db: DatabaseHelper
-    private val BASE_URL = "https://campushive-com.preview-domain.com/public/api/"
-    private val TAG = "Register-Response"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = LayoutRegisterActivityBinding.inflate(layoutInflater)
@@ -27,57 +19,37 @@ class Register_Activity : AppCompatActivity() {
 
         db = DatabaseHelper(this)
         binding.btRegisterCreateAccount.setOnClickListener {
-            val firstname = binding.etRegisterFirstname.text.toString().trim()
-            val lastname = binding.etRegisterLastName.text.toString().trim()
-            val email = binding.etRegisterEmail.text.toString().trim()
-            val password = binding.etRegisterPassword.text.toString().trim()
-            val confirmPassword = binding.etRegisterConfirm.text.toString().trim()
-
-            if (firstname.isNotEmpty() && lastname.isNotEmpty() && email.isNotEmpty() &&
-                password.isNotEmpty() && confirmPassword.isNotEmpty()
-            ) {
-                if (password == confirmPassword) {
-                    registerUser(firstname, lastname, email, password)
-                } else {
-                    // Display an error message if passwords do not match
-                    Log.e(TAG, "Passwords do not match")
-                }
-            } else {
-                // Display an error message if any field is empty
-                Log.e(TAG, "All fields are required")
-            }
+            registerUser()
         }
 
         binding.tvRegisterLogin.setOnClickListener {
-            startActivity(Intent(this, Login_Activity::class.java))
+            startActivity(Intent(this,Login_Activity::class.java))
         }
     }
 
-    private fun registerUser(name: String, email: String, phone: String, password: String) {
-        val api = Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(UserServices::class.java)
+    private fun registerUser()  {
+        val firstname = binding.etRegisterFirstname.text.toString()
+        val lastname = binding.etRegisterLastName.text.toString()
+        val email = binding.etRegisterEmail.text.toString()
+        val password = binding.etRegisterPassword.text.toString()
+        val confirm = binding.etRegisterConfirm.text.toString()
 
-        val request = RegistrationRequest(name, email, phone, password)
-
-        api.registerUser(request).enqueue(object : Callback<ApiResponse> {
-            override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
-                if (response.isSuccessful) {
-                    // Registration successful, handle response accordingly
-                    // For example, navigate to the login screen
-                    Log.d(TAG, "Registration successful")
-                } else {
-                    // Registration failed, handle response accordingly
-                    Log.e(TAG, "Registration failed: ${response.code()}")
-                }
+        if (ValidationUtils.isTextNotEmpty(firstname) &&
+            ValidationUtils.isTextNotEmpty(lastname) &&
+            ValidationUtils.isTextNotFill(email) &&
+            ValidationUtils.isTextNotEmpty(password) &&
+            ValidationUtils.isTextNotEmpty(confirm)
+        ) {
+            if (ValidationUtils.isValidEmail(email)) {
+                val user = Users(firstname = firstname, lastname = lastname, email = email.trim(), password = password, confirm = confirm)
+                db.registerUser(user)
+                Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Invalid email format", Toast.LENGTH_SHORT).show()
             }
-
-            override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
-                // Handle failure to connect to the server
-                Log.e(TAG, "Registration failed: ${t.message}", t)
-            }
-        })
+        } else {
+            Toast.makeText(this, "Please input all field", Toast.LENGTH_SHORT).show()
+        }
     }
+
 }

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Html_Module3_2">
+
+    <TextView
+        android:id="@+id/textView317"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="HTML Head"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView318"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView317"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The &lt;head> section contains information about the HTML document like meta, links, styles, scripts, titles, etc."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView319"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView318"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n      &lt;head>\n              &lt;title>HTML  Head Article&lt;/title> \n      &lt;/head>\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView320"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView319"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The contents of the HTML head are not displayed in the browser when the document is loaded."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView655"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView320"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Elements of &lt;head> Tag"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView656"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView655"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The HTML &lt;head> tag can contain the following tags:\n\nHTML &lt;title> tag \nHTML&lt;meta> tag \nHTML&lt;link> tag \nHTML&lt;style> tag \nHTML&lt;script> tag \nHTML&lt;base> tag"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/html_tap_to_next9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

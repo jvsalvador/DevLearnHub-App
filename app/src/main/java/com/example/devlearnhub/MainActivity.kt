@@ -62,7 +62,6 @@ class MainActivity : AppCompatActivity() {
                             myStringBuilder.append("First Name: ${user.firstname}\n")
                             myStringBuilder.append("Last Name: ${user.lastname}\n")
                             myStringBuilder.append("Email: ${user.email}\n")
-                            myStringBuilder.append("\n") // Add a separator between users
                         }
 
                     }

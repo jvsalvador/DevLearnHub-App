@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Html_Module3_3">
+
+    <TextView
+        android:id="@+id/textView657"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="HTML Favicon"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView658"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView657"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A Favicon is a small image displayed on the left of the page title in the browser tab.  \n\nHere, the small image before the title of the webpage is the favicon." />
+
+    <TextView
+        android:id="@+id/textView659"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView658"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Add Favicon" />
+
+    <TextView
+        android:id="@+id/textView660"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView659"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="We use the HTML &lt;link> tag to attach a favicon to the document. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView661"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView660"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n          &lt;link rel=&quot;shortcut icon&quot; href=&quot;/images/favicon.ico&quot;>\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView662"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView661"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Let us look at how this would look on a real site. For example, programiz.com might have something like this in their code,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView663"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView662"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n          &lt;head>\n                 &lt;title>Programiz: Learn to Code for Free!&lt;/title> \n                 &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;>\n         &lt;/head>\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView664"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView663"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here the favicon.png is being displayed from the &lt;link> tag in the program site where:\n\nrel - defines the type of document linked, i.e. a shortcut icon\n\nhref - defines the URL for the icon"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/html_tap_to_next10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

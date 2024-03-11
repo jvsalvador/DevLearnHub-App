@@ -14,7 +14,6 @@ import com.example.devlearnhub.menu_nav.About_Us_Activity
 import com.example.devlearnhub.menu_nav.Contact_Us_Activity
 import com.example.devlearnhub.module_activity.Kotlin_Activity
 import com.example.devlearnhub.module_activity.Mysql_Activity
-import com.example.devlearnhub.module_activity.Php_Activity
 import com.google.android.material.navigation.NavigationView
 
 class Sophomore_Activity : AppCompatActivity() {
@@ -36,12 +35,7 @@ class Sophomore_Activity : AppCompatActivity() {
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
-        binding.btnLearn4.setOnClickListener {
-            val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Php_Activity::class.java)
-            intent.putExtra("user_email", email)
-            startActivity(intent)
-        }
+
 
 
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
