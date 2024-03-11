@@ -1,35 +1,52 @@
 package com.example.devlearnhub
 
+import Login_Activity
 import android.content.Intent
-import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.devlearnhub.data.ApiService
+import android.os.Bundle
+import android.util.Log
+import com.example.devlearnhub.api.UserServices
+import com.example.devlearnhub.data.ApiResponse
 import com.example.devlearnhub.data.DatabaseHelper
 import com.example.devlearnhub.data.RegistrationRequest
-import com.example.devlearnhub.data.RegistrationResponse
-import com.example.devlearnhub.data.ValidationUtils
 import com.example.devlearnhub.databinding.LayoutRegisterActivityBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class Register_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutRegisterActivityBinding
     private lateinit var db: DatabaseHelper
-    private lateinit var apiService: ApiService
-    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/"
-
+    private val BASE_URL = "https://campushive-com.preview-domain.com/public/api/"
+    private val TAG = "Register-Response"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = LayoutRegisterActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Initialize Retrofit API Service
-        apiService = RetrofitClient.getClient(BASE_URL).create(ApiService::class.java)
-
+        db = DatabaseHelper(this)
         binding.btRegisterCreateAccount.setOnClickListener {
-            registerUser()
+            val firstname = binding.etRegisterFirstname.text.toString().trim()
+            val lastname = binding.etRegisterLastName.text.toString().trim()
+            val email = binding.etRegisterEmail.text.toString().trim()
+            val password = binding.etRegisterPassword.text.toString().trim()
+            val confirmPassword = binding.etRegisterConfirm.text.toString().trim()
+
+            if (firstname.isNotEmpty() && lastname.isNotEmpty() && email.isNotEmpty() &&
+                password.isNotEmpty() && confirmPassword.isNotEmpty()
+            ) {
+                if (password == confirmPassword) {
+                    registerUser(firstname, lastname, email, password)
+                } else {
+                    // Display an error message if passwords do not match
+                    Log.e(TAG, "Passwords do not match")
+                }
+            } else {
+                // Display an error message if any field is empty
+                Log.e(TAG, "All fields are required")
+            }
         }
 
         binding.tvRegisterLogin.setOnClickListener {
@@ -37,53 +54,31 @@ class Register_Activity : AppCompatActivity() {
         }
     }
 
-    private fun registerUser() {
-        val firstname = binding.etRegisterFirstname.text.toString()
-        val lastname = binding.etRegisterLastName.text.toString()
-        val email = binding.etRegisterEmail.text.toString()
-        val password = binding.etRegisterPassword.text.toString()
-        val confirmString = binding.etRegisterConfirm.text.toString()
+    private fun registerUser(name: String, email: String, phone: String, password: String) {
+        val api = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(UserServices::class.java)
 
-        if (ValidationUtils.isTextNotEmpty(firstname) &&
-            ValidationUtils.isTextNotEmpty(lastname) &&
-            ValidationUtils.isTextNotEmpty(email) &&
-            ValidationUtils.isTextNotEmpty(password) &&
-            ValidationUtils.isTextNotEmpty(confirmString)
-        ) {
-            if (ValidationUtils.isValidEmail(email)) {
-                if (password == confirmString) {
+        val request = RegistrationRequest(name, email, phone, password)
 
-                    val registrationRequest = RegistrationRequest(firstname, lastname, email, password)
-
-
-                    val registrationCall = apiService.registerUser(registrationRequest)
-                    registrationCall.enqueue(object : Callback<RegistrationResponse> {
-                        override fun onResponse(call: Call<RegistrationResponse>, response: Response<RegistrationResponse>) {
-                            if (response.isSuccessful) {
-                                val registrationResponse = response.body()
-
-                                Toast.makeText(this@Register_Activity, "User Registered", Toast.LENGTH_SHORT).show()
-                                startActivity(Intent(this@Register_Activity, Login_Activity::class.java))
-                                finish()
-                            } else {
-
-                                Toast.makeText(this@Register_Activity, "Registration failed", Toast.LENGTH_SHORT).show()
-                            }
-                        }
-
-                        override fun onFailure(call: Call<RegistrationResponse>, t: Throwable) {
-
-                            Toast.makeText(this@Register_Activity, "Registration failed: ${t.message}", Toast.LENGTH_SHORT).show()
-                        }
-                    })
+        api.registerUser(request).enqueue(object : Callback<ApiResponse> {
+            override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
+                if (response.isSuccessful) {
+                    // Registration successful, handle response accordingly
+                    // For example, navigate to the login screen
+                    Log.d(TAG, "Registration successful")
                 } else {
-                    Toast.makeText(this, "Password and confirm password do not match", Toast.LENGTH_SHORT).show()
+                    // Registration failed, handle response accordingly
+                    Log.e(TAG, "Registration failed: ${response.code()}")
                 }
-            } else {
-                Toast.makeText(this, "Invalid email format", Toast.LENGTH_SHORT).show()
             }
-        } else {
-            Toast.makeText(this, "Please input all fields", Toast.LENGTH_SHORT).show()
-        }
+
+            override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
+                // Handle failure to connect to the server
+                Log.e(TAG, "Registration failed: ${t.message}", t)
+            }
+        })
     }
 }

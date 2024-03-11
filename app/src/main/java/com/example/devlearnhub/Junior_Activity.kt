@@ -1,6 +1,7 @@
 package com.example.devlearnhub
 
-import com.example.devlearnhub.Login_Activity
+
+import Login_Activity
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -14,9 +15,6 @@ import com.example.devlearnhub.menu_nav.About_Us_Activity
 import com.example.devlearnhub.menu_nav.Contact_Us_Activity
 import com.example.devlearnhub.module_activity.Csharp_Activity
 import com.example.devlearnhub.module_activity.Javascript_Activity
-import com.example.devlearnhub.module_activity.Kotlin_Activity
-import com.example.devlearnhub.module_activity.Mysql_Activity
-import com.example.devlearnhub.module_activity.Php_Activity
 import com.example.devlearnhub.module_activity.Swift_Activity
 import com.google.android.material.navigation.NavigationView
 
@@ -64,7 +62,7 @@ class Junior_Activity : AppCompatActivity() {
                     if (intent.resolveActivity(packageManager) != null){
                         startActivity(intent)
                     }else{
-
+                        //
                     }
                     true
                 }
