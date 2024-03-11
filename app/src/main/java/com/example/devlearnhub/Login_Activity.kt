@@ -1,10 +1,9 @@
+package com.example.devlearnhub
+
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.devlearnhub.Choices_Activity
-import com.example.devlearnhub.Register_Activity
 import com.example.devlearnhub.api.AuthService
 import com.example.devlearnhub.data.LoginRequest
 import com.example.devlearnhub.data.ApiResponse
@@ -23,7 +22,6 @@ class Login_Activity : AppCompatActivity() {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(AuthService::class.java)
-    private val TAG:String = "Login-Response"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,9 +42,9 @@ class Login_Activity : AppCompatActivity() {
             val email = binding.etLoginNumberOrEmail.text.toString().trim()
             val password = binding.etLoginPassword.text.toString().trim()
 
-            if (email.isNotEmpty() && password.isNotEmpty()){
+            if (email.isNotEmpty() && password.isNotEmpty()) {
                 loginUser(email, password)
-            }else {
+            } else {
                 Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
             }
         }
@@ -56,20 +54,18 @@ class Login_Activity : AppCompatActivity() {
 
     private fun loginUser(email: String, password: String) {
         val request = LoginRequest(email, password)
-        authService.login(request).enqueue(object : Callback<ApiResponse>{
+        authService.login(request).enqueue(object : Callback<ApiResponse> {
             override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
-                if (response.isSuccessful){
+                if (response.isSuccessful) {
                     val intent = Intent(this@Login_Activity, Choices_Activity::class.java)
                     startActivity(intent)
                     finish()
-                    Log.d(TAG, "Login successful")
-                }else{
+                } else {
                     Toast.makeText(
                         this@Login_Activity,
                         "Sign-in failed: ${response.code()}",
                         Toast.LENGTH_SHORT
                     ).show()
-                    Log.e(TAG, "Login failed: ${response.code()}")
                 }
             }
 
@@ -83,3 +79,7 @@ class Login_Activity : AppCompatActivity() {
         })
     }
 }
+
+
+
+
