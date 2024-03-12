@@ -216,9 +216,6 @@
             android:name=".module_activity.Cplus_Activity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Php_Activity"
-            android:exported="false" />
-        <activity
             android:name=".module_activity.Mysql_Activity"
             android:exported="false" />
         <activity
@@ -241,9 +238,6 @@
             android:exported="false" />
         <activity
             android:name=".module.Html_Module3_1"
-            android:exported="false" />
-        <activity
-            android:name=".module.Html_Module4_1"
             android:exported="false" />
         <activity
             android:name=".module.Java_Module6_6"
