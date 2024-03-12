@@ -2,97 +2,76 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Swift_Module1_3">
+    tools:context=".module.Swift_Module2_3">
 
     <TextView
-        android:id="@+id/textView644"
+        android:id="@+id/textView672"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Swift Data Types"
+        android:text="Swift for-in Loop"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView645"
+        android:id="@+id/textView673"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView644"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="In computer programming, data types specify the type of data that can be stored inside a variable. For example,"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView646"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView645"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@color/black"
-        android:text="\n    var num: Int\n"
-        android:textColor="@color/white"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView647"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView646"
+        android:layout_below="@+id/textView672"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, Int is a data type that specifies that the num variable can only store integer data.  There are six basic types of data types in Swift programming."
+        android:text="In computer programming, loops are used to repeat a block of code.\n\nFor example, if we want to show a message 100 times, then we can use a loop. It's just a simple example; you can achieve much more with loops.\n\nThere are 3 types of loops in Swift:\n\n1.for in loop\n2.while loop\n3.repeat...while loop"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView648"
+        android:id="@+id/textView674"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView647"
+        android:layout_below="@+id/textView673"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Swift Character"
+        android:text="Swift for-in Loop"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView649"
+        android:id="@+id/textView675"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView648"
+        android:layout_below="@+id/textView674"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The character data type is used to represent a single-character string. We use the Character keyword to create character-type variables. For example,"
+        android:text="In Swift, the for-in loop is used to run a block of code for a certain number of times. It is used to iterate over any sequences such as an array, range, string, etc.\n\nThe syntax of the for-in loop is:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView650"
+        android:id="@+id/textView676"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView649"
+        android:layout_below="@+id/textView675"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    // create character type variable\n    var letter: Character =\n\n    print(letter)\n\n    // Output: s\n"
+        android:text="\n    for val in sequence{\n        // statements\n    }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView651"
+        android:id="@+id/textView677"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView650"
+        android:layout_below="@+id/textView676"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In the above example, we have created a Character type variable named letter. Here, we have assigned &quot;s&quot; to the letter."
+        android:text="Here, val accesses each item of sequence on each iteration. Loop continues until we reach the last item in the sequence."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/swift_tap_to_next6"
+        android:id="@+id/swift_tap_to_next10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

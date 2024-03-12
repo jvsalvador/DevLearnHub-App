@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,4 +7,109 @@
     android:layout_height="match_parent"
     tools:context=".module.Swift_Module1_5">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <TextView
+      android:id="@+id/textView654"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_bold"
+      android:text="Swift Basic Input and Output"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/textView660"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView654"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_bold"
+      android:text="Swift Output"
+      android:textSize="16sp" />
+
+  <TextView
+      android:id="@+id/textView661"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView660"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:text="In Swift, we can simply use the print() function to print output. For example,"
+      android:textSize="12sp" />
+
+  <TextView
+      android:id="@+id/textView662"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView661"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/black"
+      android:text="\n  print(&quot;Swift is powerful&quot;)\n\n  // Output: Swift is powerful\n"
+      android:textColor="@color/white"
+      android:textSize="12sp" />
+
+  <TextView
+      android:id="@+id/textView663"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView662"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:text="Here, the print() function displays the string enclosed inside the double quotation."
+      android:textSize="12sp" />
+
+  <TextView
+      android:id="@+id/textView664"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView663"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_bold"
+      android:text="Syntax of print()"
+      android:textSize="12sp" />
+
+  <TextView
+      android:id="@+id/textView665"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView664"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="10dp"
+      android:text="In the above code, the print() function is taking a single parameter.  However, the actual syntax of the print function accepts 3 parameters"
+      android:textSize="12sp" />
+
+  <TextView
+      android:id="@+id/textView666"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView665"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:background="@color/black"
+      android:text="\n  print(items: separator: terminator:)\n"
+      android:textColor="@color/white"
+      android:textSize="12sp" />
+
+  <TextView
+      android:id="@+id/swift_tap_to_next8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView666"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:text="  Here,\n\n •items - values inside the double quotation\n •separator (optional) - allows us to separate multiple items inside print().\n •terminator (optional) - allows us to add add specific values like new line,"
+      android:textSize="12sp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="30dp"
+      android:text="All Done!"
+      android:textSize="16sp" />
+</RelativeLayout>

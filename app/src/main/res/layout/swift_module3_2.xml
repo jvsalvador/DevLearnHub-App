@@ -2,103 +2,105 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Swift_Module1_3">
+    tools:context=".module.Swift_Module3_2">
 
     <TextView
-        android:id="@+id/textView644"
+        android:id="@+id/textView685"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Swift Data Types"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView645"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView644"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="In computer programming, data types specify the type of data that can be stored inside a variable. For example,"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView646"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView645"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@color/black"
-        android:text="\n    var num: Int\n"
-        android:textColor="@color/white"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView647"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView646"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="Here, Int is a data type that specifies that the num variable can only store integer data.  There are six basic types of data types in Swift programming."
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView648"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView647"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Swift Character"
+        android:text="Swift Function Parameters and Return Values"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView649"
+        android:id="@+id/textView686"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView648"
-        android:layout_marginStart="15dp"
+        android:layout_below="@+id/textView685"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="The character data type is used to represent a single-character string. We use the Character keyword to create character-type variables. For example,"
+        android:text="A function parameter is a value that is accepted by a function.  Before you learn about function parameters and return values, make sure to know about Swift functions.  Let's see an example,"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView650"
+        android:id="@+id/textView687"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView649"
+        android:layout_below="@+id/textView686"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    // create character type variable\n    var letter: Character =\n\n    print(letter)\n\n    // Output: s\n"
+        android:text="\n    func addNumbers(a: Int, b: Int) {\n       var sum = a + b\n       print(&quot;Sum:&quot;, sum)\n    }\n      addNumbers(a: 2, b: 3)\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView651"
+        android:id="@+id/textView688"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView650"
+        android:layout_below="@+id/textView687"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In the above example, we have created a Character type variable named letter. Here, we have assigned &quot;s&quot; to the letter."
+        android:fontFamily="@font/poppins_bold"
+        android:text="Output"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView689"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView688"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    Sum: 5\n"
+        android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/swift_tap_to_next6"
+        android:id="@+id/textView690"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView689"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In the above example, the function addNumbers() takes two parameters: a and b. Notice the line,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView691"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView690"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    addNumbers(a: 2, b: 3)\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView692"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView691"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, a: 2, b: 3 specifies that parameters a and b will get values 2 and 3 respectively."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Tap to continue"
-        android:textSize="16sp" />
+        android:text="Tap to continue" />
+    ="Here, a: 2, b: 3 specifies that parameters a and b will get values 2 and 3 respectively." />
 </RelativeLayout>

@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.Swift_Module1_4">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView643"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift Characters and Strings"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView652"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView643"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift Character"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView653"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView652"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="\nCharacter is a data type that represents a single-character string (&quot;a&quot;, &quot;@&quot;, &quot;5&quot;, etc).\nWe use the Character keyword to create character-type variables in Swift. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView655"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView653"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@color/black"
+        android:text="\n  var letter: Character\n "
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView656"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView655"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the letter variable can only store single-character data.  "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView657"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView656"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Character Example"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView658"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView657"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n   // create character variable\n   var letter: Character = &quot;H&quot;\n   print(letter)  // H\n\n  var symbol: Character = &quot;@&quot;\n  print(symbol)  // @\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView659"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView658"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In the above example, we have created two character variables: letter and symbol. Here, we have assigned &quot;H&quot; to letter and &quot;@&quot; to symbol.\"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+</RelativeLayout>

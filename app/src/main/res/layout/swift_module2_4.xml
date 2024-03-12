@@ -2,97 +2,88 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Swift_Module1_3">
+    tools:context=".module.Swift_Module2_4">
 
     <TextView
-        android:id="@+id/textView644"
+        android:id="@+id/textView678"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Swift Data Types"
+        android:text="Nested Loops in Swift"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView645"
+        android:id="@+id/textView679"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView644"
-        android:layout_marginStart="10dp"
+        android:layout_below="@+id/textView678"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In computer programming, data types specify the type of data that can be stored inside a variable. For example,"
+        android:text="If a loop exists inside the body of another loop, it's called a nested loop. Here's an example of the nested for loop."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView646"
+        android:id="@+id/textView680"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView645"
+        android:layout_below="@+id/textView679"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    var num: Int\n"
+        android:text="\n    // outer loop\n    for i in 1...5 {\n         // codes\n\n    // inner loop\n    for j in 1...2 {\n       //codes\n      }\n  }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView647"
+        android:id="@+id/textView681"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView646"
+        android:layout_below="@+id/textView680"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, Int is a data type that specifies that the num variable can only store integer data.  There are six basic types of data types in Swift programming."
+        android:text="Here, the inner for loop for j in 1...2 is nested inside the outer for loop for i in 1...5."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView648"
+        android:id="@+id/textView682"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView647"
+        android:layout_below="@+id/textView681"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Swift Character"
+        android:text="Swift Nested for Loop"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView649"
+        android:id="@+id/textView683"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView648"
+        android:layout_below="@+id/textView682"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The character data type is used to represent a single-character string. We use the Character keyword to create character-type variables. For example,"
+        android:text="A nested for loop includes one for loop inside another for loop. For example"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView650"
+        android:id="@+id/textView684"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView649"
+        android:layout_below="@+id/textView683"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    // create character type variable\n    var letter: Character =\n\n    print(letter)\n\n    // Output: s\n"
+        android:text="\n    // Swift program to display 7 days of 2 weeks\n\n   // outer loop for week in 1...2 {   print(&quot;Week: \(week)&quot;)\n\n    // inner loop \n        for day in 1...7 {\n            print(&quot;  Day:  \(day)&quot;)\n         }\n    // line break after iteration of outer loop\n        print(&quot;&quot;)\n    }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView651"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView650"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="In the above example, we have created a Character type variable named letter. Here, we have assigned &quot;s&quot; to the letter."
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/swift_tap_to_next6"
+        android:id="@+id/swift_tap_to_next11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

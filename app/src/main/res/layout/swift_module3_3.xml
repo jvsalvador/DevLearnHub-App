@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Swift_Module3_3">
+
+    <TextView
+        android:id="@+id/textView693"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift Recursion"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="11dp" />
+
+    <TextView
+        android:id="@+id/textView694"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView693"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A function that calls itself is known as a recursive function. And, this technique is known as recursion.\n\nA physical world example would be to place two parallel mirrors facing each other. Any object in between them would be reflected recursively."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView696"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView694"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Working of Recursion in Swift"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView697"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView696"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    func recurse() {\n          ... ...\n       recurse()   ...  ...\n    }\n    recurse(\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView698"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView697"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the recurse() function is calling itself over and over again. The figure below shows how recursion works."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView699"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView698"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Stopping Condition for Recursion\n\nIf we don't mention any condition to break the recursive call, the function will keep calling itself infinitely.\n\nWe use the if...else statement (or similar approach) to break the recursion.\n\nNormally, a recursive function has two branches:\n\nOne for recursive calls.\n\nAnother for breaking the call under certain conditions."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+
+</RelativeLayout>

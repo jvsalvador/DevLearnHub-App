@@ -2,97 +2,97 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Swift_Module1_3">
+    tools:context=".module.Swift_Module4_2">
 
     <TextView
-        android:id="@+id/textView644"
+        android:id="@+id/textView695"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Swift Data Types"
+        android:text="Swift Properties"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView645"
+        android:id="@+id/textView700"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView644"
-        android:layout_marginStart="10dp"
+        android:layout_below="@+id/textView695"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In computer programming, data types specify the type of data that can be stored inside a variable. For example,"
-        android:textSize="12sp" />
+        android:text="A Swift variable or constant defined inside a class or struct are called properties. For example" />
 
     <TextView
-        android:id="@+id/textView646"
+        android:id="@+id/textView701"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView645"
+        android:layout_below="@+id/textView700"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    var num: Int\n"
+        android:text="\n    class Person {\n\n          // define properties\n          var name: String = &quot;&quot;\n           var age: Int = 0 \n            ...\n      }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView647"
+        android:id="@+id/textView702"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView646"
+        android:layout_below="@+id/textView701"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, Int is a data type that specifies that the num variable can only store integer data.  There are six basic types of data types in Swift programming."
+        android:text="Here, inside the Person class we have defined two properties:\n\nname - of String type with default value &quot;&quot;\n\nage - of Int type with default value 0\n\nBefore you learn about properties, make sure you know the working of class and struct in Swift."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView648"
+        android:id="@+id/textView703"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView647"
+        android:layout_below="@+id/textView702"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Swift Character"
+        android:text="Swift Static Properties"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView649"
+        android:id="@+id/textView704"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView648"
+        android:layout_below="@+id/textView703"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="The character data type is used to represent a single-character string. We use the Character keyword to create character-type variables. For example,"
+        android:text="In the previous example, we have used objects of the class to access its properties. However, we can also create properties that can be accessed and modified without creating objects."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView650"
+        android:id="@+id/textView705"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView649"
+        android:layout_below="@+id/textView704"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    // create character type variable\n    var letter: Character =\n\n    print(letter)\n\n    // Output: s\n"
+        android:text="\n    class University {\n\n       // static property \n      static var name: String = &quot;&quot;\n        ...\n   }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView651"
+        android:id="@+id/textView706"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView650"
+        android:layout_below="@+id/textView705"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In the above example, we have created a Character type variable named letter. Here, we have assigned &quot;s&quot; to the letter."
+        android:text="Here, name is the static property. Now to access and modify the value of a static property, we use the class name."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/swift_tap_to_next6"
+        android:id="@+id/swift_tap_to_next15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

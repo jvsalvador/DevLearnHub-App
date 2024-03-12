@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Swift_Module4_3">
+
+    <TextView
+        android:id="@+id/textView707"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift Inheritance"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView708"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView707"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Like other OOP languages, Swift also supports the concept of class inheritance.  Inheritance allows us to create a new class from an existing class.  The new class that is created is known as subclass (child or derived class) and the existing class from which the child class is derived is known as superclass (parent or base class)."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView709"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView708"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift Inheritance Syntax"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView710"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView709"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In Swift, we use the colon : to inherit a class from another class. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView711"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView710"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    // define a superclass\n    class Animal {\n        // properties and methods definition\n    }\n\n    // inheritance\n    class Dog: Animal {\n\n        // properties and methods of Animal\n       // properties and methods of Dog\n    }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView712"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView711"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, we are inheriting the Dog subclass from the Animal superclass."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

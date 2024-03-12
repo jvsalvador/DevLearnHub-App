@@ -91,6 +91,29 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="TextView" />
+        android:text="\n    var siteName:String\n    var id: Int\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView642"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView335"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here,\n\n•siteName is a variable of type String. Meaning, it can only store textual values.\n\n•id is a variable of Int type. Meaning, it can only store integer values."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
 
 </RelativeLayout>

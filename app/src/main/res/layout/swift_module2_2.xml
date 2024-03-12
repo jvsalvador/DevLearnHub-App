@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Swift_Module2_2">
+
+    <TextView
+        android:id="@+id/textView667"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Swift switch Statement"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <TextView
+        android:id="@+id/textView668"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView667"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The switch statement allows us to execute a block of code among many alternatives.\n\nThe syntax of the switch statement in Swift is:  "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView669"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView668"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    switch (expression)  {   \n         case value1:\n             // statements\n\n         case value2:\n             // statements\n    \n          ...\n          ...\n          default:\n               // statements \n    }"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView670"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView669"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\n   The switch statement evaluates an expression inside parentheses ().\n\n   1. If the result of the expression is equal to value1, statements of the case value1: are executed.\n    2. If the result of the expression is equal to value2, statements of the case value2: are executed.\n    3. If there is no match, statements of the default case are executed.\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView671"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView670"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="\nNote: We can do the same thing with the if...else...if ladder. However, the syntax of the switch statement is cleaner and much easier to read and write. \n "
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/swift_tap_to_next9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>
