@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Html_Module2_2">
+
+    <TextView
+        android:id="@+id/textView642"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="HTML Paragraphs"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView643"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView642"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The HTML &lt;p> tag is used to create paragraphs. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView644"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView643"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    &lt;p>HTML is fun to learn.&lt;/p>\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView645"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView644"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="HTML paragraphs always start on a new line. To demonstrate this, let's create a webpage with two paragraphs."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView646"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView645"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    &lt;p>Paragraph 1: Short Paragraph&lt;/p>\n\n    &lt;p>Paragraph 2: Long Paragraph, this is a long paragraph with more text to fill an entire line in the website.&lt;/p>"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView647"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView646"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Adding Line Breaks in Paragraphs"
+        android:textSize="16sp"
+        tools:layout_margin="15dp" />
+
+    <TextView
+        android:id="@+id/textView648"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView647"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="We can use the HTML line break tag, &lt;br>, to add line breaks within our paragraphs. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView649"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView648"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    &lt;p>We can use the &lt;br> HTML br tag &lt;br> to add a line break.&lt;/p>\n  "
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/html_tap_to_next7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

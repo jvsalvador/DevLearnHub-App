@@ -1,13 +1,14 @@
 package com.example.devlearnhub
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.example.devlearnhub.data.ApiService
+import com.example.devlearnhub.api.AuthService
+import com.example.devlearnhub.data.ApiResponse
 import com.example.devlearnhub.data.DatabaseHelper
 import com.example.devlearnhub.data.LoginRequest
-import com.example.devlearnhub.data.LoginResponse
+import com.example.devlearnhub.data.RetrofitInstance
 import com.example.devlearnhub.data.ValidationUtils
 import com.example.devlearnhub.databinding.LayoutLoginActivityBinding
 import retrofit2.Call
@@ -16,17 +17,14 @@ import retrofit2.Response
 
 class Login_Activity : AppCompatActivity() {
     private lateinit var binding: LayoutLoginActivityBinding
-    private lateinit var db: DatabaseHelper
-    private lateinit var apiService: ApiService
-    private val BASE_URL = "https://devlearn-com.preview-domain.com/public/"
+    private lateinit var authService: AuthService
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = LayoutLoginActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Initialize Retrofit API Service
-        apiService = RetrofitClient.getClient(BASE_URL).create(ApiService::class.java)
+        authService = RetrofitInstance.getRetrofitInstance().create(AuthService::class.java)
 
         binding.tvLoginSignUp.setOnClickListener {
             startActivity(Intent(this, Register_Activity::class.java))
@@ -39,6 +37,7 @@ class Login_Activity : AppCompatActivity() {
         binding.tvLearnGuest.setOnClickListener {
             startActivity(Intent(this, Choices_Activity::class.java))
         }
+
     }
 
     private fun loginUser() {
@@ -47,28 +46,25 @@ class Login_Activity : AppCompatActivity() {
 
         if (ValidationUtils.isTextNotEmpty(email) && ValidationUtils.isTextNotEmpty(password)) {
             if (ValidationUtils.isValidEmail(email)) {
-
                 val loginRequest = LoginRequest(email, password)
-
-
-                val call = apiService.loginUser(loginRequest)
-                call.enqueue(object : Callback<LoginResponse> {
-                    override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+                val call = authService.login(loginRequest)
+                call.enqueue(object : Callback<ApiResponse> {
+                    override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
                         if (response.isSuccessful) {
-                            val loginResponse = response.body()
-                            val intent = Intent(this@Login_Activity, Choices_Activity::class.java)
-                            intent.putExtra("user_email", email)
-                            startActivity(intent)
-                            finish()
+                            val apiResponse = response.body()
+                            if (apiResponse != null) {
+                                startActivity(Intent(this@Login_Activity, Choices_Activity::class.java))
+                                finish()
+                            } else {
+                                Toast.makeText(this@Login_Activity, "Invalid email or password", Toast.LENGTH_SHORT).show()
+                            }
                         } else {
-                            // Handle unsuccessful login
-                            Toast.makeText(this@Login_Activity, "Invalid email or password", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@Login_Activity, "Error: ${response.code()}", Toast.LENGTH_SHORT).show()
                         }
                     }
 
-                    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-
-                        Toast.makeText(this@Login_Activity, "Login failed: ${t.message}", Toast.LENGTH_SHORT).show()
+                    override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
+                        Toast.makeText(this@Login_Activity, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
                     }
                 })
             } else {

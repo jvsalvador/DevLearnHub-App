@@ -19,5 +19,13 @@ class Html_Module2_1 : AppCompatActivity() {
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
+
+        binding.htmlTapToNext4.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Html_Module2_2::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+
     }
 }

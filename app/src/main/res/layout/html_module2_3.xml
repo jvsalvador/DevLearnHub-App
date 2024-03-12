@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Html_Module2_3">
+
+    <TextView
+        android:id="@+id/textView650"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" HTML Headings"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView651"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView650"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The HTML heading tags (&lt;h1> to &lt;h6>) are used to add headings to a webpage. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView652"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView651"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    &lt;h1>This is heading 1.&lt;/h1>\n    &lt;h2>This is heading 2.&lt;/h2>\n    &lt;h3>This is heading 3.&lt;/h3>\n    &lt;h4>This is heading 4.&lt;/h4>\n    &lt;h5>This is heading 5.&lt;/h5>\n    &lt;h6>This is heading 6.&lt;/h6>\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView653"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView652"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In the example, we have used tags &lt;h1> to &lt;h6> to create headings of varying sizes and importance. \n\nThe &lt;h1> tag denotes the most important heading on a webpage. Similarly, &lt;h6> denotes the least important heading.\n\nThe difference in sizes of heading tags comes from the browser's \ndefault styling. And, you can always change the styling of heading tags, including font size, using CSS."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView654"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView653"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Note: Do not use heading tags to create large texts. It's because search engines like Google use heading tags to understand what a page is about."
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/html_tap_to_next8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

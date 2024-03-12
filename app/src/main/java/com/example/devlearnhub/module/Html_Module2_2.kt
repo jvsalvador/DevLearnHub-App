@@ -3,19 +3,20 @@ package com.example.devlearnhub.module
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.devlearnhub.databinding.HtmlModule22Binding
 import com.example.devlearnhub.module_activity.Html_Activity
-import com.example.devlearnhub.databinding.HtmlModule41Binding
 
-class Html_Module4_1 : AppCompatActivity() {
-    private lateinit var binding: HtmlModule41Binding
+class Html_Module2_2 : AppCompatActivity() {
+    private lateinit var binding: HtmlModule22Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = HtmlModule41Binding.inflate(layoutInflater)
+        binding = HtmlModule22Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBackHtml4.setOnClickListener {
+
+        binding.htmlTapToNext7.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Html_Activity::class.java)
+            val intent = Intent(this, Html_Module2_3::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }

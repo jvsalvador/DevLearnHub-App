@@ -4,12 +4,11 @@ import android.text.TextUtils
 import android.util.Patterns
 
 object ValidationUtils {
-
-    fun isTextNotEmpty(text: String):Boolean {
-        return !TextUtils.isEmpty(text.toString())
+    fun isTextNotEmpty(text: String?):Boolean {
+        return !TextUtils.isEmpty(text)
     }
 
-    fun isTextNotFill(int: Int) : Boolean {
+    fun isTextNotFill(int: String) : Boolean {
         return !TextUtils.isEmpty(int.toString())
     }
 

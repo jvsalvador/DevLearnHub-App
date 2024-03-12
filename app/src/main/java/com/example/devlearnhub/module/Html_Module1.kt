@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.R
 import com.example.devlearnhub.databinding.HtmlModule1Binding
+import com.example.devlearnhub.module_activity.Html_Activity
 
 class Html_Module1 : AppCompatActivity() {
     private lateinit var binding: HtmlModule1Binding
@@ -12,6 +13,13 @@ class Html_Module1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = HtmlModule1Binding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnBackHtml.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Html_Activity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
 
         binding.htmlTapToNext.setOnClickListener {
             val email = intent.getStringExtra("user_email")
