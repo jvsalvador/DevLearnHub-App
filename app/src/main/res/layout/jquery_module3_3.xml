@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Jquery_Module3_3">
+
+    <TextView
+        android:id="@+id/textView765"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="R Matrix"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView768"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView765"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nA matrix is a two-dimensional data structure where data are arranged into rows and columns. For example,\n"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView768"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/jquery_2" />
+
+    <TextView
+        android:id="@+id/textView772"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView38"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nHere, the above matrix is 3 * 3 (pronounced &quot;three by three&quot;) matrix because it has 3 rows and 3 columns.\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView773"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView772"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Create a Matrix in R"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView774"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView773"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nIn R, we use the matrix() function to create a matrix.  The syntax of the matrix() function is \n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView775"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView774"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    matrix(vector, nrow, ncol)\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

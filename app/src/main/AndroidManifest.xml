@@ -15,6 +15,33 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31">
         <activity
+            android:name=".module.Jquery_Module3_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module3_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module2_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module2_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module2_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module1_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module1_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module1_2"
+            android:exported="false" />
+        <activity
             android:name=".module.Mysql_Module4_4"
             android:exported="false" />
         <activity
@@ -383,10 +410,12 @@
         <activity
             android:name=".Choices_Activity"
             android:exported="false" />
-        <activity android:name="Register_Activity"
-            android:exported="false"/>
-        <activity android:name="com.example.devlearnhub.Login_Activity"
-            android:exported="false"/>
+        <activity
+            android:name=".Register_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

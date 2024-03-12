@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Jquery_Module1_4">
+
+    <TextView
+        android:id="@+id/textView733"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="R Data Types"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView734"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView733"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nA variable can store different types of values such as numbers, characters etc. These different types of data that we can use in our code are called data types. For example,\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView735"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView734"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    x <- 123L\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView736"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView735"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nHere, 123L is an integer data. So the data type of the variable x is integer.  We can verify this by printing the class of x.\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView737"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView736"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n   TextViewx <- 123L\n\n   # print value of x \n    print(x)\n\n    # print type of x\n    print(class(x))\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView738"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView737"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Output"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView739"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView738"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    [1] 123 [1] &quot;integer&quot;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView740"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView739"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nHere, x is a variable of data type integer.\n"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>
