@@ -102,5 +102,5 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue" />
-    ="Here, a: 2, b: 3 specifies that parameters a and b will get values 2 and 3 respectively." />
+
 </RelativeLayout>

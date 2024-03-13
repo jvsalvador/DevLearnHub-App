@@ -40,42 +40,6 @@ class MainActivity : AppCompatActivity() {
 
         databaseHelper = DatabaseHelper(this)
 
-        getalluser()
-    }
-
-    private fun getalluser(){
-        val api = Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(UserServices::class.java)
-
-        api.getData().enqueue(object : Callback<ApiResponse> {
-            override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
-                if (response.isSuccessful) {
-                    val apiResponse = response.body()
-                    val users = apiResponse?.data
-                    users?.let { userList ->
-                        val myStringBuilder = StringBuilder()
-                        for (user in userList) {
-                            myStringBuilder.append("ID: ${user.id}\n")
-                            myStringBuilder.append("First Name: ${user.firstname}\n")
-                            myStringBuilder.append("Last Name: ${user.lastname}\n")
-                            myStringBuilder.append("Email: ${user.email}\n")
-                        }
-
-                    }
-                } else {
-                    Log.e(TAG, "Unsuccessful response: ${response.code()}")
-                }
-            }
-
-            override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
-                Log.e(TAG, "onFailure: ${t.message}", t)
-            }
-        })
-
-
 
     }
 }

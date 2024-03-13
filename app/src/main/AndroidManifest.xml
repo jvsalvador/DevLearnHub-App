@@ -237,7 +237,19 @@
             android:name=".module.Html_Module2_1"
             android:exported="false" />
         <activity
+            android:name=".module.Html_Module2_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module2_3"
+            android:exported="false" />
+        <activity
             android:name=".module.Html_Module3_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module3_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Html_Module3_3"
             android:exported="false" />
         <activity
             android:name=".module.Java_Module6_6"
