@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Csharp_Module2_4">
+
+    <TextView
+        android:id="@+id/textView822"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# for loop"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView823"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView822"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In programming, it is often desired to execute certain block of statements for a specified number of times. A possible solution will be to type those statements for the required number of times. However, the number of repetition may not be known in advance (during compile time) or maybe large enough (say 10000).\n\nThe best solution to such problem is loop. Loops are used in programming to repeatedly execute a certain block of statements until some condition is met.\n\nIn this article, we’ll look at for loop in C#."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView824"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView823"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# for loop"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView825"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView824"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The for keyword is used to create for loop in C#. The syntax for for loop is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView826"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView825"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    for (initialization; condition; iterator)\n    {\n                  // body of for loop\n    }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView827"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView826"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="How for loop works?\n\n1.C# for loop has three statements: initialization, condition and iterator.\n2.The initialization statement is executed at first and only once. Here, the variable is usually declared and initialized.\n3.Then, the condition is evaluated. The condition is a boolean expression, i.e. it returns either true or false.\n4.If the condition is evaluated to true:\n  a.The statements inside the for loop are executed.\n  b.Then, the iterator statement is executed which usually changes the value of the initialized variable.\n  c.Again the condition is evaluated.\n  d.The process continues until the condition is evaluated to false.\n5.If the condition is evaluated to false, the for loop terminates. "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/csharp_tap_to_next9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

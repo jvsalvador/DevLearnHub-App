@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module1_4">
+
+    <TextView
+        android:id="@+id/textView860"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Type Conversion" />
+
+    <TextView
+        android:id="@+id/textView861"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView860"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In Kotlin, a numeric value of one type is not automatically converted to another type even when the other type is larger. This is different from how Java handles numeric conversions.\n\nFor example;"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView862"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView861"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int number1 = 55;\n    long number2 = number1;    // Valid code \n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView863"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView862"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, value of number1 of type int is automatically converted to type long, and assigned to variable number2.\n\nIn Kotlin,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView864"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView863"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    val number1: Int = 55\n    val number2: Long = number1   // Error: type mismatch.\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView865"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView864"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Though the size of Long is larger than Int, Kotlin doesn't automatically convert Int to Long.\n\nInstead, you need to use toLong() explicitly (to convert to type Long). Kotlin does it for type safety to avoid surprises."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView866"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView865"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    val number1: Int = 55\n    val number2: Long = number1.toLong()\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

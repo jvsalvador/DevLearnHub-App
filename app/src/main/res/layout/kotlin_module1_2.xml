@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module1_2">
+
+    <TextView
+        android:id="@+id/textView847"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Hello World - You First Kotlin Program"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView848"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView847"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A &quot;Hello, World!&quot; is a simple program that outputs Hello, World! on the screen. Since it's a very simple program, it's often used to introduce a new programming language.\n\nBefore you write the program, make sure your computer can run Kotlin. For that visit: How to Run Kotlin on Your Computer?\n\nLet's explore how &quot;Hello, World!&quot; program works in Kotlin."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView849"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView848"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin &quot;Hello, World!&quot; Program"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView850"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView849"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text=" \n   // Hello World Program\n\n   fun main(args : Array<String>) {\n          println(&quot;Hello, World!&quot;)\n   }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView851"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView850"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="When you run the program, the output will be:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView852"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView851"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    Hello, World!\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView853"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView852"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="How this program works?\n\n1.// Hello World Program\n\nAny line starting with // is a comment in Kotlin (similar to Java). Comments are ignored by the compiler. They are intended for person reading the code to better understand the intent and functionality of the program. To learn more, visit Kotlin comments.\n\n2.fun main(args : Array<String>) { ... }\n\nThis is the main function,which is mandatory in every Kotlin application. The Kotlin compiler starts executing the code from the main function.\n\nThe function takes array of strings as a parameter and returns Unit. You will learn about functions and parameters in later chapters."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+</RelativeLayout>

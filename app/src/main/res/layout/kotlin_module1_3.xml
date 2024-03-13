@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module1_3">
+
+    <TextView
+        android:id="@+id/textView854"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Operators"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView855"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView854"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Operators are special symbols (characters) that carry out operations on operands (variables and values). For example, + is an operator that performs addition.\n\nIn Java variables article, you learned to declare variables and assign values to variables. Now, you will learn to use operators perform various operations on them."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView856"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView855"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Example: Arithmetic Operators"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView857"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView856"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    fun main(args: Array<String>) {\n\n             val number1 = 12.5\n             val number2 = 3.5\n             var\result: Double\n\n             result = number1 + number2\n             println(&quot;number1 + number2 = $result&quot;)\n\n             result = number1 - number2\n             println(&quot;number1 - number2 = $result&quot;)\n\n             result = number1 * number2\n             println(&quot;number1 * number2 = $result&quot;)\n\n             result = number1 / number2\n             println(&quot;number1 / number2 = $result&quot;)\n\n             result = number1 % number2\n            println(&quot;number1 % number2 = $result&quot;)\n   } \n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView858"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView857"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="When you run the program, the output will be:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView859"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView858"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    number1 + number2 = 16.0\n    number1 - number2 = 9.0\n    number1 * number2 = 43.75\n    number1 / number2 = 3.5714285714285716\n    number1 % number2 = 2.0\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>
