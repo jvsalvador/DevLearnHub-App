@@ -30,9 +30,6 @@
             android:name=".module.Jquery_Module2_2"
             android:exported="false" />
         <activity
-            android:name=".module.MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".module.Jquery_Module1_4"
             android:exported="false" />
         <activity
