@@ -68,7 +68,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    # input vector\n    x <- c(12, 9, 23, 14, 20, 1, 5)\n\n   # ifelse() function to determine odd/even numbers\n    ifelse(x %% 2 == 0, &quot;EVEN&quot;, &quot;ODD&quot;)\n"
+        android:text="\n    # input vector\n    x &lt;- c(12, 9, 23, 14, 20, 1, 5)\n\n   # ifelse() function to determine odd/even numbers\n    ifelse(x %% 2 == 0, &quot;EVEN&quot;, &quot;ODD&quot;)\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

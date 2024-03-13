@@ -35,7 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    x <- 123L\n"
+        android:text="\n    x &lt;- 123L\n"
         android:textColor="@color/white" />
 
     <TextView
@@ -56,7 +56,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n   TextViewx <- 123L\n\n   # print value of x \n    print(x)\n\n    # print type of x\n    print(class(x))\n"
+        android:text="\n   TextViewx &lt;- 123L\n\n   # print value of x \n    print(x)\n\n    # print type of x\n    print(class(x))\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

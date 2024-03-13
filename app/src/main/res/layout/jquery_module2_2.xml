@@ -89,7 +89,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    x <- 3\n\n    # check if x is greater than 0\n    if (x > 0) {\n        print(&quot;The number is positive&quot;)\n     }\n\n     print(&quot;Outside if statement&quot;)\n"
+        android:text="\n    x &lt;- 3\n\n    # check if x is greater than 0\n    if (x > 0) {\n        print(&quot;The number is positive&quot;)\n     }\n\n     print(&quot;Outside if statement&quot;)\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

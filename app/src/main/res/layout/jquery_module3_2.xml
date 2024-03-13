@@ -67,7 +67,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    # create vector of string types\n    employees <- c(&quot;Sabby&quot;, &quot;Cathy&quot;, &quot;Lucy&quot;)\n\n    print(employees)\n\n    # Output: [1] &quot;Sabby&quot; &quot;Cathy&quot; &quot;Lucy&quot;\n"
+        android:text="\n    # create vector of string types\n    employees &lt;- c(&quot;Sabby&quot;, &quot;Cathy&quot;, &quot;Lucy&quot;)\n\n    print(employees)\n\n    # Output: [1] &quot;Sabby&quot; &quot;Cathy&quot; &quot;Lucy&quot;\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

@@ -67,7 +67,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    message1 <- 'Hola Amigos'\n    print(message1)\n\n    message2 <- &quot;Welcome to Programiz&quot;\n    print(message2)\n"
+        android:text="\n    message1 &lt;- 'Hola Amigos'\n    print(message1)\n\n    message2 &lt;- &quot;Welcome to Programiz&quot;\n    print(message2)\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
