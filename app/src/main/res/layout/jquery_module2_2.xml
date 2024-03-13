@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Jquery_Module2_2">
+
+    <TextView
+        android:id="@+id/textView713"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="R if...else"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView723"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView713"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In computer programming, the if statement allows us to create a decision making program.\n\nA decision making program runs one block of code under a condition and another block of code under different conditions. For example,\n\n•If age is greater than 18, allow the person to vote.\n\n•If age is not greater than 18, don't allow the person to vote."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView732"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView723"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="R if Statement"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView741"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView732"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The syntax of an if statement is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView742"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView741"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    if (test_expression) {\n        # body of if\n    }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView743"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView742"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the test_expression is a boolean expression. It returns either True or False. If the test_expression is\n\n•True - body of the if statement is executed\n\n•False - body of the if statement is skipped"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView744"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView743"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Example: R if Statement "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView745"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView744"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    x <- 3\n\n    # check if x is greater than 0\n    if (x > 0) {\n        print(&quot;The number is positive&quot;)\n     }\n\n     print(&quot;Outside if statement&quot;)\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+</RelativeLayout>

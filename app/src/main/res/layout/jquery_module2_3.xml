@@ -2,100 +2,111 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.Jquery_Module3_1">
+    tools:context=".module.Jquery_Module2_3">
 
     <TextView
-        android:id="@+id/textView385"
+        android:id="@+id/textView746"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="R Strings"
+        android:text="R ifelse() Function"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView386"
+        android:id="@+id/textView747"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView385"
+        android:layout_below="@+id/textView746"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="A string is a sequence of characters. For example, &quot;Programming&quot; is a string that includes characters: P, r, o, g, r, a, m, m, i, n, g.\n\nIn R, we represent strings using quotation marks (double quotes, &quot; &quot; or single quotes, ' ').\n\nFor example,"
+        android:text="In R, the ifelse() function is a shorthand vectorized alternative to the standard if...else statement.\n\nMost of the functions in R take a vector as input and return a vectorized output. Similarly, the vector equivalent of the traditional if...else block is the ifelse() function.\n\nThe syntax of the ifelse() function is:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView387"
+        android:id="@+id/textView748"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView386"
+        android:layout_below="@+id/textView747"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    # string value using single quotes\n    'Hello'\n\n    # string value using double quotes\n    &quot;Hello&quot;\n"
+        android:text="\n    ifelse(test_expression, x, y)\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView388"
+        android:id="@+id/textView749"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView387"
+        android:layout_below="@+id/textView748"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Here, both 'Hello' and &quot;Hello&quot; are strings. We can use either single quotes or double quotes to represent strings in R.\n\nHowever, we cannot mismatch them. For example, start the string with a single quote and end it with a double quote, 'Hello&quot; and vice versa, &quot;Hello'."
+        android:text="The output vector has the element x if the output of the test_expression is TRUE. If the output is FALSE, then the element in the output vector will be y."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView389"
+        android:id="@+id/textView750"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView388"
+        android:layout_below="@+id/textView749"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Example: Strings in R"
-        android:textSize="16sp" />
+        android:text="Example 1: ifelse() Function for Odd/Even Numbers"
+        android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/textView390"
+        android:id="@+id/textView751"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView389"
+        android:layout_below="@+id/textView750"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    message1 <- 'Hola Amigos'\n    print(message1)\n\n    message2 <- &quot;Welcome to Programiz&quot;\n    print(message2)\n"
+        android:text="\n    # input vector\n    x <- c(12, 9, 23, 14, 20, 1, 5)\n\n   # ifelse() function to determine odd/even numbers\n    ifelse(x %% 2 == 0, &quot;EVEN&quot;, &quot;ODD&quot;)\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView761"
+        android:id="@+id/textView752"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView390"
+        android:layout_below="@+id/textView751"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Output  "
+        android:text="Output"
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/textView762"
+        android:id="@+id/textView753"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView761"
+        android:layout_below="@+id/textView752"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    [1] &quot;Hola Amigos&quot;\n    [1] &quot;Welcome to Programiz&quot;\n"
+        android:text="\n    [1] &quot;EVEN&quot; &quot;ODD&quot;  &quot;ODD&quot;  &quot;EVEN&quot; &quot;EVEN&quot; &quot;ODD&quot;  &quot;ODD&quot;  \n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/jquery_tap_to_next26"
+        android:id="@+id/textView754"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView753"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In this program, we have defined a vector x using the c() function in R. The vector contains a few odd and even numbers."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -104,12 +115,4 @@
         android:fontFamily="@font/poppins_regular"
         android:text="Tap to continue"
         android:textSize="16sp" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 </RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Jquery_Module2_4">
+
+    <TextView
+        android:id="@+id/textView755"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView756"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In programming, loops are used to repeat a block of code as long as the specified condition is satisfied. Loops help you to save time, avoid repeatable blocks of code, and write cleaner code.\n\nIn R, there are three types of loops:\n\n•while loops\n\n•for loops\n\n•repeat loops"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView756"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="R while Loop"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView757"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView755"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="R while Loop"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView758"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView757"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="while loops are used when you don't know the exact number of times a block of code is to be repeated. The basic syntax of while loop in R is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView759"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView758"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@color/black"
+        android:text="\n    while (test_expression) {\n         # block of code\n     }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView760"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView759"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="•Here, the test_expression is first evaluated.\n\n•If the result is TRUE, then the block of code inside the while loop gets executed.\n\n•Once the execution is completed, the test_expression is evaluated again and the same process is repeated until the test_expression evaluates to FALSE.\n\n•The while loop will terminate when the boolean expression returns FALSE."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

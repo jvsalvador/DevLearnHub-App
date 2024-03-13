@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Jquery_Module3_2">
+
+    <TextView
+        android:id="@+id/textView763"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="R Vectors"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <TextView
+        android:id="@+id/textView764"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView763"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="\nA vector is the basic data structure in R that stores data of similar types. For example,\n\nSuppose we need to record the age of 5 employees. Instead of creating 5 separate variables, we can simply create a vector.\n"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView764"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/jquery_1" />
+
+    <TextView
+        android:id="@+id/textView766"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView23"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Create a Vector in R"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView767"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView766"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In R, we use the c() function to create a vector. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView770"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView767"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    # create vector of string types\n    employees <- c(&quot;Sabby&quot;, &quot;Cathy&quot;, &quot;Lucy&quot;)\n\n    print(employees)\n\n    # Output: [1] &quot;Sabby&quot; &quot;Cathy&quot; &quot;Lucy&quot;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView769"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView770"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In the above example, we have created a vector named employees with elements: Sabby, Cathy, and Lucy.\n\nHere, the c() function creates a vector by combining three different elements of employees together."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/jquery_tap_to_next28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+
+</RelativeLayout>
