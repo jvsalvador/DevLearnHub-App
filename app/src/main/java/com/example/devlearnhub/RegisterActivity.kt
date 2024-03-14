@@ -31,7 +31,7 @@ class RegisterActivity : AppCompatActivity() {
 
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://devlearn-com.preview-domain.com/public/users/register/")
+            .baseUrl("https://devlearn-com.preview-domain.com/public/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
