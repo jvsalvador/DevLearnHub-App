@@ -8,9 +8,9 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface UserServices {
-    @GET("users")
+    @GET("users/register/")
     fun getData(): Call<ApiResponse>
 
-    @POST("users")
+    @POST("users/register")
     fun registerUser(@Body request: RegistrationRequest): Call<ApiResponse>
 }

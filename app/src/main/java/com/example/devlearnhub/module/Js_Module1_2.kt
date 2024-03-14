@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.databinding.JsModule12Binding
-import com.example.devlearnhub.module_activity.Javascript_Activity
 
 class Js_Module1_2 : AppCompatActivity() {
     private lateinit var binding: JsModule12Binding

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.devlearnhub.databinding.LayoutChoicesActivityBinding
 
-class Choices_Activity : AppCompatActivity() {
+class ChoicesActivity : AppCompatActivity() {
 
     private lateinit var binding: LayoutChoicesActivityBinding
 
@@ -35,10 +35,10 @@ class Choices_Activity : AppCompatActivity() {
             if (selectedCheckBox != null) {
                 val email = intent.getStringExtra("user_email")
                 val intent = when (selectedCheckBox) {
-                    cbFirst -> Intent(this, Initial_Activity::class.java)
-                    cbSecond -> Intent(this, Sophomore_Activity::class.java)
-                    cbThird -> Intent(this, Junior_Activity::class.java)
-                    cbFourth -> Intent(this, Senior_Activity::class.java)
+                    cbFirst -> Intent(this, InitialActivity::class.java)
+                    cbSecond -> Intent(this, SophomoreActivity::class.java)
+                    cbThird -> Intent(this, JuniorActivity::class.java)
+                    cbFourth -> Intent(this, SeniorActivity::class.java)
                     else -> null
                 }
 

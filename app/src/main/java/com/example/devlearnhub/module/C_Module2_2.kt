@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.databinding.CModule22Binding
-import com.example.devlearnhub.module_activity.C_Activity
 
 class C_Module2_2 : AppCompatActivity() {
     private lateinit var binding: CModule22Binding

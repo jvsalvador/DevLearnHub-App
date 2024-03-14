@@ -3,7 +3,7 @@ package com.example.devlearnhub.module
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.devlearnhub.module_activity.Python_Activity
+import com.example.devlearnhub.module_activity.PythonActivity
 import com.example.devlearnhub.databinding.PythonModule33Binding
 
 class Python_Module3_3 : AppCompatActivity() {
@@ -16,7 +16,7 @@ class Python_Module3_3 : AppCompatActivity() {
 
         binding.btnTapToNextt3.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Python_Activity::class.java)
+            val intent = Intent(this, PythonActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }

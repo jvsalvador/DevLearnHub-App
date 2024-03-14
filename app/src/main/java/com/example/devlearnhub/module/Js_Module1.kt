@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.databinding.JsModule1Binding
-import com.example.devlearnhub.module_activity.Javascript_Activity
+import com.example.devlearnhub.module_activity.JavascriptActivity
 
 class Js_Module1 : AppCompatActivity() {
     private lateinit var binding: JsModule1Binding
@@ -15,7 +15,7 @@ class Js_Module1 : AppCompatActivity() {
 
         binding.jsBack.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Javascript_Activity::class.java)
+            val intent = Intent(this, JavascriptActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }

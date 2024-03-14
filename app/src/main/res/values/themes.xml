@@ -23,7 +23,6 @@
     <style name="Theme.DevLearnHub.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-    </style>
-    <style name="Theme.DevLearnHub.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </style>/>
     <style name="Theme.DevLearnHub.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

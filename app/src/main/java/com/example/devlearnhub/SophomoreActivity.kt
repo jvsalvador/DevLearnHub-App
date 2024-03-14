@@ -10,13 +10,13 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import com.example.devlearnhub.databinding.LayoutSophomoreActivityBinding
-import com.example.devlearnhub.menu_nav.About_Us_Activity
-import com.example.devlearnhub.menu_nav.Contact_Us_Activity
-import com.example.devlearnhub.module_activity.Kotlin_Activity
-import com.example.devlearnhub.module_activity.Mysql_Activity
+import com.example.devlearnhub.menu_nav.AboutUsActivity
+import com.example.devlearnhub.menu_nav.ContactUsActivity
+import com.example.devlearnhub.module_activity.KotlinActivity
+import com.example.devlearnhub.module_activity.MysqlActivity
 import com.google.android.material.navigation.NavigationView
 
-class Sophomore_Activity : AppCompatActivity() {
+class SophomoreActivity : AppCompatActivity() {
     private lateinit var binding: LayoutSophomoreActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,13 +25,13 @@ class Sophomore_Activity : AppCompatActivity() {
 
         binding.btnLearn.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Kotlin_Activity::class.java)
+            val intent = Intent(this, KotlinActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
         binding.btnLearn2.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Mysql_Activity::class.java)
+            val intent = Intent(this, MysqlActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
@@ -62,7 +62,7 @@ class Sophomore_Activity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_logout -> {
-                    val intent = Intent(this, Login_Activity::class.java)
+                    val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
 
@@ -70,7 +70,7 @@ class Sophomore_Activity : AppCompatActivity() {
                 }
                 R.id.nav_back -> {
                     val email = intent.getStringExtra("user_email")
-                    val intent = Intent(this, Choices_Activity::class.java)
+                    val intent = Intent(this, ChoicesActivity::class.java)
                     intent.putExtra("user_email", email)
                     startActivity(intent)
 
@@ -78,7 +78,7 @@ class Sophomore_Activity : AppCompatActivity() {
                 }
                 R.id.nav_contact -> {
                     val email = intent.getStringExtra("user_email")
-                    val intent = Intent(this, Contact_Us_Activity::class.java)
+                    val intent = Intent(this, ContactUsActivity::class.java)
                     startActivity(intent)
                     intent.putExtra("user_email", email)
 
@@ -87,7 +87,7 @@ class Sophomore_Activity : AppCompatActivity() {
 
                 R.id.nav_about -> {
                     val email = intent.getStringExtra("user_email")
-                    val intent = Intent(this, About_Us_Activity::class.java)
+                    val intent = Intent(this, AboutUsActivity::class.java)
                     startActivity(intent)
                     intent.putExtra("user_email", email)
 

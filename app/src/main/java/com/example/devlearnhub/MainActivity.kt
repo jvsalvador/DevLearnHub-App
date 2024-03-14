@@ -3,17 +3,9 @@ package com.example.devlearnhub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.example.devlearnhub.api.UserServices
-import com.example.devlearnhub.data.ApiResponse
 import com.example.devlearnhub.data.DatabaseHelper
 import com.example.devlearnhub.databinding.ActivityMainBinding
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val delayMillis = 2000L
-        val intent = Intent(this, Login_Activity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
 
         android.os.Handler().postDelayed({
             startActivity(intent)

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu_nav.About_Us_Activity">
+    tools:context=".menu_nav.AboutUsActivity">
 
 
     <ScrollView
@@ -20,101 +20,23 @@
                 android:id="@+id/textView170"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/poppins_bold"
                 android:text="About DevLearn Hub"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView171"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView170"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:text="Welcome to DevLearn Hub, your ultimate destination for mastering programming languages and advancing your coding skills. DevLearn Hub is more than just an application; it's a vibrant community of learners, educators, and developers passionate about technology and innovation."
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/textView172"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView171"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Our Mission" />
-
-            <TextView
-                android:id="@+id/textView173"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView172"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:text="At DevLearn Hub, our mission is to empower individuals worldwide to learn, create, and excel in programming. We believe that programming is not just a skill; it's a gateway to endless possibilities and opportunities. Our goal is to democratize access to quality programming education and support learners at every step of their journey."
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/textView174"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView173"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="What We Offer" />
-
-            <TextView
-                android:id="@+id/textView175"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView174"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:text="•Comprehensive Learning Resources: Whether you're a complete beginner or an experienced coder, DevLearn Hub offers a diverse range of learning resources to suit your needs. From interactive tutorials and coding challenges to in-depth articles and project-based learning, we provide everything you need to succeed in your programming journey.\n\n•Interactive Coding Environment: Our intuitive code editor and integrated compiler/interpreter allow you to write, test, and debug code seamlessly within the application. With features like syntax highlighting, code completion, and real-time feedback, coding has never been more enjoyable and efficient.\n\n•Community Collaboration: Join a thriving community of learners and developers from around the globe. Engage in discussions, share insights, collaborate on projects, and learn from each other's experiences. At DevLearn Hub, we believe that learning is a collaborative journey, and our community is here to support you every step of the way."
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/textView176"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView175"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Our Commitment to Quality" />
-
-            <TextView
-                android:id="@+id/textView177"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView176"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:text="At DevLearn Hub, we are committed to excellence in everything we do. We strive to provide a user-friendly, feature-rich, and reliable platform that meets the needs of our users. Our team of experienced developers, educators, and designers works tirelessly to ensure that DevLearn Hub remains the go-to destination for programming education and innovation.w" />
-
-            <TextView
-                android:id="@+id/textView178"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView177"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Get Started Today!" />
-
-            <TextView
                 android:id="@+id/textView179"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textView178"
-                android:layout_marginStart="5dp"
+                android:layout_below="@+id/textView170"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="100dp"
-                android:text="Ready to take your programming skills to the next level? Join the DevLearn Hub community today and embark on an exciting journey of learning, creativity, and growth. Whether you're passionate about web development, mobile app development, data science, or cybersecurity, DevLearn Hub has something for everyone. Start coding, start learning, and start building your future with DevLearn Hub."
-                android:textSize="12sp" />
+                android:fontFamily="@font/poppins_regular"
+                android:text="Our proposed project aims to develop an innovative and comprehensive education app focused exclusively on IT and programming. The app will provide a user-friendly platform for learners to acquire essential skills, stay updated with industry trends, and engage in hands-on coding experiences. "
+                android:textSize="12sp"
+                android:textStyle="bold" />
         </RelativeLayout>
     </ScrollView>
 

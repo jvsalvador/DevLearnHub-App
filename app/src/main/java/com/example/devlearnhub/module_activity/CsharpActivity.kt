@@ -3,13 +3,12 @@ package com.example.devlearnhub.module_activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.devlearnhub.R
 import com.example.devlearnhub.databinding.LayoutCsharpActivityBinding
 import com.example.devlearnhub.module.Csharp_Module1
 import com.example.devlearnhub.module.Csharp_Module2_1
 import com.example.devlearnhub.module.Csharp_Module3_1
 
-class Csharp_Activity : AppCompatActivity() {
+class CsharpActivity : AppCompatActivity() {
     private lateinit var binding: LayoutCsharpActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu_nav.Contact_Us_Activity">
+    tools:context=".menu_nav.ContactUsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,28 +22,11 @@
             android:layout_marginTop="70dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_register_firstname"
+                android:id="@+id/et_contact_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_regular"
-                android:hint="First Name "
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout4"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textInputLayout3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_register_Lastname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:hint="Last Name "
+                android:hint="Name"
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,12 +34,12 @@
             android:id="@+id/textInputLayout5"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textInputLayout4"
+            android:layout_below="@+id/textInputLayout3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_register_email"
+                android:id="@+id/et_contact_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_regular"
@@ -73,7 +56,7 @@
             android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_register_message"
+                android:id="@+id/et_contact_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_regular"

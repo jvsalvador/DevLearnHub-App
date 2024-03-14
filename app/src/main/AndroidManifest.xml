@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -37,6 +37,9 @@
             android:exported="false" />
         <activity
             android:name=".module.Jquery_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Jquery_Module1"
             android:exported="false" />
         <activity
             android:name=".module.Mysql_Module4_4"
@@ -84,6 +87,12 @@
             android:name=".module.Mysql_Module1_3"
             android:exported="false" />
         <activity
+            android:name=".module.Mysql_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Mysql_Module1"
+            android:exported="false" />
+        <activity
             android:name=".module.C_Module3_5"
             android:exported="false" />
         <activity
@@ -123,16 +132,10 @@
             android:name=".module.C_Module1"
             android:exported="false" />
         <activity
-            android:name=".module.Mysql_Module1_2"
-            android:exported="false" />
-        <activity
             android:name=".module.Mysql_Module3_1"
             android:exported="false" />
         <activity
             android:name=".module.Mysql_Module2_1"
-            android:exported="false" />
-        <activity
-            android:name=".module.Mysql_Module1"
             android:exported="false" />
         <activity
             android:name=".module.Kotlin_Module4_1"
@@ -160,9 +163,6 @@
             android:exported="false" />
         <activity
             android:name=".module.Jquery_Module2_1"
-            android:exported="false" />
-        <activity
-            android:name=".module.Jquery_Module1"
             android:exported="false" />
         <activity
             android:name=".module.Js_Module1_5"
@@ -222,31 +222,31 @@
             android:name=".module.Csharp_Module1"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Javascript_Activity"
+            android:name=".module_activity.JavascriptActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Swift_Activity"
+            android:name=".module_activity.SwiftActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Csharp_Activity"
+            android:name=".module_activity.CsharpActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Jquery_Activity"
+            android:name=".module_activity.JqueryActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.C_Activity"
+            android:name=".module_activity.CActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Cplus_Activity"
+            android:name=".module_activity.CplusActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Mysql_Activity"
+            android:name=".module_activity.MysqlActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Kotlin_Activity"
+            android:name=".module_activity.KotlinActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Html_Activity"
+            android:name=".module_activity.HtmlActivity"
             android:exported="false" />
         <activity
             android:name=".module.Html_Module1"
@@ -297,6 +297,9 @@
             android:name=".module.Java_Module5_6"
             android:exported="false" />
         <activity
+            android:name=".module.Python_Module4_3"
+            android:exported="false" />
+        <activity
             android:name=".module.Python_Module4_2"
             android:exported="false" />
         <activity
@@ -312,10 +315,10 @@
             android:name=".module.Python_Module3_1"
             android:exported="false" />
         <activity
-            android:name=".menu_nav.About_Us_Activity"
+            android:name=".menu_nav.AboutUsActivity"
             android:exported="false" />
         <activity
-            android:name=".menu_nav.Contact_Us_Activity"
+            android:name=".menu_nav.ContactUsActivity"
             android:exported="false" />
         <activity
             android:name=".module.Python_Module2_5"
@@ -384,6 +387,39 @@
             android:name=".module.Java_Module4_3"
             android:exported="false" />
         <activity
+            android:name=".module.Java_Module4_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module4_5"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module4_6"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module4_7"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module4_8"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module4_9"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module5_1"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module5_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module5_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module5_4"
+            android:exported="false" />
+        <activity
+            android:name=".module.Java_Module5_5"
+            android:exported="false" />
+        <activity
             android:name=".module.Python_Module1_5"
             android:exported="false" />
         <activity
@@ -399,31 +435,31 @@
             android:name=".module.Python_Module1"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Java_Activity"
+            android:name=".module_activity.JavaActivity"
             android:exported="false" />
         <activity
-            android:name=".module_activity.Python_Activity"
+            android:name=".module_activity.PythonActivity"
             android:exported="false" />
         <activity
-            android:name=".Senior_Activity"
+            android:name=".SeniorActivity"
             android:exported="false" />
         <activity
-            android:name=".Junior_Activity"
+            android:name=".JuniorActivity"
             android:exported="false" />
         <activity
-            android:name=".Sophomore_Activity"
+            android:name=".SophomoreActivity"
             android:exported="false" />
         <activity
-            android:name=".Initial_Activity"
+            android:name=".InitialActivity"
             android:exported="false" />
         <activity
-            android:name=".Choices_Activity"
+            android:name=".ChoicesActivity"
             android:exported="false" />
         <activity
-            android:name=".Register_Activity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".Login_Activity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
