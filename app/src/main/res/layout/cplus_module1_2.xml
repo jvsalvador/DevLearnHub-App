@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Cplus_Module1_2">
+
+    <TextView
+        android:id="@+id/textView910"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C++ Data Types"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView911"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView910"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In C++, data types are declarations for variables. This determines the type and size of data associated with variables. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView912"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView911"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age = 13;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView913"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView912"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, age is a variable of type int. Meaning, the variable can only store integers of either 2 or 4 bytes."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView914"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView913"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" C++ int"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView915"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView914"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="•The int keyword is used to indicate integers.\n\n•Its size is usually 4 bytes. Meaning, it can store values from -2147483648 to 2147483647.\n\n•For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView916"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView915"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int salary = 85000;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView917"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView916"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" C++ wchar_t"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView918"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView917"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="•Wide character wchar_t is similar to the char data type, except its size is 2 bytes instead of 1.\n\n•It is used to represent characters that require more memory to represent them than a single char."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView919"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView918"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    wchar_t test = L'ם'  // storing Hebrew character; \n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cplus_tap_to_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

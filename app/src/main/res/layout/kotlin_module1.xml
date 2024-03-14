@@ -76,7 +76,7 @@
         android:textSize="11sp" />
 
     <TextView
-        android:id="@+id/kotlin_tap_to_next"
+        android:id="@+id/kotlin_tap_to_next3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

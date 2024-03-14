@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Cplus_Module1_3">
+
+    <TextView
+        android:id="@+id/textView920"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C++ Type Conversion"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView921"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView920"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="C++ allows us to convert data of one type to that of another. This is known as type conversion.\n\nThere are two types of type conversion in C++.\n\n1.Implicit Conversion\n\n2.Explicit Conversion (also known as Type Casting) "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView922"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView921"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Implicit Type Conversion"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView923"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView922"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The type conversion that is done automatically done by the compiler is known as implicit type conversion. This type of conversion is also known as automatic conversion."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView924"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView923"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="1: Conversion From int to double"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView925"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView924"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    // Working of implicit type-conversion\n\n   #include <iostream>\n    using namespace std;\n\n     int main() {\n           // assigning an int value to num_int\n          int num_int = 9;\n\n           // declaring a double type variable\n          double num_double;\n\n           // implicit conversion\n          // assigning int value to a double variable\n         num_double = num_int;\n\n         cout << &quot;num_int = &quot; << num_int << endl;\n         cout << &quot;num_double = &quot; << num_double << endl;\n         return 0;\n      }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cplus_tap_to_next12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -15,6 +15,30 @@
         android:theme="@style/Theme.DevLearnHub"
         tools:targetApi="31">
         <activity
+            android:name=".module.Cplus_Module1_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Cplus_Module1_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Kotlin_Module4_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Kotlin_Module4_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Kotlin_Module3_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Kotlin_Module3_2"
+            android:exported="false" />
+        <activity
+            android:name=".module.Kotlin_Module2_3"
+            android:exported="false" />
+        <activity
+            android:name=".module.Kotlin_Module2_2"
+            android:exported="false" />
+        <activity
             android:name=".module.Kotlin_Module1_4"
             android:exported="false" />
         <activity

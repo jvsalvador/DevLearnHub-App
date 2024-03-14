@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module4_2">
+
+    <TextView
+        android:id="@+id/textView894"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Constructors"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView896"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView894"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A constructor is a concise way to initialize class properties.\n\nIt is a special member function that is called when an object is instantiated (created). However, how they work in Kotlin is slightly different.\n\nIn Kotlin, there are two constructors:\n\n•Primary constructor - concise way to initialize a class\n\n•Secondary constructor - allows you to put additional initialization lo"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView897"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView896"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Primary Constructor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView898"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView897"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The primary constructor is part of the class header. Here's an example:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView899"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView898"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:scrollHorizontally="true"
+        android:text="\n    class Person(val firstName: String, var age: Int) {\n               // class body\n     }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView899"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The block of code surrounded by parentheses is the primary constructor: (val firstName: String, var age: Int).\n\nThe constructor declared two properties: firstName (read-only property as it's declared using keyword val) and age (read-write property as it is declared with keyword var)."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView901"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView900"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Example: Primary Constructor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView902"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView901"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    fun main(args: Array<String>) {\n\n            \val person1 = Person(&quot;Joe&quot;, 25)\n            println(&quot;First Name = ${person1.firstName}&quot;)\n            println(&quot;Age = ${person1.age}&quot;)\n    }\n\n   class Person(val firstName: String, var age: Int) {\n\n   }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

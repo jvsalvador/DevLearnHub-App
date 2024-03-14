@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module3_2">
+
+    <TextView
+        android:id="@+id/textView883"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Infix Function Call"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView884"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView883"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Before you learn how to create a function having infix notation, let's explore two commonly used infix functions.\n\nWhen you use || and  operations, the compiler look up for or and and functions respectively, and calls them under the hood.\n\nThese two functions support infix notation."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView885"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView884"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Example: Kotlin or  and function"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView886"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView885"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    fun main(args: Array<String>) {\n           val a = true\n           val b = false\n           var result: Boolean\n\n           result = a or b // a.or(b)\n           println(&quot;result = $result&quot;)\n\n           result = a and b // a.and(b)\n          println(&quot;result = $result&quot;)\n     }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView887"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView886"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="When you run the program, the output will be:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView888"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView887"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    result = true\n    result = false\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView889"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView888"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In the above program, a or b instead of a.or(b), and a and b instead of a.and(b) is used. It was possible because these two functions support infix notation."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

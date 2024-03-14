@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module2_3">
+
+    <TextView
+        android:id="@+id/textView875"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin break Expression"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView876"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView875"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Suppose you are working with loops. It is sometimes desirable to terminate the loop immediately without checking the test expression.\n\nIn such case, break is used. It terminates the nearest enclosing loop when encountered (without checking the test expression). This is similar to how break statement works in Java."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView877"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView876"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How break works?"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView878"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView877"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="It is almost always used with if..else construct. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView879"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView878"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    for (...) {\n         if (testExpression) {\n               break\n     }\n  }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView880"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView879"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="If testExpression is evaluated to true, break is executed which terminates the for loop."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView881"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView880"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How labeled break works?"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView881"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/kotlin_1" />
+
+    <TextView
+        android:id="@+id/textView882"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView44"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Label in Kotlin starts with an identifier which is followed by @.\n\nHere, test@ is a label marked at the outer while loop. Now, by using break with a label (break@test in this case), you can break the specific loop."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

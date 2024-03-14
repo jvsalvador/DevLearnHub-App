@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Kotlin_Module3_3">
+
+    <TextView
+        android:id="@+id/textView890"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kotlin Default and Named Arguments"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView891"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView890"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In Kotlin, you can provide default values to parameters in function definition.\n\nIf the function is called with arguments passed, those arguments are used as parameters. However, if the function is called without passing argument(s), default arguments are used."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView892"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView891"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How default arguments works?"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView893"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView892"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Case I: All arguments passed"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView893"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/kotlin_2" />
+
+    <TextView
+        android:id="@+id/textView895"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView45"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The function foo() takes two arguments. The arguments are provided with default values. However, foo() is called by passing both arguments in the above program. Hence, the default arguments are not used.\n\nThe value of letter and number will be 'x' and 2 respectively inside the foo() function."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kotlin_tap_to_next10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+
+</RelativeLayout>
