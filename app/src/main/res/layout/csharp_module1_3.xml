@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Csharp_Module1_3">
+
+    <TextView
+        android:id="@+id/textView787"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" C# Variables and (Primitive) Data Types"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView788"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView787"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A variable is a symbolic name given to a memory location. Variables are used to store data in a computer program."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView789"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView788"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How to declare variables in C#?"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView790"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView789"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here's an example to declare a variable in C#."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView791"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView790"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView792"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView791"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In this example, a variable age of type int (integer) is declared and it can only store integer values.\n\nWe can assign a value to the variable later in our program like such:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView793"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView792"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age;\n    ... ... ...\n    age = 24;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView794"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView793"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="However, the variable can also be initialized to some value during declaration.\n\nFor example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView795"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView794"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age = 24;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView796"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView795"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, a variable age of type int is declared and initialized to 24 at the same time.\n\nSince, it’s a variable, we can change the value of variables as well. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView797"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView796"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int age = 24;\n    age = 35;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView798"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView797"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, the value of age is changed to 35 from 24."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/csharp_tap_to_next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

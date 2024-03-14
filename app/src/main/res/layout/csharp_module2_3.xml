@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Csharp_Module2_3">
+
+    <TextView
+        android:id="@+id/textView814"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# ternary (? :) Operator"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView815"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView814"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Ternary operator are a substitute for if...else statement. So before you move any further in this tutorial, go through C# if...else statement (if you haven't).\n\nThe syntax of ternary operator is"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView816"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView815"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    Condition ? Expression1 : Expression2;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView817"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView816"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The ternary operator works as follows:\n\n•If the expression stated by Condition is true, the result of Expression1 is returned by the ternary operator.\n\n•If it is false, the result of Expression2 is returned."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView818"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView817"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="For example, we can replace the following code"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView819"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView818"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    if (number % 2 == 0)\n    {\n                      isEven = true;\n     }\n    else\n     {\n                    isEven = false;\n      }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView820"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView819"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="with"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView821"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView820"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    isEven = (number % 2 == 0) ? true : false ;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/csharp_tap_to_next8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

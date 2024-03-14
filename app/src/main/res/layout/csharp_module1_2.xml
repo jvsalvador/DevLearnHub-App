@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Csharp_Module1_2">
+
+    <TextView
+        android:id="@+id/textView771"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# Keywords and Identifiers"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView776"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView771"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# Keywords"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView777"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView776"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Keywords are predefined sets of reserved words that have special meaning in a program. The meaning of keywords can not be changed, neither can they be directly used as identifiers in a program.\n\nFor example"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView778"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView777"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    long mobileNum;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView779"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView778"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, long is a keyword and mobileNum is a variable (identifier). long has a special meaning in C# i.e. it is used to declare variables of type long and this function cannot be changed.\n\nAlso, keywords like long, int, char, etc can not be used as identifiers. So, we cannot have something like:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView780"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView779"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    long long;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView781"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView780"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="C# has a total of 79 keywords. All these keywords are in lowercase. Here is a complete list of all C# keywords."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView782"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView781"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# Identifiers"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView783"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView782"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Identifiers are the name given to entities such as variables, methods, classes, etc. They are tokens in a program which uniquely identify an element. For example"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView784"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView783"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int value;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView785"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView784"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, value is the name of variable. Hence it is an identifier. Reserved keywords can not be used as identifiers unless @ is added as prefix. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView786"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView785"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int break;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/csharp_tap_to_next4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

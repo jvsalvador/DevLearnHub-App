@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Csharp_Module3_3">
+
+    <TextView
+        android:id="@+id/textView837"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# Constructor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView838"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView837"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In C#, a constructor is similar to a method that is invoked when an object of the class is created.\n\nHowever, unlike methods, a constructor:\n\n•has the same name as that of the class\n\n•does not have any return type"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView839"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView838"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Create a C# constructor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView840"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView839"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here's how we create a constructor in C#"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView841"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView840"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    class Car {\n\n       // constructor\n      Car() { \n           //code\n       }\n  }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView842"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView841"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, Car() is a constructor. It has the same name as its class."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView843"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView842"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Once we create a constructor, we can call it using the new keyword. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView844"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView843"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    new Car();\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView845"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView844"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In C#, a constructor is called when we try to create an object of a class. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView846"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView845"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    Car car1 = new Car();\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/chsarp_tap_to_next11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

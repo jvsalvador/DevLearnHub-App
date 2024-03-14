@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Csharp_Module1_4">
+
+    <TextView
+        android:id="@+id/textView799"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C# Operators"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView799"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Operators are symbols that are used to perform operations on operands. Operands may be variables and/or constants.\n\nFor example, in 2+3, + is an operator that is used to carry out addition operation, while 2 and 3 are operands.\n\nOperators are used to manipulate variables and values in a program. C# supports a number of operators that are classified based on the type of operations they perform."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView801"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView800"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="1. Basic Assignment Operator"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView802"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView801"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Basic assignment operator (=) is used to assign values to variables. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView803"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView802"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    double x;\n    x = 50.05;\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView804"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView803"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here, 50.05 is assigned to x."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView805"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView804"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="2. Arithmetic Operators"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView806"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView805"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Arithmetic operators are used to perform arithmetic operations such as addition, subtraction, multiplication, division, etc.\n\nFor example"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView807"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView806"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    int x = 5;\n    int y = 10;\n    int z = x + y;// z = 15\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView808"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView807"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="3. Relational Operators"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView809"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView808"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Relational operators are used to check the relationship between two operands. If the relationship is true the result will be true, otherwise it will result in false."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/csharp_tap_to_next6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>
