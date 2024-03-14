@@ -3,10 +3,10 @@ package com.example.devlearnhub.module_activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.devlearnhub.Initial_Activity
+import com.example.devlearnhub.InitialActivity
 import com.example.devlearnhub.databinding.LayoutJavaActivityBinding
 
-class Java_Activity : AppCompatActivity() {
+class JavaActivity : AppCompatActivity() {
     private lateinit var binding: LayoutJavaActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,7 +15,7 @@ class Java_Activity : AppCompatActivity() {
 
         binding.btnBackToHome.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Initial_Activity::class.java)
+            val intent = Intent(this, InitialActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }

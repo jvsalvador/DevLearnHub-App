@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@drawable/mbb"
-    tools:context=".Sophomore_Activity">
+    tools:context=".SophomoreActivity">
 
     <!-- Main content -->
     <FrameLayout
@@ -36,7 +36,7 @@
 
             <RelativeLayout
                 android:id="@+id/relativeLayout"
-                android:layout_width="350dp"
+                android:layout_width="320dp"
                 android:layout_height="60dp"
                 android:layout_below="@+id/imageView13"
                 android:layout_centerHorizontal="true"
@@ -88,7 +88,7 @@
 
             <RelativeLayout
                 android:id="@+id/relativeLayout2"
-                android:layout_width="350dp"
+                android:layout_width="320dp"
                 android:layout_height="60dp"
                 android:layout_below="@+id/relativeLayout"
                 android:layout_centerHorizontal="true"

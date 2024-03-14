@@ -9,8 +9,7 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
 
     private val CREATE_TABLE_USER = "CREATE TABLE $TABLE_USER (" +
             "$COL_USER_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-            "$COL_USER_FIRSTNAME TEXT," +
-            "$COL_USER_LASTNAME TEXT," +
+            "$COL_USER_NAME TEXT," +
             "$COL_USER_EMAIL TEXT," +
             "$COL_USER_PASSWORD TEXT," +
             "$COL_USER_CONFIRM TEXT)"
@@ -29,8 +28,7 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
     fun registerUser(user : Users) {
         val db = this.writableDatabase
         val value = ContentValues()
-        value.put(COL_USER_FIRSTNAME,user.firstname)
-        value.put(COL_USER_LASTNAME,user.lastname)
+        value.put(COL_USER_NAME,user.name)
         value.put(COL_USER_EMAIL,user.email)
         value.put(COL_USER_PASSWORD,user.password)
         value.put(COL_USER_CONFIRM,user.confirm)
@@ -67,10 +65,8 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
         private const val DATABASE_VERSION = 1
         private const val DATABASE_NAME = "user.db"
         private const val TABLE_USER = "tbl_user"
-
         private const val COL_USER_ID = "user_id"
-        private const val COL_USER_FIRSTNAME = "user_firstname"
-        private const val COL_USER_LASTNAME = "user_lastname"
+        private const val COL_USER_NAME = "user_name"
         private const val COL_USER_EMAIL = "user_email"
         private const val COL_USER_PASSWORD = "user_password"
         private const val COL_USER_CONFIRM = "user_confirm"

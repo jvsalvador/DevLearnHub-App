@@ -9,36 +9,36 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import com.example.devlearnhub.databinding.LayoutSeniorActivityBinding
-import com.example.devlearnhub.menu_nav.About_Us_Activity
-import com.example.devlearnhub.menu_nav.Contact_Us_Activity
-import com.example.devlearnhub.module_activity.C_Activity
-import com.example.devlearnhub.module_activity.Cplus_Activity
-import com.example.devlearnhub.module_activity.Jquery_Activity
+import com.example.devlearnhub.databinding.LayoutJuniorActivityBinding
+import com.example.devlearnhub.menu_nav.AboutUsActivity
+import com.example.devlearnhub.menu_nav.ContactUsActivity
+import com.example.devlearnhub.module_activity.CsharpActivity
+import com.example.devlearnhub.module_activity.JavascriptActivity
+import com.example.devlearnhub.module_activity.SwiftActivity
 import com.google.android.material.navigation.NavigationView
 
-class Senior_Activity : AppCompatActivity() {
-    private lateinit var binding: LayoutSeniorActivityBinding
+class JuniorActivity : AppCompatActivity() {
+    private lateinit var binding: LayoutJuniorActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = LayoutSeniorActivityBinding.inflate(layoutInflater)
+        binding = LayoutJuniorActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnLearn.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Cplus_Activity::class.java)
+            val intent = Intent(this, CsharpActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
         binding.btnLearn2.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, Jquery_Activity::class.java)
+            val intent = Intent(this, SwiftActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
         binding.btnLearn3.setOnClickListener {
             val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, C_Activity::class.java)
+            val intent = Intent(this, JavascriptActivity::class.java)
             intent.putExtra("user_email", email)
             startActivity(intent)
         }
@@ -47,7 +47,6 @@ class Senior_Activity : AppCompatActivity() {
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        // Set up the NavigationView
         val navView: NavigationView = findViewById(R.id.nav_view)
         val userEmail = intent.getStringExtra("user_email")
         val headerView = navView.getHeaderView(0)
@@ -62,12 +61,12 @@ class Senior_Activity : AppCompatActivity() {
                     if (intent.resolveActivity(packageManager) != null){
                         startActivity(intent)
                     }else{
-
+                        //
                     }
                     true
                 }
                 R.id.nav_logout -> {
-                    val intent = Intent(this, Login_Activity::class.java)
+                    val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
 
@@ -75,7 +74,7 @@ class Senior_Activity : AppCompatActivity() {
                 }
                 R.id.nav_back -> {
                     val email = intent.getStringExtra("user_email")
-                    val intent = Intent(this, Choices_Activity::class.java)
+                    val intent = Intent(this, ChoicesActivity::class.java)
                     intent.putExtra("user_email", email)
                     startActivity(intent)
 
@@ -83,7 +82,7 @@ class Senior_Activity : AppCompatActivity() {
                 }
                 R.id.nav_contact -> {
                     val email = intent.getStringExtra("user_email")
-                    val intent = Intent(this, Contact_Us_Activity::class.java)
+                    val intent = Intent(this, ContactUsActivity::class.java)
                     startActivity(intent)
                     intent.putExtra("user_email", email)
 
@@ -92,7 +91,7 @@ class Senior_Activity : AppCompatActivity() {
 
                 R.id.nav_about -> {
                     val email = intent.getStringExtra("user_email")
-                    val intent = Intent(this, About_Us_Activity::class.java)
+                    val intent = Intent(this, AboutUsActivity::class.java)
                     startActivity(intent)
                     intent.putExtra("user_email", email)
 

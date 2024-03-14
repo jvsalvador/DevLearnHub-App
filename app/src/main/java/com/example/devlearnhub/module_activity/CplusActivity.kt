@@ -3,13 +3,12 @@ package com.example.devlearnhub.module_activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.devlearnhub.R
 import com.example.devlearnhub.databinding.LayoutCplusActivityBinding
 import com.example.devlearnhub.module.Cplus_Module1
 import com.example.devlearnhub.module.Cplus_Module2_1
 import com.example.devlearnhub.module.Cplus_Module3_1
 
-class Cplus_Activity : AppCompatActivity() {
+class CplusActivity : AppCompatActivity() {
     private lateinit var binding: LayoutCplusActivityBinding
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

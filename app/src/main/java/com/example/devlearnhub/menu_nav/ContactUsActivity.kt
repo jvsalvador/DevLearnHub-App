@@ -5,14 +5,13 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.devlearnhub.Initial_Activity
-import com.example.devlearnhub.Junior_Activity
-import com.example.devlearnhub.R
-import com.example.devlearnhub.Senior_Activity
-import com.example.devlearnhub.Sophomore_Activity
+import com.example.devlearnhub.InitialActivity
+import com.example.devlearnhub.JuniorActivity
+import com.example.devlearnhub.SeniorActivity
+import com.example.devlearnhub.SophomoreActivity
 import com.example.devlearnhub.databinding.LayoutContactUsActivityBinding
 
-class Contact_Us_Activity : AppCompatActivity() {
+class ContactUsActivity : AppCompatActivity() {
     private lateinit var binding: LayoutContactUsActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,27 +26,26 @@ class Contact_Us_Activity : AppCompatActivity() {
             val sourceActivity = intent.getStringExtra("sourceActivity")
             intent.putExtra("user_email", email)
             val intent = when (sourceActivity) {
-                "Initial_Activity" -> Intent(this, Initial_Activity::class.java)
-                "Sophomore_Activity" -> Intent(this, Sophomore_Activity::class.java)
-                "Junior_Activity" -> Intent(this, Junior_Activity::class.java)
-                "Senior_Activity" -> Intent(this, Senior_Activity::class.java)
-                else -> Intent(this, Initial_Activity::class.java)
+                "Initial_Activity" -> Intent(this, InitialActivity::class.java)
+                "Sophomore_Activity" -> Intent(this, SophomoreActivity::class.java)
+                "Junior_Activity" -> Intent(this, JuniorActivity::class.java)
+                "Senior_Activity" -> Intent(this, SeniorActivity::class.java)
+                else -> Intent(this, InitialActivity::class.java)
             }
             startActivity(intent)
         }
 
         binding.apply {
             btnSend.setOnClickListener {
-                val firstName = etRegisterFirstname.text.toString()
-                val lastName = etRegisterLastname.text.toString()
-                val email = etRegisterEmail.text.toString()
-                val message = etRegisterMessage.text.toString()
+                val name = etContactName.text.toString()
+                val email = etContactEmail.text.toString()
+                val message = etContactMessage.text.toString()
 
-                if (firstName.isNotEmpty()&& lastName.isNotEmpty()&& email.isNotEmpty()&& message.isNotEmpty()){
-                    val messageBody = "Name: $firstName $lastName\nEmail: $email\nMessage: $message"
+                if (name.isNotEmpty()&&  email.isNotEmpty()&& message.isNotEmpty()){
+                    val messageBody = "Name: $name \nEmail: $email\nMessage: $message"
                     sendMessage(messageBody)
                 }else{
-                    Toast.makeText(this@Contact_Us_Activity, "Please fill out all fields", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ContactUsActivity, "Please fill out all fields", Toast.LENGTH_SHORT).show()
                 }
 
             }

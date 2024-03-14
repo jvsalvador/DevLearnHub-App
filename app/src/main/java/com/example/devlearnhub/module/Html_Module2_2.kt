@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.devlearnhub.databinding.HtmlModule22Binding
-import com.example.devlearnhub.module_activity.Html_Activity
 
 class Html_Module2_2 : AppCompatActivity() {
     private lateinit var binding: HtmlModule22Binding

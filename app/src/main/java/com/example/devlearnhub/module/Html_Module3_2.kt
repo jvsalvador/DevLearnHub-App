@@ -3,7 +3,6 @@ package com.example.devlearnhub.module
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.devlearnhub.module_activity.Html_Activity
 import com.example.devlearnhub.databinding.HtmlModule32Binding
 
 class Html_Module3_2 : AppCompatActivity() {
