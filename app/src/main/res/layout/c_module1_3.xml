@@ -13,7 +13,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C# Variables and (Primitive) Data Types"
+        android:text="C Variables and (Primitive) Data Types"
         android:textSize="16sp" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="How to declare variables in C#?"
+        android:text="How to declare variables in C?"
         android:textSize="16sp" />
 
     <TextView

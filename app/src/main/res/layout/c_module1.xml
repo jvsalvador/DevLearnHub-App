@@ -22,7 +22,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C# Hello World - Your First C# Program"
+        android:text="C Hello World - Your First C# Program"
         android:textSize="16sp" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="&quot;Hello World!&quot; in C#"
+        android:text="&quot;Hello World!&quot; in C"
         android:textSize="16sp" />
 
     <TextView

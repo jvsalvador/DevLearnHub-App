@@ -22,7 +22,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C# if, if...else, if...else if and Nested if Statement"
+        android:text="C if, if...else, if...else if and Nested if Statement"
         android:textSize="16sp" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C# if (if-then) Statement"
+        android:text="C#if (if-then) Statement"
         android:textSize="16sp" />
 
     <TextView

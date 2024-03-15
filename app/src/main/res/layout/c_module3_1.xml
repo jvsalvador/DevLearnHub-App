@@ -22,7 +22,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C# Class and Object"
+        android:text="C Class and Object"
         android:textSize="20sp" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C# Class"
+        android:text="C Class"
         android:textSize="16sp" />
 
     <TextView

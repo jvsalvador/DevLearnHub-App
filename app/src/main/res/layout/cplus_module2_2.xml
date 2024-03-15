@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Cplus_Module2_2">
+
+
+    <TextView
+        android:id="@+id/textView932"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" C++ for Loop"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView926"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView932"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In computer programming, loops are used to repeat a block of code.\n\nFor example, let's say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can use a loop.\n\nThat was just a simple example; we can achieve much more efficiency and sophistication in our programs by making effective use of loops.\n\nThere are 3 types of loops in C++.\n\n•for loop\n\n•while loop\n\n•do...while loop\n\nThis tutorial focuses on C++ for loop. We will learn about the other type of loops in the upcoming tutorials."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView927"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView926"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C++ for loop"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView928"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView927"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The syntax of for-loop is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView929"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView928"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n    for (initialization; condition; update) {\n           // body of-loop\n     }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView930"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView929"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Here,\n\n•initialization - initializes variables and is executed only once\n\n•condition - if true, the body of for loop is executed if false, the for loop is terminated\n\n•update - updates the value of initialized variables and again checks the condition"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cplus_tap_to_next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -13,7 +13,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C# Operator Precedence and Associativity"
+        android:text="C Operator Precedence and Associativity"
         android:textSize="16sp" />
 
     <TextView

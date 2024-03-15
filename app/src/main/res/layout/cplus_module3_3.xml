@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Cplus_Module3_3">
+
+    <TextView
+        android:id="@+id/textView943"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="C++ Storage Class"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView944"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView943"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Every variable in C++ has two features: type and storage class.\n\nType specifies the type of data that can be stored in a variable. For example: int, float, char etc.\n\nAnd, storage class controls two different properties of a variable: lifetime (determines how long a variable can exist) and scope (determines which part of the program can access it).\n\nDepending upon the storage class of a variable, it can be divided into 4 major types:\n\n•Local variable\n\n•Global variable\n\n•Static local variable\n\n•Register Variable\n\n•Thread Local Storage"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView945"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView944"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text=" A variable defined inside a function (defined inside function body between braces) is called a local variable or automatic variable.\n\nIts scope is only limited to the function where it is defined. In simple terms, local variable exists and can be accessed only inside a function.\n\nThe life of a local variable ends (It is destroyed) when the function exits."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView946"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView945"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Global Variable"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView947"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView946"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="If a variable is defined outside all functions, then it is called a global variable.\n\nThe scope of a global variable is the whole program. This means, It can be used and changed at any part of the program after its declaration.\n\nLikewise, its life ends only when the program ends."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cplus_tap_to_next6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

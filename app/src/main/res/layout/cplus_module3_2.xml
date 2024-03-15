@@ -2,83 +2,83 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.C_Module3_5">
+    tools:context=".module.Cplus_Module3_2">
 
     <TextView
-        android:id="@+id/textView531"
+        android:id="@+id/textView937"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="C Static Variables"
+        android:text="C++ Function Overloading"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView532"
+        android:id="@+id/textView938"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView531"
-        android:layout_marginStart="10dp"
+        android:layout_below="@+id/textView937"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="If a variable is declared static, we can access the variable using the class name. For example,"
+        android:text="In C++, two functions can have the same name if the number and/or type of arguments passed is different.\n\nThese functions having the same name but different arguments are known as overloaded functions. For example:"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView533"
+        android:id="@+id/textView939"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView532"
+        android:layout_below="@+id/textView938"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    using System;\n\n    namespace StaticKeyword {\n\n          class Student {\n\n                // static variable\n                 public static string department = Computer Science;\n               }\n\n               class Program {\n                   static void Main(string[] argos) {\n\n                      // access static variable\n                     Console.WriteLine(Department: + Student.department);\n\n                     Console.ReadLine();\n                 }\n          }\n   }\n"
+        android:text="\n    // same name different arguments\n    int test() { }\n    int test(int a) { }\n    float test(double a) { }\n    int test(int a, double b) { }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView534"
+        android:id="@+id/textView940"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView533"
+        android:layout_below="@+id/textView939"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Output"
-        android:textSize="16sp" />
+        android:text="Here, all 4 functions are overloaded functions.\n\nNotice that the return types of all these 4 functions are not the same. Overloaded functions may or may not have different return types but they must have different arguments.\n\nFor example,"
+        android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView535"
+        android:id="@+id/textView941"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView534"
+        android:layout_below="@+id/textView940"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    Department: Computer Science\n"
+        android:text="\n    // Error code\n    int test(int a) { }\n    double test(int b){ }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView536"
+        android:id="@+id/textView942"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView535"
+        android:layout_below="@+id/textView941"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="9dp"
-        android:text="In the above example, we have created a static variable named department. Since the variable is static, we have used the class name Student to access the variable"
+        android:layout_marginTop="10dp"
+        android:text="Here, both functions have the same name, the same type, and the same number of arguments. Hence, the compiler will throw an error."
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/c_tap_to_next7"
+        android:id="@+id/cplus_tap_to_next5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="All Done!"
+        android:text="Tap to continue"
         android:textSize="16sp" />
 </RelativeLayout>
