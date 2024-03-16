@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Js_Module2_2">
+
+    <TextView
+        android:id="@+id/textView867"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript if...else Statement"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView868"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView867"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In computer programming, there may arise situations where you have to run a block of code among more than one alternatives. For example, assigning grades A, B or C based on marks obtained by a student.\n\nIn such situations, you can use the JavaScript if...else statement to create a program that can make decisions."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView869"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView868"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In JavaScript, there are three forms of the if...else statement.\n\n1. if statement\n2.if...else statement\n3. if...else if...else statement"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView870"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView869"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript if Statement"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView871"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView870"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="The syntax of the if statement is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView872"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView871"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n       if (condition) {\n                 // the body of if\n        }\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView873"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView872"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The if statement evaluates the condition inside the parenthesis ().\n\n1. If the condition is evaluated to true, the code inside the body of if is executed.\n2. If the condition is evaluated to false, the code inside the body of if is skipped."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView874"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView873"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Note: The code inside { } is the body of the if statement."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/js_tap_to_textt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

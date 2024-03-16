@@ -46,7 +46,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    fun main(args: Array<String>) {\n\n             val number1 = 12.5\n             val number2 = 3.5\n             var\result: Double\n\n             result = number1 + number2\n             println(&quot;number1 + number2 = $result&quot;)\n\n             result = number1 - number2\n             println(&quot;number1 - number2 = $result&quot;)\n\n             result = number1 * number2\n             println(&quot;number1 * number2 = $result&quot;)\n\n             result = number1 / number2\n             println(&quot;number1 / number2 = $result&quot;)\n\n             result = number1 % number2\n            println(&quot;number1 % number2 = $result&quot;)\n   } \n"
+        android:text="\n    fun main(args: Array&lt;String>) {\n\n             val number1 = 12.5\n             val number2 = 3.5\n             var\result: Double\n\n             result = number1 + number2\n             println(&quot;number1 + number2 = $result&quot;)\n\n             result = number1 - number2\n             println(&quot;number1 - number2 = $result&quot;)\n\n             result = number1 * number2\n             println(&quot;number1 * number2 = $result&quot;)\n\n             result = number1 / number2\n             println(&quot;number1 / number2 = $result&quot;)\n\n             result = number1 % number2\n            println(&quot;number1 % number2 = $result&quot;)\n   } \n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

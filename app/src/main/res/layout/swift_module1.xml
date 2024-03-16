@@ -7,7 +7,7 @@
     tools:context=".module.Swift_Module1">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/swift_back1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -18,7 +18,7 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView6"
+        android:layout_below="@+id/swift_back1"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"

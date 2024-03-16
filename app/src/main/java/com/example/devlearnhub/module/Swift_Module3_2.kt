@@ -1,21 +1,22 @@
 package com.example.devlearnhub.module
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.devlearnhub.R
+import com.example.devlearnhub.databinding.SwiftModule32Binding
 
 class Swift_Module3_2 : AppCompatActivity() {
+    private lateinit var binding: SwiftModule32Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.swift_module3_2)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = SwiftModule32Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.swiftTapToNext12.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, Swift_Module3_3::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
         }
     }
 }

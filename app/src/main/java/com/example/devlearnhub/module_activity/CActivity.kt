@@ -3,6 +3,7 @@ package com.example.devlearnhub.module_activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.devlearnhub.SeniorActivity
 import com.example.devlearnhub.databinding.LayoutCActivityBinding
 import com.example.devlearnhub.module.C_Module1
 import com.example.devlearnhub.module.C_Module2_1
@@ -14,6 +15,13 @@ class CActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = LayoutCActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnBackToHome.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, SeniorActivity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
 
         binding.btnNextLearn.setOnClickListener {
             val email = intent.getStringExtra("user_email")

@@ -39,7 +39,7 @@
         android:textSize="12sp" />
 
     <ImageView
-        android:id="@+id/imageView47"
+        android:id="@+id/mysql_back4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"

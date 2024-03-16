@@ -26,7 +26,7 @@
         android:textSize="12sp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/csharp_back2"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:layout_below="@+id/textView91"
@@ -37,7 +37,7 @@
         android:id="@+id/textView92"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView4"
+        android:layout_below="@+id/csharp_back2"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:text="Here, customers is a table inside the database.\n\nThe first row is the attributes of the table. Each row after that contains the data of a customer.\n\nIn a relational database, two or more tables may be related to each other. Hence the term Relational."

@@ -97,7 +97,7 @@
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView731"
+        android:id="@+id/jq_tap_to_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -90,7 +90,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    fun main(args: Array<String>) {\n\n            \val person1 = Person(&quot;Joe&quot;, 25)\n            println(&quot;First Name = ${person1.firstName}&quot;)\n            println(&quot;Age = ${person1.age}&quot;)\n    }\n\n   class Person(val firstName: String, var age: Int) {\n\n   }\n"
+        android:text="\n    fun main(args: Array&lt;String>) {\n\n            \val person1 = Person(&quot;Joe&quot;, 25)\n            println(&quot;First Name = ${person1.firstName}&quot;)\n            println(&quot;Age = ${person1.age}&quot;)\n    }\n\n   class Person(val firstName: String, var age: Int) {\n\n   }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

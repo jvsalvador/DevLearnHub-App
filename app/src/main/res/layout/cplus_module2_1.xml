@@ -7,7 +7,7 @@
     tools:context=".module.Cplus_Module2_1">
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/cplus_back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -18,7 +18,7 @@
         android:id="@+id/textView399"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView27"
+        android:layout_below="@+id/cplus_back2"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:text="C++ if, if...else and Nested if...else"
@@ -87,7 +87,7 @@
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/jquery_tap_to_next5"
+        android:id="@+id/cplus_tap_to_next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

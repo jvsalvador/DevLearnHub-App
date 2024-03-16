@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Js_Module2_3">
+
+    <TextView
+        android:id="@+id/textView875"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript switch Statement"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView876"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView875"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The JavaScript switch statement is used in decision making.\n\nThe switch statement evaluates an expression and executes the corresponding body that matches the expression's result.\n\nThe syntax of the switch statement is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView877"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView876"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n        switch(variable/expression) {\n                     case value1:\n                            // body of case 1\n                            break;\n                      case value2:\n                            // body of case 2\n                       break;\n                       case valueN:\n                            // body of case N\n                       break;\n                       default:\n                            // body of default\n        }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView878"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView877"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The switch statement evaluates a variable/expression inside parentheses ().\n\n• If the result of the expression is equal to value1, its body is executed.\n• If the result of the expression is equal to value2, its body is executed. This process goes on.\n• If there is no matching case, the default body executes."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView879"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView878"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Notes:  The break statement is optional. If the break statement is encountered, the switch statement ends. If the break statement is not used, the cases after the matching case are also executed. The default clause is also optional."
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/js_tap_to_nextt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

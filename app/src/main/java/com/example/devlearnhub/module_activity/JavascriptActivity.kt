@@ -3,6 +3,7 @@ package com.example.devlearnhub.module_activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.devlearnhub.JuniorActivity
 import com.example.devlearnhub.databinding.LayoutJavascriptActivityBinding
 import com.example.devlearnhub.module.Js_Module1
 import com.example.devlearnhub.module.Js_Module2_1
@@ -15,6 +16,13 @@ class JavascriptActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = LayoutJavascriptActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnBackToHome.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, JuniorActivity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
 
         binding.btnNextLearn.setOnClickListener {
             val email = intent.getStringExtra("user_email")

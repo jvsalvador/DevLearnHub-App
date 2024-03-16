@@ -67,7 +67,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text="\n    // Working of implicit type-conversion\n\n   #include <iostream>\n    using namespace std;\n\n     int main() {\n           // assigning an int value to num_int\n          int num_int = 9;\n\n           // declaring a double type variable\n          double num_double;\n\n           // implicit conversion\n          // assigning int value to a double variable\n         num_double = num_int;\n\n         cout << &quot;num_int = &quot; << num_int << endl;\n         cout << &quot;num_double = &quot; << num_double << endl;\n         return 0;\n      }\n"
+        android:text="\n    // Working of implicit type-conversion\n\n   #include &lt;iostream>\n    using namespace std;\n\n     int main() {\n           // assigning an int value to num_int\n          int num_int = 9;\n\n           // declaring a double type variable\n          double num_double;\n\n           // implicit conversion\n          // assigning int value to a double variable\n         num_double = num_int;\n\n         cout &lt;&lt; &quot;num_int = &quot; &lt;&lt; num_int &lt;&lt; endl;\n         cout &lt;&lt; &quot;num_double = &quot; &lt;&lt; num_double &lt;&lt; endl;\n         return 0;\n      }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

@@ -1,21 +1,23 @@
 package com.example.devlearnhub.module
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.devlearnhub.R
+import com.example.devlearnhub.databinding.CsharpModule33Binding
+import com.example.devlearnhub.module_activity.CsharpActivity
 
 class Csharp_Module3_3 : AppCompatActivity() {
+    private lateinit var binding: CsharpModule33Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.csharp_module3_3)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = CsharpModule33Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.chsarpTapToNext11.setOnClickListener {
+            val email = intent.getStringExtra("user_email")
+            val intent = Intent(this, CsharpActivity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
         }
     }
 }

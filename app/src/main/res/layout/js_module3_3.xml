@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Js_Module3_3">
+
+    <TextView
+        android:id="@+id/textView886"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Hoisting"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView887"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView886"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Hoisting in JavaScript is a behavior in which a function or a variable can be used before declaration. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView888"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView887"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n         // using test before declaring\n         console.log(test);             // undefined\n         var test;\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView889"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView888"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="The above program works and the output will be undefined. The above program behaves as"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView890"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView889"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n         // using test before\n         declaring var test;\n         console.log(test); // undefined\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView891"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView890"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Since the variable test is only declared and has no value, undefined value is assigned to it."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView892"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView891"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Note: In hoisting, though it seems that the declaration has moved up in the program, the actual thing that happens is that the function and variable declarations are added to memory during the compile phase."
+        android:textSize="12sp"
+        tools:ignore="VisualLintLongText" />
+
+    <TextView
+        android:id="@+id/js_tap_to_nextttt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

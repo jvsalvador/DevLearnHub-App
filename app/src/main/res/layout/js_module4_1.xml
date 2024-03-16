@@ -7,7 +7,7 @@
     tools:context=".module.Js_Module4_1">
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/js_back4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -18,12 +18,12 @@
         android:id="@+id/textView359"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView20"
+        android:layout_below="@+id/js_back4"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
         android:text="JavaScript Objects"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_below="@+id/textView359"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="In the JavaScript data types tutorial, you learned about 7 different primitive data types. And here, you are going to learn about the eighth data-type (JavaScript object).\n\nJavaScript object is a non-primitive data-type that allows you to store multiple collections of data."
+        android:text="JavaScript object is a non-primitive data-type that allows you to store multiple collections of data."
         android:textSize="12sp" />
 
     <TextView

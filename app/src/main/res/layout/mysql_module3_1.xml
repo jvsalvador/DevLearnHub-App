@@ -7,7 +7,7 @@
     tools:context=".module.Mysql_Module3_1">
 
     <ImageView
-        android:id="@+id/imageView46"
+        android:id="@+id/mysql_back3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -18,7 +18,7 @@
         android:id="@+id/textView431"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView46"
+        android:layout_below="@+id/mysql_back3"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"

@@ -4,6 +4,7 @@ package com.example.devlearnhub
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -27,24 +28,8 @@ class InitialActivity : AppCompatActivity() {
         binding = LayoutInitialActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnLearn.setOnClickListener {
-            val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, PythonActivity::class.java)
-            intent.putExtra("user_email", email)
-            startActivity(intent)
-        }
-        binding.btnLearn2.setOnClickListener {
-            val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, JavaActivity::class.java)
-            intent.putExtra("user_email", email)
-            startActivity(intent)
-        }
-        binding.btnLearn3.setOnClickListener {
-            val email = intent.getStringExtra("user_email")
-            val intent = Intent(this, HtmlActivity::class.java)
-            intent.putExtra("user_email", email)
-            startActivity(intent)
-        }
+
+        val email = intent.getStringExtra("user_email")
 
         // Navigation Drawer
         val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -52,10 +37,11 @@ class InitialActivity : AppCompatActivity() {
         toggle.syncState()
 
         val navView: NavigationView = findViewById(R.id.nav_view)
-        val userEmail = intent.getStringExtra("user_email")
         val headerView = navView.getHeaderView(0)
         val emailTextView: TextView = headerView.findViewById(R.id.et_email)
-        emailTextView.text = userEmail
+        emailTextView.text = email
+
+        Log.d("UserEmail", "The user's email is: $email")
 
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
@@ -101,6 +87,23 @@ class InitialActivity : AppCompatActivity() {
                 else -> false
             }
         }
+
+        binding.btnLearn.setOnClickListener {
+            val intent = Intent(this, PythonActivity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+        binding.btnLearn2.setOnClickListener {
+            val intent = Intent(this, JavaActivity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+        binding.btnLearn3.setOnClickListener {
+            val intent = Intent(this, HtmlActivity::class.java)
+            intent.putExtra("user_email", email)
+            startActivity(intent)
+        }
+
     }
 
     override fun onBackPressed() {

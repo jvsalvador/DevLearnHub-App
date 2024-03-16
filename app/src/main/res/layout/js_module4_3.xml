@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Js_Module4_3">
+
+    <TextView
+        android:id="@+id/textView896"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Getter and Setter"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView901"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView896"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In JavaScript, there are two kinds of object properties:\n\n• Data properties\n• Accessor properties"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView902"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView901"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Data Property"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView903"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView902"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Here's an example of data property that we have been using in the previous tutorials.  "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView904"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView903"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:text="\n         const student = {\n\n                // data property\n                firstName: 'Monica'; \n         };\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView905"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView904"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Accessor Property"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView906"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView905"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="In JavaScript, accessor properties are methods that get or set the value of an object. For that, we use these two keywords:\n\n• get - to define a getter method to get the property value\n• set - to define a setter method to set the property value"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView907"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView906"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Getter"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView908"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView907"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:text="In the above program, a getter method getName() is created to access the property of an object."
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView909"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView908"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:text="\n          get getName() {\n               return this.firstName;\n          }\n"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView910"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView909"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Setter"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView911"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView910"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:text="In the above example, the setter method is used to change the value of an object."
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView912"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView911"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:background="@color/black"
+        android:text="\n          set changeName(newName) {\n                  this.firstName = newName; \n          }\n"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/js_tap_to_nextt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

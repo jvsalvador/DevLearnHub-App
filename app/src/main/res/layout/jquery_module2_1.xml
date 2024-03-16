@@ -7,7 +7,7 @@
     tools:context=".module.Jquery_Module2_1">
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/jq_back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -18,7 +18,7 @@
         android:id="@+id/textView374"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView22"
+        android:layout_below="@+id/jq_back2"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
@@ -37,7 +37,7 @@
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView381"
+        android:id="@+id/jq_tap_to_next"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView375"
@@ -52,7 +52,7 @@
         android:id="@+id/textView382"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView381"
+        android:layout_below="@+id/jq_tap_to_next"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Js_Module3_2">
+
+    <TextView
+        android:id="@+id/textView880"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Function and Function Expressions"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView881"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView880"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="A function is a block of code that performs a specific task.\n\nSuppose you need to create a program to create a circle and color it. You can create two functions to solve this problem:\n\n• a function to draw the circle\n•a function to color the circle\n\nDividing a complex problem into smaller chunks makes your program easy to understand and reusable.\n\nJavaScript also has a huge number of inbuilt functions. For example, Math.sqrt() is a function to calculate the square root of a number."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView882"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView884"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n           function nameOfFunction () {\n                    // function body\n           }\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView883"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView881"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Declaring a Function"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView884"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView883"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="The syntax to declare a function is:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView885"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView882"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="• A function is declared using the function keyword.\n\n• The basic rules of naming a function are similar to naming a variable. It is better to write a descriptive name for your function. For example, if a function is used to add two numbers, you could name the function add or addNumbers.\n\n• The body of function is written within {}."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/js_tap_to_nexttt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

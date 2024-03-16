@@ -18,6 +18,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var binding: LayoutLoginActivityBinding
     private lateinit var authService: AuthService
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = LayoutLoginActivityBinding.inflate(layoutInflater)
@@ -38,7 +39,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
     }
-
     private fun loginUser() {
         val email = binding.etLoginNumberOrEmail.text.toString().trim()
         val password = binding.etLoginPassword.text.toString().trim()
@@ -52,7 +52,9 @@ class LoginActivity : AppCompatActivity() {
                         if (response.isSuccessful) {
                             val apiResponse = response.body()
                             if (apiResponse != null) {
+                                val email = intent.getStringExtra("user_email")
                                 startActivity(Intent(this@LoginActivity, ChoicesActivity::class.java))
+                                intent.putExtra("user_email", email)
                                 finish()
                             } else {
                                 Toast.makeText(this@LoginActivity, "Invalid email or password", Toast.LENGTH_SHORT).show()

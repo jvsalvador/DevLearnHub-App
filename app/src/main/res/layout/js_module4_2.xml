@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.Js_Module4_2">
+
+    <TextView
+        android:id="@+id/textView893"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Methods and this Keyword"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView894"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView893"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In the above example, a person object has two keys (name and greet), which have a string value and a function value, respectively.\n\nHence basically, the JavaScript method is an object property that has a function value."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView895"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView894"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In JavaScript, objects can also contain functions. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView897"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView895"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n          // object containing method\n          const person = {\n               name: 'John',\n               greet: function() { console.log('hello'); } \n          };\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView898"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView897"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Accessing Object Methods"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView899"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView898"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="You can access an object method using a dot notation. The syntax is:\n\n• objectName.methodKey()\n\nYou can access property by calling an objectName and a key. You can access a method by calling an objectName and a key for that method along with (). For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView900"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView899"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n          // accessing method and property\n          const person = {\n               name: 'John',\n               greet: function() { console.log('hello'); } };\n        \n           // accessing property person.name; // John\n\n           // accessing method person.greet(); // hello\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/js_tap_to_nextt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -13,7 +13,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="JavaScript Variables and Constants"
+        android:text="JavaScript console.log()"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -22,6 +22,106 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView368"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="TextView" />
+        android:text="All modern browsers have a web console for debugging. The console.log() method is used to write messages to these consoles. For example,"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView381"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView369"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n         let sum = 44;\n         console.log(sum);   // 44\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView722"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView381"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="When you run the above code, 44 is printed on the console."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView731"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView722"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Note: We will be using the console.log() method to display\n the output in our upcoming lessons."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView926"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView731"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="As you can see from these examples, console.log() makes it easier to see the value inside a variable. That's why it's commonly used for testing/debugging code.  The console object also has various methods other than console.log(). "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView927"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView926"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Example 1: Print a Sentence"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView928"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView927"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n        // program to print a sentence\n        // passing string\n        console.log(&quot;I love DevLearn&quot;);\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView929"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView928"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Output"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView930"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView929"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n   I love DevLearn\n"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/js_tap_to_next11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tap to continue"
+        android:textSize="16sp" />
 </RelativeLayout>

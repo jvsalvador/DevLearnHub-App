@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".module.Js_Module1_3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView931"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Type Conversions"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView932"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView931"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In programming, type conversion is the process of converting data of one type to another. For example: converting string data to number.\n\nThere are two types of type conversion in JavaScript.  \n\n1. Implicit Conversion - automatic type conversion\n2. Explicit Conversion - manual type conversion"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView933"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView932"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Implicit Conversion"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView934"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView933"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="In certain situations, JavaScript automatically converts one data type to another (to the right type). This is known as implicit conversion.  "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView935"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView934"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n         // numeric string used with - , / , * results number type\n         let result;\n         result = '4' - '2';\n         console.log(result); // 2\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView936"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView935"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="JavaScript Explicit Conversion"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView937"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView936"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="You can also convert one data type to another as per your needs. The type conversion that you do manually is known as explicit type conversion."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView938"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView937"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="\n         let result;  \n         // string to number\n         result = Number('324');\n         console.log(result); // 324\n"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/js_tap_to_next12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="All Done!"
+        android:textSize="16sp" />
+</RelativeLayout>

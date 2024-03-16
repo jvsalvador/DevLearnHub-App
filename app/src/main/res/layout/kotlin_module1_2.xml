@@ -46,7 +46,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@color/black"
-        android:text=" \n   // Hello World Program\n\n   fun main(args : Array<String>) {\n          println(&quot;Hello, World!&quot;)\n   }\n"
+        android:text=" \n   // Hello World Program\n\n   fun main(args : Array&lt;String>) {\n          println(&quot;Hello, World!&quot;)\n   }\n"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
@@ -79,7 +79,7 @@
         android:layout_below="@+id/textView852"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="How this program works?\n\n1.// Hello World Program\n\nAny line starting with // is a comment in Kotlin (similar to Java). Comments are ignored by the compiler. They are intended for person reading the code to better understand the intent and functionality of the program. To learn more, visit Kotlin comments.\n\n2.fun main(args : Array<String>) { ... }\n\nThis is the main function,which is mandatory in every Kotlin application. The Kotlin compiler starts executing the code from the main function.\n\nThe function takes array of strings as a parameter and returns Unit. You will learn about functions and parameters in later chapters."
+        android:text="How this program works?\n\n1.// Hello World Program\n\nAny line starting with // is a comment in Kotlin (similar to Java). Comments are ignored by the compiler. They are intended for person reading the code to better understand the intent and functionality of the program. To learn more, visit Kotlin comments.\n\n2.fun main(args : Array&lt;String>) { ... }\n\nThis is the main function,which is mandatory in every Kotlin application. The Kotlin compiler starts executing the code from the main function.\n\nThe function takes array of strings as a parameter and returns Unit. You will learn about functions and parameters in later chapters."
         android:textSize="12sp" />
 
     <TextView

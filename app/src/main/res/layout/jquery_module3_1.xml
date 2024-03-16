@@ -10,8 +10,9 @@
         android:id="@+id/textView385"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/jq_back3"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/poppins_bold"
         android:text="R Strings"
         android:textSize="20sp" />
@@ -106,10 +107,10 @@
         android:textSize="16sp" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/jq_back3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 </RelativeLayout>
